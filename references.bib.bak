@@ -1,0 +1,89 @@
+ 
+@TechReport{Singer2022,
+  author     = {Singer, Uriel and Polyak, Adam and Hayes, Thomas and Yin, Xi and An, Jie and Zhang, Songyang and Hu, Qiyuan and Yang, Harry and Ashual, Oron and Gafni, Oran and Parikh, Devi and Gupta, Sonal and Taigman, Yaniv},
+  title      = {Make-{A}-{Video}: {Text}-to-{Video} {Generation} without {Text}-{Video} {Data}},
+  year       = {2022},
+  month      = sep,
+  note       = {arXiv:2209.14792 [cs] type: article},
+  abstract   = {We propose Make-A-Video -- an approach for directly translating the tremendous recent progress in Text-to-Image (T2I) generation to Text-to-Video (T2V). Our intuition is simple: learn what the world looks like and how it is described from paired text-image data, and learn how the world moves from unsupervised video footage. Make-A-Video has three advantages: (1) it accelerates training of the T2V model (it does not need to learn visual and multimodal representations from scratch), (2) it does not require paired text-video data, and (3) the generated videos inherit the vastness (diversity in aesthetic, fantastical depictions, etc.) of today's image generation models. We design a simple yet effective way to build on T2I models with novel and effective spatial-temporal modules. First, we decompose the full temporal U-Net and attention tensors and approximate them in space and time. Second, we design a spatial temporal pipeline to generate high resolution and frame rate videos with a video decoder, interpolation model and two super resolution models that can enable various applications besides T2V. In all aspects, spatial and temporal resolution, faithfulness to text, and quality, Make-A-Video sets the new state-of-the-art in text-to-video generation, as determined by both qualitative and quantitative measures.},
+  doi        = {10.48550/arXiv.2209.14792},
+  file       = {:Singer2022 - Make a Video_ Text to Video Generation without Text Video Data.pdf:PDF},
+  groups     = {Others},
+  keywords   = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+  school     = {arXiv},
+  shorttitle = {Make-{A}-{Video}},
+  url        = {http://arxiv.org/abs/2209.14792},
+  urldate    = {2022-10-07},
+}
+
+ 
+@TechReport{Yang2022,
+  author   = {Yang, Ziqing and He, Xinlei and Li, Zheng and Backes, Michael and Humbert, Mathias and Berrang, Pascal and Zhang, Yang},
+  title    = {Data {Poisoning} {Attacks} {Against} {Multimodal} {Encoders}},
+  year     = {2022},
+  month    = sep,
+  note     = {arXiv:2209.15266 [cs] type: article},
+  abstract = {Traditional machine learning (ML) models usually rely on large-scale labeled datasets to achieve strong performance. However, such labeled datasets are often challenging and expensive to obtain. Also, the predefined categories limit the model's ability to generalize to other visual concepts as additional labeled data is required. On the contrary, the newly emerged multimodal model, which contains both visual and linguistic modalities, learns the concept of images from the raw text. It is a promising way to solve the above problems as it can use easy-to-collect image-text pairs to construct the training dataset and the raw texts contain almost unlimited categories according to their semantics. However, learning from a large-scale unlabeled dataset also exposes the model to the risk of potential poisoning attacks, whereby the adversary aims to perturb the model's training dataset to trigger malicious behaviors in it. Previous work mainly focuses on the visual modality. In this paper, we instead focus on answering two questions: (1) Is the linguistic modality also vulnerable to poisoning attacks? and (2) Which modality is most vulnerable? To answer the two questions, we conduct three types of poisoning attacks against CLIP, the most representative multimodal contrastive learning framework. Extensive evaluations on different datasets and model architectures show that all three attacks can perform well on the linguistic modality with only a relatively low poisoning rate and limited epochs. Also, we observe that the poisoning effect differs between different modalities, i.e., with lower MinRank in the visual modality and with higher Hit@K when K is small in the linguistic modality. To mitigate the attacks, we propose both pre-training and post-training defenses. We empirically show that both defenses can significantly reduce the attack performance while preserving the model's utility.},
+  doi      = {10.48550/arXiv.2209.15266},
+  file     = {:Yang2022 - Data Poisoning Attacks against Multimodal Encoders.pdf:PDF},
+  groups   = {Backdoors},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2209.15266},
+  urldate  = {2022-10-07},
+}
+
+ 
+@TechReport{Salem2021,
+  author   = {Salem, Ahmed and Backes, Michael and Zhang, Yang},
+  title    = {Get a {Model}! {Model} {Hijacking} {Attack} {Against} {Machine} {Learning} {Models}},
+  year     = {2021},
+  month    = nov,
+  note     = {arXiv:2111.04394 [cs] type: article},
+  abstract = {Machine learning (ML) has established itself as a cornerstone for various critical applications ranging from autonomous driving to authentication systems. However, with this increasing adoption rate of machine learning models, multiple attacks have emerged. One class of such attacks is training time attack, whereby an adversary executes their attack before or during the machine learning model training. In this work, we propose a new training time attack against computer vision based machine learning models, namely model hijacking attack. The adversary aims to hijack a target model to execute a different task than its original one without the model owner noticing. Model hijacking can cause accountability and security risks since a hijacked model owner can be framed for having their model offering illegal or unethical services. Model hijacking attacks are launched in the same way as existing data poisoning attacks. However, one requirement of the model hijacking attack is to be stealthy, i.e., the data samples used to hijack the target model should look similar to the model's original training dataset. To this end, we propose two different model hijacking attacks, namely Chameleon and Adverse Chameleon, based on a novel encoder-decoder style ML model, namely the Camouflager. Our evaluation shows that both of our model hijacking attacks achieve a high attack success rate, with a negligible drop in model utility.},
+  annote   = {Comment: To Appear in NDSS 2022},
+  doi      = {10.48550/arXiv.2111.04394},
+  file     = {:Salem2021 - Get a Model! Model Hijacking Attack against Machine Learning Models.pdf:PDF},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2111.04394},
+  urldate  = {2022-10-07},
+}
+
+ 
+@TechReport{Salem2020,
+  author   = {Salem, Ahmed and Backes, Michael and Zhang, Yang},
+  title    = {Don't {Trigger} {Me}! {A} {Triggerless} {Backdoor} {Attack} {Against} {Deep} {Neural} {Networks}},
+  year     = {2020},
+  month    = oct,
+  note     = {arXiv:2010.03282 [cs] type: article},
+  abstract = {Backdoor attack against deep neural networks is currently being profoundly investigated due to its severe security consequences. Current state-of-the-art backdoor attacks require the adversary to modify the input, usually by adding a trigger to it, for the target model to activate the backdoor. This added trigger not only increases the difficulty of launching the backdoor attack in the physical world, but also can be easily detected by multiple defense mechanisms. In this paper, we present the first triggerless backdoor attack against deep neural networks, where the adversary does not need to modify the input for triggering the backdoor. Our attack is based on the dropout technique. Concretely, we associate a set of target neurons that are dropped out during model training with the target label. In the prediction phase, the model will output the target label when the target neurons are dropped again, i.e., the backdoor attack is launched. This triggerless feature of our attack makes it practical in the physical world. Extensive experiments show that our triggerless backdoor attack achieves a perfect attack success rate with a negligible damage to the model's utility.},
+  doi      = {10.48550/arXiv.2010.03282},
+  file     = {:Salem2020 - Don't Trigger Me! a Triggerless Backdoor Attack against Deep Neural Networks.pdf:PDF},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2010.03282},
+  urldate  = {2022-10-07},
+}
+
+ 
+@InProceedings{Salem2022,
+  author    = {Salem, Ahmed and Wen, Rui and Backes, Michael and Ma, Shiqing and Zhang, Yang},
+  booktitle = {2022 {IEEE} 7th {European} {Symposium} on {Security} and {Privacy} ({EuroS}\&{P})},
+  title     = {Dynamic {Backdoor} {Attacks} {Against} {Machine} {Learning} {Models}},
+  year      = {2022},
+  month     = jun,
+  pages     = {703--718},
+  abstract  = {Machine learning (ML) has made tremendous progress during the past decade and is being adopted in various critical real-world applications. However, recent research has shown that ML models are vulnerable to multiple security and privacy attacks. In particular, backdoor attacks against ML models have recently raised a lot of awareness. A successful backdoor attack can cause severe consequences, such as allowing an adversary to bypass critical authentication systems. Current backdooring techniques rely on adding static triggers (with fixed patterns and locations) on ML model inputs which are prone to detection by the current backdoor detection mechanisms. In this paper, we propose the first class of dynamic backdooring techniques against deep neural networks (DNN), namely Random Backdoor, Backdoor Generating Network (BaN), and conditional Backdoor Generating Network (c-BaN). Triggers generated by our techniques can have random patterns and locations, which reduce the efficacy of the current backdoor detection mechanisms. In particular, BaN and c-BaN based on a novel generative network are the first two schemes that algorithmically generate triggers. Moreover, c-BaN is the first conditional backdooring technique that given a target label, it can generate a target-specific trigger. Both BaN and c-BaN are essentially a general framework which renders the adversary the flexibility for further customizing backdoor attacks. We extensively evaluate our techniques on three benchmark datasets: MNIST, CelebA, and CIFAR-10. Our techniques achieve almost perfect attack performance on back-doored data with a negligible utility loss. We further show that our techniques can bypass current state-of-the-art defense mechanisms against backdoor attacks, including ABS, Februus, MNTD, Neural Cleanse, and STRIP.},
+  doi       = {10.1109/EuroSP53844.2022.00049},
+  file      = {:Salem2022 - Dynamic Backdoor Attacks against Machine Learning Models.pdf:PDF},
+  keywords  = {Deep learning, Training, Privacy, Strips, Neural networks, Authentication, Benchmark testing, Backdoor attack, Machine learning security},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
+1 StaticGroup:Others\;0\;1\;0xff00ffff\;\;\;;
+}
