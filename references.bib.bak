@@ -9,7 +9,7 @@
   note       = {arXiv:2210.09276 [cs] type: article},
   abstract   = {Text-conditioned image editing has recently attracted considerable interest. However, most methods are currently either limited to specific editing types (e.g., object overlay, style transfer), or apply to synthetically generated images, or require multiple input images of a common object. In this paper we demonstrate, for the very first time, the ability to apply complex (e.g., non-rigid) text-guided semantic edits to a single real image. For example, we can change the posture and composition of one or multiple objects inside an image, while preserving its original characteristics. Our method can make a standing dog sit down or jump, cause a bird to spread its wings, etc. -- each within its single high-resolution natural image provided by the user. Contrary to previous work, our proposed method requires only a single input image and a target text (the desired edit). It operates on real images, and does not require any additional inputs (such as image masks or additional views of the object). Our method, which we call "Imagic", leverages a pre-trained text-to-image diffusion model for this task. It produces a text embedding that aligns with both the input image and the target text, while fine-tuning the diffusion model to capture the image-specific appearance. We demonstrate the quality and versatility of our method on numerous inputs from various domains, showcasing a plethora of high quality complex semantic image edits, all within a single unified framework.},
   doi        = {10.48550/arXiv.2210.09276},
-  file       = {arXiv Fulltext PDF:https\://arxiv.org/pdf/2210.09276.pdf:application/pdf},
+  file       = {:Kawar2022 - Imagic_ Text Based Real Image Editing with Diffusion Models.pdf:PDF},
   groups     = {To read, Others},
   keywords   = {Computer Science - Computer Vision and Pattern Recognition},
   school     = {arXiv},
@@ -221,6 +221,46 @@
   shorttitle = {{SoK}},
   url        = {http://arxiv.org/abs/2009.04131},
   urldate    = {2022-10-17},
+}
+
+'
+@InProceedings{Wang2019,
+  author     = {Wang, Bolun and Yao, Yuanshun and Shan, Shawn and Li, Huiying and Viswanath, Bimal and Zheng, Haitao and Zhao, Ben Y.},
+  booktitle  = {2019 {IEEE} {Symposium} on {Security} and {Privacy} ({SP})},
+  title      = {Neural {Cleanse}: {Identifying} and {Mitigating} {Backdoor} {Attacks} in {Neural} {Networks}},
+  year       = {2019},
+  month      = may,
+  note       = {ISSN: 2375-1207},
+  pages      = {707--723},
+  abstract   = {Lack of transparency in deep neural networks (DNNs) make them susceptible to backdoor attacks, where hidden associations or triggers override normal classification to produce unexpected results. For example, a model with a backdoor always identifies a face as Bill Gates if a specific symbol is present in the input. Backdoors can stay hidden indefinitely until activated by an input, and present a serious security risk to many security or safety related applications, e.g. biometric authentication systems or self-driving cars. We present the first robust and generalizable detection and mitigation system for DNN backdoor attacks. Our techniques identify backdoors and reconstruct possible triggers. We identify multiple mitigation techniques via input filters, neuron pruning and unlearning. We demonstrate their efficacy via extensive experiments on a variety of DNNs, against two types of backdoor injection methods identified by prior work. Our techniques also prove robust against a number of variants of the backdoor attack.},
+  doi        = {10.1109/SP.2019.00031},
+  file       = {:Wang2019 - Neural Cleanse_ Identifying and Mitigating Backdoor Attacks in Neural Networks.pdf:PDF},
+  groups     = {To read, Defenses},
+  issn       = {2375-1207},
+  keywords   = {Training, Biological neural networks, Face recognition, Face, Neurons, Computational modeling, Security, Deep-Learning, Security, Backdoor-Attack},
+  shorttitle = {Neural {Cleanse}},
+}
+
+'
+@InProceedings{Liu2019,
+  author     = {Liu, Yingqi and Lee, Wen-Chuan and Tao, Guanhong and Ma, Shiqing and Aafer, Yousra and Zhang, Xiangyu},
+  booktitle  = {Proceedings of the 2019 {ACM} {SIGSAC} {Conference} on {Computer} and {Communications} {Security}},
+  title      = {{ABS}: {Scanning} {Neural} {Networks} for {Back}-doors by {Artificial} {Brain} {Stimulation}},
+  year       = {2019},
+  address    = {New York, NY, USA},
+  month      = nov,
+  pages      = {1265--1282},
+  publisher  = {Association for Computing Machinery},
+  series     = {{CCS} '19},
+  abstract   = {This paper presents a technique to scan neural network based AI models to determine if they are trojaned. Pre-trained AI models may contain back-doors that are injected through training or by transforming inner neuron weights. These trojaned models operate normally when regular inputs are provided, and mis-classify to a specific output label when the input is stamped with some special pattern called trojan trigger. We develop a novel technique that analyzes inner neuron behaviors by determining how output activations change when we introduce different levels of stimulation to a neuron. The neurons that substantially elevate the activation of a particular output label regardless of the provided input is considered potentially compromised. Trojan trigger is then reverse-engineered through an optimization procedure using the stimulation analysis results, to confirm that a neuron is truly compromised. We evaluate our system ABS on 177 trojaned models that are trojaned with various attack methods that target both the input space and the feature space, and have various trojan trigger sizes and shapes, together with 144 benign models that are trained with different data and initial weight values. These models belong to 7 different model structures and 6 different datasets, including some complex ones such as ImageNet, VGG-Face and ResNet110. Our results show that ABS is highly effective, can achieve over 90\% detection rate for most cases (and many 100\%), when only one input sample is provided for each output label. It substantially out-performs the state-of-the-art technique Neural Cleanse that requires a lot of input samples and small trojan triggers to achieve good performance.},
+  doi        = {10.1145/3319535.3363216},
+  file       = {Full Text PDF:https\://dl.acm.org/doi/pdf/10.1145/3319535.3363216:application/pdf},
+  groups     = {To read},
+  isbn       = {9781450367479},
+  keywords   = {deep learning system, ai trojan attacks, artificial brain stimulation},
+  shorttitle = {{ABS}},
+  url        = {https://doi.org/10.1145/3319535.3363216},
+  urldate    = {2022-10-20},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
