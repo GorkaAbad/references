@@ -1,15 +1,6 @@
 % Encoding: UTF-8
 
 '
-@InProceedings{bagdasaryan2021blind,
-  author    = {Bagdasaryan, Eugene and Shmatikov, Vitaly},
-  booktitle = {30th USENIX Security Symposium (USENIX Security 21)},
-  title     = {Blind backdoors in deep learning models},
-  year      = {2021},
-  pages     = {1505--1521},
-}
-
-'
 @TechReport{Kawar2022,
   author     = {Kawar, Bahjat and Zada, Shiran and Lang, Oran and Tov, Omer and Chang, Huiwen and Dekel, Tali and Mosseri, Inbar and Irani, Michal},
   title      = {Imagic: {Text}-{Based} {Real} {Image} {Editing} with {Diffusion} {Models}},
@@ -298,6 +289,20 @@
   school   = {arXiv},
   url      = {http://arxiv.org/abs/2110.07139},
   urldate  = {2022-10-20},
+}
+
+@Article{Bagdasaryan2020,
+  author        = {Eugene Bagdasaryan and Vitaly Shmatikov},
+  title         = {Blind Backdoors in Deep Learning Models},
+  year          = {2020},
+  month         = may,
+  abstract      = {We investigate a new method for injecting backdoors into machine learning models, based on compromising the loss-value computation in the model-training code. We use it to demonstrate new classes of backdoors strictly more powerful than those in the prior literature: single-pixel and physical backdoors in ImageNet models, backdoors that switch the model to a covert, privacy-violating task, and backdoors that do not require inference-time input modifications. Our attack is blind: the attacker cannot modify the training data, nor observe the execution of his code, nor access the resulting model. The attack code creates poisoned training inputs "on the fly," as the model is training, and uses multi-objective optimization to achieve high accuracy on both the main and backdoor tasks. We show how a blind attack can evade any known defense and propose new ones.},
+  archiveprefix = {arXiv},
+  eprint        = {2005.03823},
+  file          = {:Bagdasaryan2020 - Blind Backdoors in Deep Learning Models.pdf:PDF},
+  groups        = {Attack, To read},
+  keywords      = {cs.CR, cs.CV, cs.LG},
+  primaryclass  = {cs.CR},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
