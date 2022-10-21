@@ -10,7 +10,7 @@
   abstract   = {Text-conditioned image editing has recently attracted considerable interest. However, most methods are currently either limited to specific editing types (e.g., object overlay, style transfer), or apply to synthetically generated images, or require multiple input images of a common object. In this paper we demonstrate, for the very first time, the ability to apply complex (e.g., non-rigid) text-guided semantic edits to a single real image. For example, we can change the posture and composition of one or multiple objects inside an image, while preserving its original characteristics. Our method can make a standing dog sit down or jump, cause a bird to spread its wings, etc. -- each within its single high-resolution natural image provided by the user. Contrary to previous work, our proposed method requires only a single input image and a target text (the desired edit). It operates on real images, and does not require any additional inputs (such as image masks or additional views of the object). Our method, which we call "Imagic", leverages a pre-trained text-to-image diffusion model for this task. It produces a text embedding that aligns with both the input image and the target text, while fine-tuning the diffusion model to capture the image-specific appearance. We demonstrate the quality and versatility of our method on numerous inputs from various domains, showcasing a plethora of high quality complex semantic image edits, all within a single unified framework.},
   doi        = {10.48550/arXiv.2210.09276},
   file       = {:Kawar2022 - Imagic_ Text Based Real Image Editing with Diffusion Models.pdf:PDF},
-  groups     = {To read, Others},
+  groups     = {Others, To read},
   keywords   = {Computer Science - Computer Vision and Pattern Recognition},
   school     = {arXiv},
   shorttitle = {Imagic},
@@ -133,7 +133,7 @@
   abstract   = {Self-supervised learning in computer vision aims to pre-train an image encoder using a large amount of unlabeled images or (image, text) pairs. The pre-trained image encoder can then be used as a feature extractor to build downstream classifiers for many downstream tasks with a small amount of or no labeled training data. In this work, we propose BadEncoder, the first backdoor attack to self-supervised learning. In particular, our BadEncoder injects backdoors into a pre-trained image encoder such that the downstream classifiers built based on the backdoored image encoder for different downstream tasks simultaneously inherit the backdoor behavior. We formulate our BadEncoder as an optimization problem and we propose a gradient descent based method to solve it, which produces a backdoored image encoder from a clean one. Our extensive empirical evaluation results on multiple datasets show that our BadEncoder achieves high attack success rates while preserving the accuracy of the downstream classifiers. We also show the effectiveness of BadEncoder using two publicly available, real-world image encoders, i.e., Google’s image encoder pre-trained on ImageNet and OpenAI’s Contrastive Language-Image Pre-training (CLIP) image encoder pre-trained on 400 million (image, text) pairs collected from the Internet. Moreover, we consider defenses including Neural Cleanse and MNTD (empirical defenses) as well as PatchGuard (a provable defense). Our results show that these defenses are insufficient to defend against BadEncoder, highlighting the needs for new defenses against our BadEncoder. Our code is publicly available at: https://github.com/jjy1994/BadEncoder.},
   doi        = {10.1109/SP46214.2022.9833644},
   file       = {:Jia2022 - BadEncoder_ Backdoor Attacks to Pre Trained Encoders in Self Supervised Learning.html:URL},
-  groups     = {To read},
+  groups     = {To read, Attack},
   issn       = {2375-1207},
   keywords   = {Privacy, Computer vision, Training data, Self-supervised learning, Feature extraction, Internet, Security},
   shorttitle = {{BadEncoder}},
@@ -153,7 +153,7 @@
   abstract  = {Backdoor attacks represent a serious threat to neural network models. A backdoored model will misclassify the trigger-embedded inputs into an attacker-chosen target label while performing normally on other benign inputs. There are already numerous works on backdoor attacks on neural networks, but only a few works consider graph neural networks (GNNs). As such, there is no intensive research on explaining the impact of trigger injecting position on the performance of backdoor attacks on GNNs. To bridge this gap, we conduct an experimental investigation on the performance of backdoor attacks on GNNs. We apply two powerful GNN explainability approaches to select the optimal trigger injecting position to achieve two attacker objectives - high attack success rate and low clean accuracy drop. Our empirical results on benchmark datasets and state-of-the-art neural network models demonstrate the proposed method's effectiveness in selecting trigger injecting position for backdoor attacks on GNNs. For instance, on the node classification task, the backdoor attack with trigger injecting position selected by GraphLIME reaches over 84\% attack success rate with less than 2.5\% accuracy drop.},
   doi       = {10.1145/3468218.3469046},
   file      = {:Xu2021 - Explainability Based Backdoor Attacks against Graph Neural Networks.pdf:PDF},
-  groups    = {To read},
+  groups    = {To read, Attack},
   isbn      = {9781450385619},
   keywords  = {graph neural networks, explainability, backdoor attacks},
   url       = {https://doi.org/10.1145/3468218.3469046},
@@ -165,7 +165,7 @@
   title      = {Trojaning Attack on Neural Networks - Trojaning Attack on Neural Networks},
   accessdate = {2022-10-17},
   file       = {:- Trojaning Attack on Neural Networks Trojaning Attack on Neural Networks.pdf:PDF},
-  groups     = {Backdoors, Attack, To read},
+  groups     = {Backdoors, To read, Attack},
   url        = {https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=2782&context=cstech},
 }
 
@@ -180,7 +180,7 @@
   volume    = {33},
   abstract  = {In recent years, neural backdoor attack has been considered to be a potential security threat to deep learning systems. Such systems, while achieving the state-of-the-art performance on clean data, perform abnormally on inputs with predefined triggers. Current backdoor techniques, however, rely on uniform trigger patterns, which are easily detected and mitigated by current defense methods. In this work, we propose a novel backdoor attack technique in which the triggers vary from input to input. To achieve this goal, we implement an input-aware trigger generator driven by diversity loss. A novel cross-trigger test is applied to enforce trigger nonreusablity, making backdoor verification impossible. Experiments show that our method is efficient in various attack scenarios as well as multiple datasets. We further demonstrate that our backdoor can bypass the state of the art defense methods. An analysis with a famous neural network inspector again proves the stealthiness of the proposed attack. Our code is publicly available.},
   file      = {:Nguyen2020 - Input Aware Dynamic Backdoor Attack.pdf:PDF},
-  groups    = {Backdoors, Attack, To read},
+  groups    = {Backdoors, To read, Attack},
   url       = {https://proceedings.neurips.cc/paper/2020/hash/234e691320c0ad5b45ee3c96d0d7b8f8-Abstract.html},
   urldate   = {2022-10-17},
 }
@@ -196,7 +196,7 @@
   annote     = {Comment: IEEE Symposium on Security and Privacy 2023},
   doi        = {10.48550/arXiv.2003.08904},
   file       = {:Weber2022 - RAB_ Provable Robustness against Backdoor Attacks.pdf:PDF},
-  groups     = {To read, Defenses, Backdoors},
+  groups     = {Defenses, Backdoors, To read},
   keywords   = {Computer Science - Machine Learning, Statistics - Machine Learning},
   school     = {arXiv},
   shorttitle = {{RAB}},
@@ -215,29 +215,12 @@
   annote     = {Comment: To appear at 2023 IEEE Symposium on Security and Privacy (SP); 14 pages for the main text; benchmark \& tool website: http://sokcertifiedrobustness.github.io/},
   doi        = {10.48550/arXiv.2009.04131},
   file       = {:Li2022 - SoK_ Certified Robustness for Deep Neural Networks.pdf:PDF},
-  groups     = {To read, Defenses},
+  groups     = {Defenses, To read},
   keywords   = {Computer Science - Machine Learning, Computer Science - Cryptography and Security, Statistics - Machine Learning},
   school     = {arXiv},
   shorttitle = {{SoK}},
   url        = {http://arxiv.org/abs/2009.04131},
   urldate    = {2022-10-17},
-}
-
-@InProceedings{Wang2019,
-  author     = {Wang, Bolun and Yao, Yuanshun and Shan, Shawn and Li, Huiying and Viswanath, Bimal and Zheng, Haitao and Zhao, Ben Y.},
-  booktitle  = {2019 {IEEE} {Symposium} on {Security} and {Privacy} ({SP})},
-  title      = {Neural {Cleanse}: {Identifying} and {Mitigating} {Backdoor} {Attacks} in {Neural} {Networks}},
-  year       = {2019},
-  month      = may,
-  note       = {ISSN: 2375-1207},
-  pages      = {707--723},
-  abstract   = {Lack of transparency in deep neural networks (DNNs) make them susceptible to backdoor attacks, where hidden associations or triggers override normal classification to produce unexpected results. For example, a model with a backdoor always identifies a face as Bill Gates if a specific symbol is present in the input. Backdoors can stay hidden indefinitely until activated by an input, and present a serious security risk to many security or safety related applications, e.g. biometric authentication systems or self-driving cars. We present the first robust and generalizable detection and mitigation system for DNN backdoor attacks. Our techniques identify backdoors and reconstruct possible triggers. We identify multiple mitigation techniques via input filters, neuron pruning and unlearning. We demonstrate their efficacy via extensive experiments on a variety of DNNs, against two types of backdoor injection methods identified by prior work. Our techniques also prove robust against a number of variants of the backdoor attack.},
-  doi        = {10.1109/SP.2019.00031},
-  file       = {:Wang2019 - Neural Cleanse_ Identifying and Mitigating Backdoor Attacks in Neural Networks.pdf:PDF},
-  groups     = {To read, Defenses},
-  issn       = {2375-1207},
-  keywords   = {Training, Biological neural networks, Face recognition, Face, Neurons, Computational modeling, Security, Deep-Learning, Security, Backdoor-Attack},
-  shorttitle = {Neural {Cleanse}},
 }
 
 '
@@ -254,12 +237,72 @@
   abstract   = {This paper presents a technique to scan neural network based AI models to determine if they are trojaned. Pre-trained AI models may contain back-doors that are injected through training or by transforming inner neuron weights. These trojaned models operate normally when regular inputs are provided, and mis-classify to a specific output label when the input is stamped with some special pattern called trojan trigger. We develop a novel technique that analyzes inner neuron behaviors by determining how output activations change when we introduce different levels of stimulation to a neuron. The neurons that substantially elevate the activation of a particular output label regardless of the provided input is considered potentially compromised. Trojan trigger is then reverse-engineered through an optimization procedure using the stimulation analysis results, to confirm that a neuron is truly compromised. We evaluate our system ABS on 177 trojaned models that are trojaned with various attack methods that target both the input space and the feature space, and have various trojan trigger sizes and shapes, together with 144 benign models that are trained with different data and initial weight values. These models belong to 7 different model structures and 6 different datasets, including some complex ones such as ImageNet, VGG-Face and ResNet110. Our results show that ABS is highly effective, can achieve over 90\% detection rate for most cases (and many 100\%), when only one input sample is provided for each output label. It substantially out-performs the state-of-the-art technique Neural Cleanse that requires a lot of input samples and small trojan triggers to achieve good performance.},
   doi        = {10.1145/3319535.3363216},
   file       = {:Liu2019 - ABS_ Scanning Neural Networks for Back Doors by Artificial Brain Stimulation.pdf:PDF},
-  groups     = {To read},
+  groups     = {To read, Defenses},
   isbn       = {9781450367479},
   keywords   = {deep learning system, ai trojan attacks, artificial brain stimulation},
   shorttitle = {{ABS}},
   url        = {https://doi.org/10.1145/3319535.3363216},
   urldate    = {2022-10-20},
+}
+
+'
+@InProceedings{Arp2022,
+  author   = {Arp, Daniel and Quiring, Erwin and Pendlebury, Feargus and Warnecke, Alexander and Pierazzi, Fabio and Wressnegger, Christian and Cavallaro, Lorenzo and Rieck, Konrad},
+  title    = {Dos and {Don}'ts of {Machine} {Learning} in {Computer} {Security}},
+  year     = {2022},
+  pages    = {3971--3988},
+  file     = {:Arp2022 - Dos and Don'ts of Machine Learning in Computer Security.pdf:PDF},
+  groups   = {Others, To read},
+  isbn     = {9781939133311},
+  language = {en},
+  url      = {https://www.usenix.org/conference/usenixsecurity22/presentation/arp},
+  urldate  = {2022-10-20},
+}
+
+'
+@InProceedings{Pan2022,
+  author   = {Pan, Xudong and Zhang, Mi and Sheng, Beina and Zhu, Jiaming and Yang, Min},
+  title    = {Hidden {Trigger} {Backdoor} {Attack} on \{{NLP}\} {Models} via {Linguistic} {Style} {Manipulation}},
+  year     = {2022},
+  pages    = {3611--3628},
+  file     = {:pan_hidden_2022 - Hidden Trigger Backdoor Attack on NLP_ Models Via Linguistic Style Manipulation.pdf:PDF},
+  groups   = {To read, Attack},
+  isbn     = {9781939133311},
+  language = {en},
+  url      = {https://www.usenix.org/conference/usenixsecurity22/presentation/pan-hidden},
+  urldate  = {2022-10-20},
+}
+
+'
+@TechReport{Qi2021,
+  author   = {Qi, Fanchao and Chen, Yangyi and Zhang, Xurui and Li, Mukai and Liu, Zhiyuan and Sun, Maosong},
+  title    = {Mind the {Style} of {Text}! {Adversarial} and {Backdoor} {Attacks} {Based} on {Text} {Style} {Transfer}},
+  year     = {2021},
+  month    = oct,
+  note     = {arXiv:2110.07139 [cs] type: article},
+  abstract = {Adversarial attacks and backdoor attacks are two common security threats that hang over deep learning. Both of them harness task-irrelevant features of data in their implementation. Text style is a feature that is naturally irrelevant to most NLP tasks, and thus suitable for adversarial and backdoor attacks. In this paper, we make the first attempt to conduct adversarial and backdoor attacks based on text style transfer, which is aimed at altering the style of a sentence while preserving its meaning. We design an adversarial attack method and a backdoor attack method, and conduct extensive experiments to evaluate them. Experimental results show that popular NLP models are vulnerable to both adversarial and backdoor attacks based on text style transfer -- the attack success rates can exceed 90\% without much effort. It reflects the limited ability of NLP models to handle the feature of text style that has not been widely realized. In addition, the style transfer-based adversarial and backdoor attack methods show superiority to baselines in many aspects. All the code and data of this paper can be obtained at https://github.com/thunlp/StyleAttack.},
+  annote   = {Comment: Accepted by the main conference of EMNLP 2021 as a long paper. The camera-ready version},
+  doi      = {10.48550/arXiv.2110.07139},
+  file     = {:Qi2021 - Mind the Style of Text! Adversarial and Backdoor Attacks Based on Text Style Transfer.pdf:PDF},
+  groups   = {To read, Attack},
+  keywords = {Computer Science - Computation and Language, Computer Science - Artificial Intelligence, Computer Science - Cryptography and Security},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2110.07139},
+  urldate  = {2022-10-20},
+}
+
+@Article{Bagdasaryan2020,
+  author        = {Eugene Bagdasaryan and Vitaly Shmatikov},
+  title         = {Blind Backdoors in Deep Learning Models},
+  year          = {2020},
+  month         = may,
+  abstract      = {We investigate a new method for injecting backdoors into machine learning models, based on compromising the loss-value computation in the model-training code. We use it to demonstrate new classes of backdoors strictly more powerful than those in the prior literature: single-pixel and physical backdoors in ImageNet models, backdoors that switch the model to a covert, privacy-violating task, and backdoors that do not require inference-time input modifications. Our attack is blind: the attacker cannot modify the training data, nor observe the execution of his code, nor access the resulting model. The attack code creates poisoned training inputs "on the fly," as the model is training, and uses multi-objective optimization to achieve high accuracy on both the main and backdoor tasks. We show how a blind attack can evade any known defense and propose new ones.},
+  archiveprefix = {arXiv},
+  eprint        = {2005.03823},
+  file          = {:Bagdasaryan2020 - Blind Backdoors in Deep Learning Models.pdf:PDF},
+  groups        = {Attack, To read},
+  keywords      = {cs.CR, cs.CV, cs.LG},
+  primaryclass  = {cs.CR},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -268,7 +311,7 @@
 0 AllEntriesGroup:;
 1 StaticGroup:Others\;0\;1\;0xff00ffff\;\;\;;
 1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
-2 StaticGroup:Attack\;0\;0\;0xff00ffff\;\;\;;
+2 StaticGroup:Attack\;0\;1\;0xe64d4dff\;\;\;;
 2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:To read\;0\;1\;0x4d804dff\;\;\;;
+1 StaticGroup:To read\;0\;1\;0x00ffffff\;\;\;;
 }
