@@ -165,7 +165,8 @@
   title      = {Trojaning Attack on Neural Networks - Trojaning Attack on Neural Networks},
   accessdate = {2022-10-17},
   file       = {:- Trojaning Attack on Neural Networks Trojaning Attack on Neural Networks.pdf:PDF},
-  groups     = {Backdoors, To read, Attack},
+  groups     = {Backdoors, Attack},
+  ranking    = {rank4},
   url        = {https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=2782&context=cstech},
 }
 
@@ -237,7 +238,7 @@
   abstract   = {This paper presents a technique to scan neural network based AI models to determine if they are trojaned. Pre-trained AI models may contain back-doors that are injected through training or by transforming inner neuron weights. These trojaned models operate normally when regular inputs are provided, and mis-classify to a specific output label when the input is stamped with some special pattern called trojan trigger. We develop a novel technique that analyzes inner neuron behaviors by determining how output activations change when we introduce different levels of stimulation to a neuron. The neurons that substantially elevate the activation of a particular output label regardless of the provided input is considered potentially compromised. Trojan trigger is then reverse-engineered through an optimization procedure using the stimulation analysis results, to confirm that a neuron is truly compromised. We evaluate our system ABS on 177 trojaned models that are trojaned with various attack methods that target both the input space and the feature space, and have various trojan trigger sizes and shapes, together with 144 benign models that are trained with different data and initial weight values. These models belong to 7 different model structures and 6 different datasets, including some complex ones such as ImageNet, VGG-Face and ResNet110. Our results show that ABS is highly effective, can achieve over 90\% detection rate for most cases (and many 100\%), when only one input sample is provided for each output label. It substantially out-performs the state-of-the-art technique Neural Cleanse that requires a lot of input samples and small trojan triggers to achieve good performance.},
   doi        = {10.1145/3319535.3363216},
   file       = {:Liu2019 - ABS_ Scanning Neural Networks for Back Doors by Artificial Brain Stimulation.pdf:PDF},
-  groups     = {To read, Defenses},
+  groups     = {Defenses},
   isbn       = {9781450367479},
   keywords   = {deep learning system, ai trojan attacks, artificial brain stimulation},
   shorttitle = {{ABS}},
@@ -280,4 +281,4 @@
   year     = {2021},
   month    = oct,
   note     = {arXiv:2110.07139 [cs] type: article},
-  abstract = {Adversarial attacks and backdoor attacks are two common security threats that hang over deep learning. Both of them harness task-irrelevant features of data in their implementation. Text style is a feature that is naturally irrelevant to most NLP tasks, and thus suitable for adversarial and backdoor attacks. In this paper, we make the first attempt to conduct adversarial and backdoor attacks based on text style transfer, which is aimed at altering the style of a sentence while preserving its meaning. We design an adversarial attack method and a backdoor attack method, and conduct extensive experiments to evaluate them. Experimental results show that popular NLP models are vulnerable to both adversarial
+  abstract = {Adversarial attacks and backdoor attacks are two common security threats that hang over deep learning. Both of them harness task-irrelevant features of data in their implementation. Text style is a feature that is naturally irrelevant to most NLP tasks, and thus suitable for adversarial and backdoor attacks. In this paper, we make the first attempt to conduct adversarial and backdoor attacks based on text style transfer, which is aimed at altering the style of a sentence while preserving its meaning. We design an adversarial attack method and a backdoor attack method, and conduct extensive experiments to evaluate them. Experimental results show that popular NLP models are vulnerable to both adver

@@ -165,7 +165,8 @@
   title      = {Trojaning Attack on Neural Networks - Trojaning Attack on Neural Networks},
   accessdate = {2022-10-17},
   file       = {:- Trojaning Attack on Neural Networks Trojaning Attack on Neural Networks.pdf:PDF},
-  groups     = {Backdoors, To read, Attack},
+  groups     = {Backdoors, Attack},
+  ranking    = {rank4},
   url        = {https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=2782&context=cstech},
 }
 
@@ -237,7 +238,7 @@
   abstract   = {This paper presents a technique to scan neural network based AI models to determine if they are trojaned. Pre-trained AI models may contain back-doors that are injected through training or by transforming inner neuron weights. These trojaned models operate normally when regular inputs are provided, and mis-classify to a specific output label when the input is stamped with some special pattern called trojan trigger. We develop a novel technique that analyzes inner neuron behaviors by determining how output activations change when we introduce different levels of stimulation to a neuron. The neurons that substantially elevate the activation of a particular output label regardless of the provided input is considered potentially compromised. Trojan trigger is then reverse-engineered through an optimization procedure using the stimulation analysis results, to confirm that a neuron is truly compromised. We evaluate our system ABS on 177 trojaned models that are trojaned with various attack methods that target both the input space and the feature space, and have various trojan trigger sizes and shapes, together with 144 benign models that are trained with different data and initial weight values. These models belong to 7 different model structures and 6 different datasets, including some complex ones such as ImageNet, VGG-Face and ResNet110. Our results show that ABS is highly effective, can achieve over 90\% detection rate for most cases (and many 100\%), when only one input sample is provided for each output label. It substantially out-performs the state-of-the-art technique Neural Cleanse that requires a lot of input samples and small trojan triggers to achieve good performance.},
   doi        = {10.1145/3319535.3363216},
   file       = {:Liu2019 - ABS_ Scanning Neural Networks for Back Doors by Artificial Brain Stimulation.pdf:PDF},
-  groups     = {To read, Defenses},
+  groups     = {Defenses},
   isbn       = {9781450367479},
   keywords   = {deep learning system, ai trojan attacks, artificial brain stimulation},
   shorttitle = {{ABS}},
@@ -305,13 +306,73 @@
   primaryclass  = {cs.CR},
 }
 
+'
+@TechReport{Aytekin2022,
+  author   = {Aytekin, Caglar},
+  title    = {Neural {Networks} are {Decision} {Trees}},
+  year     = {2022},
+  month    = oct,
+  note     = {arXiv:2210.05189 [cs] type: article},
+  abstract = {In this manuscript, we show that any feedforward neural network having piece-wise linear activation functions can be represented as a decision tree. The representation is equivalence and not an approximation, thus keeping the accuracy of the neural network exactly as is. We believe that this work paves the way to tackle the black-box nature of neural networks. We share equivalent trees of some neural networks and show that besides providing interpretability, tree representation can also achieve some computational advantages. The analysis holds both for fully connected and convolutional networks, which may or may not also include skip connections and/or normalizations.},
+  annote   = {Comment: This paper has significant overlaps with some other papers, kindly read \&cite others that are indicated in last paragraph of Introduction section},
+  doi      = {10.48550/arXiv.2210.05189},
+  file     = {:Aytekin2022 - Neural Networks Are Decision Trees.pdf:PDF},
+  groups   = {Others, To read},
+  keywords = {Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2210.05189},
+  urldate  = {2022-10-21},
+}
+
+'
+@InProceedings{Wang2018,
+  author     = {Wang, Yaxing and Wu, Chenshen and Herranz, Luis and van de Weijer, Joost and Gonzalez-Garcia, Abel and Raducanu, Bogdan},
+  title      = {Transferring {GANs}: generating images from limited data},
+  year       = {2018},
+  pages      = {218--234},
+  file       = {:Wang2018 - Transferring GANs_ Generating Images from Limited Data.pdf:PDF},
+  groups     = {To read, Others},
+  shorttitle = {Transferring {GANs}},
+  url        = {https://openaccess.thecvf.com/content_ECCV_2018/html/yaxing_wang_Transferring_GANs_generating_ECCV_2018_paper.html},
+  urldate    = {2022-10-26},
+}
+
+@Article{Zhao2018,
+  author   = {Zhao, Yue and Li, Meng and Lai, Liangzhen and Suda, Naveen and Civin, Damon and Chandra, Vikas},
+  title    = {Federated {Learning} with {Non}-{IID} {Data}},
+  year     = {2018},
+  note     = {arXiv:1806.00582 [cs, stat]},
+  abstract = {Federated learning enables resource-constrained edge compute devices, such as mobile phones and IoT devices, to learn a shared model for prediction, while keeping the training data local. This decentralized approach to train models provides privacy, security, regulatory and economic benefits. In this work, we focus on the statistical challenge of federated learning when local data is non-IID. We first show that the accuracy of federated learning reduces significantly, by up to 55\% for neural networks trained for highly skewed non-IID data, where each client device trains only on a single class of data. We further show that this accuracy reduction can be explained by the weight divergence, which can be quantified by the earth mover's distance (EMD) between the distribution over classes on each device and the population distribution. As a solution, we propose a strategy to improve training on non-IID data by creating a small subset of data which is globally shared between all the edge devices. Experiments show that accuracy can be increased by 30\% for the CIFAR-10 dataset with only 5\% globally shared data.},
+  doi      = {10.48550/arXiv.1806.00582},
+  file     = {:Zhao2018 - Federated Learning with Non IID Data.pdf:PDF},
+  groups   = {Others, To read},
+  keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+  url      = {http://arxiv.org/abs/1806.00582},
+  urldate  = {2022-10-26},
+}
+
+'
+@InProceedings{Gulrajani2017,
+  author    = {Gulrajani, Ishaan and Ahmed, Faruk and Arjovsky, Martin and Dumoulin, Vincent and Courville, Aaron C},
+  booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+  title     = {Improved {Training} of {Wasserstein} {GANs}},
+  year      = {2017},
+  publisher = {Curran Associates, Inc.},
+  volume    = {30},
+  abstract  = {Generative Adversarial Networks (GANs) are powerful generative models, but suffer from training instability. The recently proposed Wasserstein GAN (WGAN) makes progress toward stable training of GANs, but sometimes can still generate only poor samples or fail to converge. We find that these problems are often due to the use of weight clipping in WGAN to enforce a Lipschitz constraint on the critic, which can lead to undesired behavior. We propose an alternative to clipping weights: penalize the norm of gradient of the critic with respect to its input. Our proposed method performs better than standard WGAN and enables stable training of a wide variety of GAN architectures with almost no hyperparameter tuning, including 101-layer ResNets and language models with continuous generators. We also achieve high quality generations on CIFAR-10 and LSUN bedrooms.},
+  file      = {:Gulrajani2017 - Improved Training of Wasserstein GANs.pdf:PDF},
+  groups    = {Others},
+  url       = {https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html},
+  urldate   = {2022-10-26},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Others\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:Others\;0\;0\;0xff00ffff\;\;\;;
 1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
 2 StaticGroup:Attack\;0\;1\;0xe64d4dff\;\;\;;
 2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:To read\;0\;1\;0x00ffffff\;\;\;;
+1 StaticGroup:To read\;0\;0\;0x00ffffff\;\;\;;
 }
