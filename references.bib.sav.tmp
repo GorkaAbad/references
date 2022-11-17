@@ -376,9 +376,9 @@
 
 '
 @TechReport{Ji2019,
-  author   = {Ji, Yu and Liu, Zixin and Hu, Xing and Wang, Peiqi and Zhang, Youhui},
-  title    = {Programmable {Neural} {Network} {Trojan} for {Pre}-{Trained} {Feature} {Extractor}},
-  year     = {2019},
-  month    = jan,
-  note     = {arXiv:1901.07766 [cs] type: article},
-  abstract = {Neural network (NN) trojaning atta
+  author     = {Ji, Yu and Liu, Zixin and Hu, Xing and Wang, Peiqi and Zhang, Youhui},
+  title      = {Programmable {Neural} {Network} {Trojan} for {Pre}-{Trained} {Feature} {Extractor}},
+  year       = {2019},
+  month      = jan,
+  note       = {arXiv:1901.07766 [cs] type: article},
+  abstract   = {Neural network (NN) tr
