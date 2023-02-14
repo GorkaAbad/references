@@ -486,13 +486,50 @@
   keywords  = {Vision},
 }
 
+ 
+@TechReport{Li2021a,
+  author   = {Li, Yiming and Zhai, Tongqing and Wu, Baoyuan and Jiang, Yong and Li, Zhifeng and Xia, Shutao},
+  title    = {Rethinking the {Trigger} of {Backdoor} {Attack}},
+  year     = {2021},
+  month    = jan,
+  note     = {ZSCC: NoCitationData[s0] arXiv:2004.04692 [cs] type: article},
+  abstract = {Backdoor attack intends to inject hidden backdoor into the deep neural networks (DNNs), such that the prediction of the infected model will be maliciously changed if the hidden backdoor is activated by the attacker-defined trigger, while it performs well on benign samples. Currently, most of existing backdoor attacks adopted the setting of {\textbackslash}emph\{static\} trigger, \$i.e.,\$ triggers across the training and testing images follow the same appearance and are located in the same area. In this paper, we revisit this attack paradigm by analyzing the characteristics of the static trigger. We demonstrate that such an attack paradigm is vulnerable when the trigger in testing images is not consistent with the one used for training. We further explore how to utilize this property for backdoor defense, and discuss how to alleviate such vulnerability of existing attacks.},
+  annote   = {Comment: 18 pages},
+  doi      = {10.48550/arXiv.2004.04692},
+  file     = {arXiv Fulltext PDF:https\://arxiv.org/pdf/2004.04692.pdf:application/pdf;arXiv.org Snapshot:http\://arxiv.org/abs/2004.04692:text/html},
+  groups   = {Backdoors, Attack},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2004.04692},
+  urldate  = {2023-02-14},
+}
+
+@Misc{,
+  title      = {Invisible Backdoor Attack With Sample-Specific Triggers - Li_Invisible_Backdoor_Attack_With_Sample-Specific_Triggers_ICCV_2021_paper},
+  accessdate = {2023-02-14},
+  file       = {:- Invisible Backdoor Attack with Sample Specific Triggers Li_Invisible_Backdoor_Attack_With_Sample Specific_Triggers_ICCV_2021_paper.pdf:PDF},
+  groups     = {Attack, Backdoors},
+  url        = {https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Invisible_Backdoor_Attack_With_Sample-Specific_Triggers_ICCV_2021_paper.pdf},
+}
+
+@InProceedings{Chen2000,
+  author    = {Zhenzhu Chen and Shang Wang and Anmin Fu and Yansong Gao and Shui Yu and Robert H. Deng},
+  title     = {LinkBreaker: Breaking the Backdoor-Trigger Link in DNNs via Neurons Consistency Check},
+  year      = {2000},
+  publisher = {IEEE},
+  abstract  = {IEEE Transactions on Information Forensics and Security;2022;17; ;10.1109/TIFS.2022.3175616},
+  file      = {://wsl.localhost/Ubuntu/home/gorka/Git/references/LinkBreaker_Breaking_the_Backdoor-Trigger_Link_in_DNNs_via_Neurons_Consistency_Check.pdf:PDF},
+  groups    = {Attack, Backdoors},
+  keywords  = {Backdoor attack, defense, deep learning, AI security},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Others\;0\;0\;0xff00ffff\;\;\;;
+1 StaticGroup:Others\;0\;1\;0xff00ffff\;\;\;;
 1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
 2 StaticGroup:Attack\;0\;1\;0xe64d4dff\;\;\;;
-2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Defenses\;0\;0\;0x8a8a8aff\;\;\;;
 1 KeywordGroup:To read\;0\;readstatus\;\;0\;1\;1\;0x00ffffff\;\;\;;
 }
