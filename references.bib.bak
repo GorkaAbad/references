@@ -516,6 +516,41 @@
   readstatus = {read},
 }
 
+ 
+@TechReport{Carlini2022,
+  author   = {Carlini, Nicholas and Terzis, Andreas},
+  title    = {Poisoning and {Backdooring} {Contrastive} {Learning}},
+  year     = {2022},
+  month    = mar,
+  note     = {ZSCC: NoCitationData[s0] arXiv:2106.09667 [cs] type: article},
+  abstract = {Multimodal contrastive learning methods like CLIP train on noisy and uncurated training datasets. This is cheaper than labeling datasets manually, and even improves out-of-distribution robustness. We show that this practice makes backdoor and poisoning attacks a significant threat. By poisoning just 0.01\% of a dataset (e.g., just 300 images of the 3 million-example Conceptual Captions dataset), we can cause the model to misclassify test images by overlaying a small patch. Targeted poisoning attacks, whereby the model misclassifies a particular test input with an adversarially-desired label, are even easier requiring control of 0.0001\% of the dataset (e.g., just three out of the 3 million images). Our attacks call into question whether training on noisy and uncurated Internet scrapes is desirable.},
+  doi      = {10.48550/arXiv.2106.09667},
+  file     = {:carlini_poisoning_2022 - Poisoning and Backdooring Contrastive Learning.pdf:PDF;:Carlini2022 - Poisoning and Backdooring Contrastive Learning.html:URL},
+  groups   = {Backdoors, Attack},
+  keywords = {Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2106.09667},
+  urldate  = {2023-02-14},
+}
+
+ 
+@TechReport{Nguyen2021,
+  author   = {Nguyen, Anh and Tran, Anh},
+  title    = {{WaNet} -- {Imperceptible} {Warping}-based {Backdoor} {Attack}},
+  year     = {2021},
+  month    = mar,
+  note     = {ZSCC: 0000135 arXiv:2102.10369 [cs] type: article},
+  abstract = {With the thriving of deep learning and the widespread practice of using pre-trained networks, backdoor attacks have become an increasing security threat drawing many research interests in recent years. A third-party model can be poisoned in training to work well in normal conditions but behave maliciously when a trigger pattern appears. However, the existing backdoor attacks are all built on noise perturbation triggers, making them noticeable to humans. In this paper, we instead propose using warping-based triggers. The proposed backdoor outperforms the previous methods in a human inspection test by a wide margin, proving its stealthiness. To make such models undetectable by machine defenders, we propose a novel training mode, called the ``noise mode. The trained networks successfully attack and bypass the state-of-the-art defense methods on standard classification datasets, including MNIST, CIFAR-10, GTSRB, and CelebA. Behavior analyses show that our backdoors are transparent to network inspection, further proving this novel attack mechanism's efficiency.},
+  annote   = {Comment: Accepted to ICLR 2021},
+  doi      = {10.48550/arXiv.2102.10369},
+  file     = {:nguyen_wanet_2021 - WaNet Imperceptible Warping Based Backdoor Attack.pdf:PDF;:Nguyen2021 - WaNet Imperceptible Warping Based Backdoor Attack.html:URL},
+  groups   = {Attack, Backdoors},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2102.10369},
+  urldate  = {2023-02-15},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -523,6 +558,6 @@
 1 StaticGroup:Others\;0\;1\;0xff00ffff\;\;\;;
 1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
 2 StaticGroup:Attack\;0\;1\;0xe64d4dff\;\;\;;
-2 StaticGroup:Defenses\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;
 1 KeywordGroup:To read\;0\;readstatus\;\;0\;1\;1\;0x00ffffff\;\;\;;
 }
