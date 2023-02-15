@@ -38,19 +38,21 @@
 
  
 @TechReport{Yang2022,
-  author   = {Yang, Ziqing and He, Xinlei and Li, Zheng and Backes, Michael and Humbert, Mathias and Berrang, Pascal and Zhang, Yang},
-  title    = {Data {Poisoning} {Attacks} {Against} {Multimodal} {Encoders}},
-  year     = {2022},
-  month    = sep,
-  note     = {arXiv:2209.15266 [cs] type: article},
-  abstract = {Traditional machine learning (ML) models usually rely on large-scale labeled datasets to achieve strong performance. However, such labeled datasets are often challenging and expensive to obtain. Also, the predefined categories limit the model's ability to generalize to other visual concepts as additional labeled data is required. On the contrary, the newly emerged multimodal model, which contains both visual and linguistic modalities, learns the concept of images from the raw text. It is a promising way to solve the above problems as it can use easy-to-collect image-text pairs to construct the training dataset and the raw texts contain almost unlimited categories according to their semantics. However, learning from a large-scale unlabeled dataset also exposes the model to the risk of potential poisoning attacks, whereby the adversary aims to perturb the model's training dataset to trigger malicious behaviors in it. Previous work mainly focuses on the visual modality. In this paper, we instead focus on answering two questions: (1) Is the linguistic modality also vulnerable to poisoning attacks? and (2) Which modality is most vulnerable? To answer the two questions, we conduct three types of poisoning attacks against CLIP, the most representative multimodal contrastive learning framework. Extensive evaluations on different datasets and model architectures show that all three attacks can perform well on the linguistic modality with only a relatively low poisoning rate and limited epochs. Also, we observe that the poisoning effect differs between different modalities, i.e., with lower MinRank in the visual modality and with higher Hit@K when K is small in the linguistic modality. To mitigate the attacks, we propose both pre-training and post-training defenses. We empirically show that both defenses can significantly reduce the attack performance while preserving the model's utility.},
-  doi      = {10.48550/arXiv.2209.15266},
-  file     = {:Yang2022 - Data Poisoning Attacks against Multimodal Encoders.pdf:PDF},
-  groups   = {Backdoors, Attack},
-  keywords = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
-  school   = {arXiv},
-  url      = {http://arxiv.org/abs/2209.15266},
-  urldate  = {2022-10-07},
+  author     = {Yang, Ziqing and He, Xinlei and Li, Zheng and Backes, Michael and Humbert, Mathias and Berrang, Pascal and Zhang, Yang},
+  title      = {Data {Poisoning} {Attacks} {Against} {Multimodal} {Encoders}},
+  year       = {2022},
+  month      = sep,
+  note       = {arXiv:2209.15266 [cs] type: article},
+  abstract   = {Traditional machine learning (ML) models usually rely on large-scale labeled datasets to achieve strong performance. However, such labeled datasets are often challenging and expensive to obtain. Also, the predefined categories limit the model's ability to generalize to other visual concepts as additional labeled data is required. On the contrary, the newly emerged multimodal model, which contains both visual and linguistic modalities, learns the concept of images from the raw text. It is a promising way to solve the above problems as it can use easy-to-collect image-text pairs to construct the training dataset and the raw texts contain almost unlimited categories according to their semantics. However, learning from a large-scale unlabeled dataset also exposes the model to the risk of potential poisoning attacks, whereby the adversary aims to perturb the model's training dataset to trigger malicious behaviors in it. Previous work mainly focuses on the visual modality. In this paper, we instead focus on answering two questions: (1) Is the linguistic modality also vulnerable to poisoning attacks? and (2) Which modality is most vulnerable? To answer the two questions, we conduct three types of poisoning attacks against CLIP, the most representative multimodal contrastive learning framework. Extensive evaluations on different datasets and model architectures show that all three attacks can perform well on the linguistic modality with only a relatively low poisoning rate and limited epochs. Also, we observe that the poisoning effect differs between different modalities, i.e., with lower MinRank in the visual modality and with higher Hit@K when K is small in the linguistic modality. To mitigate the attacks, we propose both pre-training and post-training defenses. We empirically show that both defenses can significantly reduce the attack performance while preserving the model's utility.},
+  doi        = {10.48550/arXiv.2209.15266},
+  file       = {:Yang2022 - Data Poisoning Attacks against Multimodal Encoders.pdf:PDF},
+  groups     = {Backdoors, Attack},
+  keywords   = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  ranking    = {rank4},
+  readstatus = {read},
+  school     = {arXiv},
+  url        = {http://arxiv.org/abs/2209.15266},
+  urldate    = {2022-10-07},
 }
 
  
@@ -469,4 +471,4 @@
   booktitle = {The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)},
   title     = {Hidden Trigger Backdoor Attacks},
   year      = {1195},
-  abstract  = {With the success of deep learning algorithms in various domains, studying adversarial attacks to secure deep models in real world applications has become an important research topic. Backdoor attacks are a form of adversarial attacks on deep networks where the attacker provides poisoned data to the victim to train the model with, and then activates the attack by showing a specific small trigger pattern at the test time. Most state-of-the-art backdoor attacks either provide mislabeled poisoning data that is possible to identify by visual inspection, reveal the trigger in the poisoned data, or use noise to hide the trigger. We propose a novel form of backdoor attack where poisoned data look natural with correct labels and also more importantly, the attacker hides the trigger in the poisoned d
+  abstract  = {With the success of deep learning algorithms in various domains, studying adversarial attacks to secure deep models in real world applications has become an important research topic. Backdoor attacks are a form of adversarial attacks on deep networks where the attacker provides poisoned data to the victim to train the model with, and then activates the attack by showing a specific small trigger pattern at the test time. Most state-of-the-art backdoor attacks either provide mislabeled poisoning data that is possible to identify by visual inspection, reveal the trigger in the poisoned data, or use noise to hide the trigger. We propose a novel form of backdoor attack where poisoned data look natural with correct labels 
