@@ -38,19 +38,21 @@
 
  
 @TechReport{Yang2022,
-  author   = {Yang, Ziqing and He, Xinlei and Li, Zheng and Backes, Michael and Humbert, Mathias and Berrang, Pascal and Zhang, Yang},
-  title    = {Data {Poisoning} {Attacks} {Against} {Multimodal} {Encoders}},
-  year     = {2022},
-  month    = sep,
-  note     = {arXiv:2209.15266 [cs] type: article},
-  abstract = {Traditional machine learning (ML) models usually rely on large-scale labeled datasets to achieve strong performance. However, such labeled datasets are often challenging and expensive to obtain. Also, the predefined categories limit the model's ability to generalize to other visual concepts as additional labeled data is required. On the contrary, the newly emerged multimodal model, which contains both visual and linguistic modalities, learns the concept of images from the raw text. It is a promising way to solve the above problems as it can use easy-to-collect image-text pairs to construct the training dataset and the raw texts contain almost unlimited categories according to their semantics. However, learning from a large-scale unlabeled dataset also exposes the model to the risk of potential poisoning attacks, whereby the adversary aims to perturb the model's training dataset to trigger malicious behaviors in it. Previous work mainly focuses on the visual modality. In this paper, we instead focus on answering two questions: (1) Is the linguistic modality also vulnerable to poisoning attacks? and (2) Which modality is most vulnerable? To answer the two questions, we conduct three types of poisoning attacks against CLIP, the most representative multimodal contrastive learning framework. Extensive evaluations on different datasets and model architectures show that all three attacks can perform well on the linguistic modality with only a relatively low poisoning rate and limited epochs. Also, we observe that the poisoning effect differs between different modalities, i.e., with lower MinRank in the visual modality and with higher Hit@K when K is small in the linguistic modality. To mitigate the attacks, we propose both pre-training and post-training defenses. We empirically show that both defenses can significantly reduce the attack performance while preserving the model's utility.},
-  doi      = {10.48550/arXiv.2209.15266},
-  file     = {:Yang2022 - Data Poisoning Attacks against Multimodal Encoders.pdf:PDF},
-  groups   = {Backdoors, Attack},
-  keywords = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
-  school   = {arXiv},
-  url      = {http://arxiv.org/abs/2209.15266},
-  urldate  = {2022-10-07},
+  author     = {Yang, Ziqing and He, Xinlei and Li, Zheng and Backes, Michael and Humbert, Mathias and Berrang, Pascal and Zhang, Yang},
+  title      = {Data {Poisoning} {Attacks} {Against} {Multimodal} {Encoders}},
+  year       = {2022},
+  month      = sep,
+  note       = {arXiv:2209.15266 [cs] type: article},
+  abstract   = {Traditional machine learning (ML) models usually rely on large-scale labeled datasets to achieve strong performance. However, such labeled datasets are often challenging and expensive to obtain. Also, the predefined categories limit the model's ability to generalize to other visual concepts as additional labeled data is required. On the contrary, the newly emerged multimodal model, which contains both visual and linguistic modalities, learns the concept of images from the raw text. It is a promising way to solve the above problems as it can use easy-to-collect image-text pairs to construct the training dataset and the raw texts contain almost unlimited categories according to their semantics. However, learning from a large-scale unlabeled dataset also exposes the model to the risk of potential poisoning attacks, whereby the adversary aims to perturb the model's training dataset to trigger malicious behaviors in it. Previous work mainly focuses on the visual modality. In this paper, we instead focus on answering two questions: (1) Is the linguistic modality also vulnerable to poisoning attacks? and (2) Which modality is most vulnerable? To answer the two questions, we conduct three types of poisoning attacks against CLIP, the most representative multimodal contrastive learning framework. Extensive evaluations on different datasets and model architectures show that all three attacks can perform well on the linguistic modality with only a relatively low poisoning rate and limited epochs. Also, we observe that the poisoning effect differs between different modalities, i.e., with lower MinRank in the visual modality and with higher Hit@K when K is small in the linguistic modality. To mitigate the attacks, we propose both pre-training and post-training defenses. We empirically show that both defenses can significantly reduce the attack performance while preserving the model's utility.},
+  doi        = {10.48550/arXiv.2209.15266},
+  file       = {:Yang2022 - Data Poisoning Attacks against Multimodal Encoders.pdf:PDF},
+  groups     = {Backdoors, Attack},
+  keywords   = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  ranking    = {rank4},
+  readstatus = {read},
+  school     = {arXiv},
+  url        = {http://arxiv.org/abs/2209.15266},
+  urldate    = {2022-10-07},
 }
 
  
@@ -87,17 +89,19 @@
 }
 
 @InProceedings{Salem2022,
-  author    = {Salem, Ahmed and Wen, Rui and Backes, Michael and Ma, Shiqing and Zhang, Yang},
-  booktitle = {2022 {IEEE} 7th {European} {Symposium} on {Security} and {Privacy} ({EuroS}\&{P})},
-  title     = {Dynamic {Backdoor} {Attacks} {Against} {Machine} {Learning} {Models}},
-  year      = {2022},
-  month     = jun,
-  pages     = {703--718},
-  abstract  = {Machine learning (ML) has made tremendous progress during the past decade and is being adopted in various critical real-world applications. However, recent research has shown that ML models are vulnerable to multiple security and privacy attacks. In particular, backdoor attacks against ML models have recently raised a lot of awareness. A successful backdoor attack can cause severe consequences, such as allowing an adversary to bypass critical authentication systems. Current backdooring techniques rely on adding static triggers (with fixed patterns and locations) on ML model inputs which are prone to detection by the current backdoor detection mechanisms. In this paper, we propose the first class of dynamic backdooring techniques against deep neural networks (DNN), namely Random Backdoor, Backdoor Generating Network (BaN), and conditional Backdoor Generating Network (c-BaN). Triggers generated by our techniques can have random patterns and locations, which reduce the efficacy of the current backdoor detection mechanisms. In particular, BaN and c-BaN based on a novel generative network are the first two schemes that algorithmically generate triggers. Moreover, c-BaN is the first conditional backdooring technique that given a target label, it can generate a target-specific trigger. Both BaN and c-BaN are essentially a general framework which renders the adversary the flexibility for further customizing backdoor attacks. We extensively evaluate our techniques on three benchmark datasets: MNIST, CelebA, and CIFAR-10. Our techniques achieve almost perfect attack performance on back-doored data with a negligible utility loss. We further show that our techniques can bypass current state-of-the-art defense mechanisms against backdoor attacks, including ABS, Februus, MNTD, Neural Cleanse, and STRIP.},
-  doi       = {10.1109/EuroSP53844.2022.00049},
-  file      = {:Salem2022 - Dynamic Backdoor Attacks against Machine Learning Models.pdf:PDF},
-  groups    = {Backdoors, Attack},
-  keywords  = {Deep learning, Training, Privacy, Strips, Neural networks, Authentication, Benchmark testing, Backdoor attack, Machine learning security},
+  author     = {Salem, Ahmed and Wen, Rui and Backes, Michael and Ma, Shiqing and Zhang, Yang},
+  booktitle  = {2022 {IEEE} 7th {European} {Symposium} on {Security} and {Privacy} ({EuroS}\&{P})},
+  title      = {Dynamic {Backdoor} {Attacks} {Against} {Machine} {Learning} {Models}},
+  year       = {2022},
+  month      = jun,
+  pages      = {703--718},
+  abstract   = {Machine learning (ML) has made tremendous progress during the past decade and is being adopted in various critical real-world applications. However, recent research has shown that ML models are vulnerable to multiple security and privacy attacks. In particular, backdoor attacks against ML models have recently raised a lot of awareness. A successful backdoor attack can cause severe consequences, such as allowing an adversary to bypass critical authentication systems. Current backdooring techniques rely on adding static triggers (with fixed patterns and locations) on ML model inputs which are prone to detection by the current backdoor detection mechanisms. In this paper, we propose the first class of dynamic backdooring techniques against deep neural networks (DNN), namely Random Backdoor, Backdoor Generating Network (BaN), and conditional Backdoor Generating Network (c-BaN). Triggers generated by our techniques can have random patterns and locations, which reduce the efficacy of the current backdoor detection mechanisms. In particular, BaN and c-BaN based on a novel generative network are the first two schemes that algorithmically generate triggers. Moreover, c-BaN is the first conditional backdooring technique that given a target label, it can generate a target-specific trigger. Both BaN and c-BaN are essentially a general framework which renders the adversary the flexibility for further customizing backdoor attacks. We extensively evaluate our techniques on three benchmark datasets: MNIST, CelebA, and CIFAR-10. Our techniques achieve almost perfect attack performance on back-doored data with a negligible utility loss. We further show that our techniques can bypass current state-of-the-art defense mechanisms against backdoor attacks, including ABS, Februus, MNTD, Neural Cleanse, and STRIP.},
+  doi        = {10.1109/EuroSP53844.2022.00049},
+  file       = {:Salem2022 - Dynamic Backdoor Attacks against Machine Learning Models.pdf:PDF},
+  groups     = {Backdoors, Attack},
+  keywords   = {Deep learning, Training, Privacy, Strips, Neural networks, Authentication, Benchmark testing, Backdoor attack, Machine learning security},
+  ranking    = {rank2},
+  readstatus = {read},
 }
 
 @InProceedings{Chen2021,
@@ -442,16 +446,6 @@
   urldate    = {2022-11-23},
 }
 
-@InProceedings{SubramanyaandHamedPirsiavash1195,
-  author    = {Aniruddha Saha,Akshayvarun Subramanya,Hamed Pirsiavash},
-  booktitle = {The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)},
-  title     = {Hidden Trigger Backdoor Attacks},
-  year      = {1195},
-  abstract  = {The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)},
-  file      = {:/home/gorka/Downloads/6871-Article Text-10100-1-10-20200525.pdf:PDF},
-  keywords  = {Vision},
-}
-
 @InProceedings{Goldwasser2022,
   author   = {Goldwasser, Shafi and Kim, Michael and Vaikuntanathan, Vinod and Or, Mit and Ias, Zamir},
   title    = {Planting Undetectable Backdoors in Machine Learning Models},
@@ -470,7 +464,7 @@
   title     = {Hidden Trigger Backdoor Attacks},
   year      = {1195},
   abstract  = {With the success of deep learning algorithms in various domains, studying adversarial attacks to secure deep models in real world applications has become an important research topic. Backdoor attacks are a form of adversarial attacks on deep networks where the attacker provides poisoned data to the victim to train the model with, and then activates the attack by showing a specific small trigger pattern at the test time. Most state-of-the-art backdoor attacks either provide mislabeled poisoning data that is possible to identify by visual inspection, reveal the trigger in the poisoned data, or use noise to hide the trigger. We propose a novel form of backdoor attack where poisoned data look natural with correct labels and also more importantly, the attacker hides the trigger in the poisoned data and keeps the trigger secret until the test time. We perform an extensive study on various image classification settings and show that our attack can fool the model by pasting the trigger at random locations on unseen images although the model performs well on clean data. We also show that our proposed attack cannot be easily defended using a state-of-the-art defense algorithm for backdoor attacks.},
-  file      = {:/home/gorka/Downloads/6871-Article Text-10100-1-10-20200525.pdf:PDF},
+  file      = {:Saha1195 - Hidden Trigger Backdoor Attacks.pdf:PDF},
   keywords  = {Vision},
 }
 
@@ -552,6 +546,14 @@
   school   = {arXiv},
   url      = {http://arxiv.org/abs/2102.10369},
   urldate  = {2023-02-15},
+}
+
+@Misc{,
+  title      = {Attention is All you Need - NIPS-2017-attention-is-all-you-need-Paper},
+  accessdate = {2023-02-15},
+  file       = {:- Attention Is All You Need NIPS 2017 Attention Is All You Need Paper.pdf:PDF;:6871-Article Text-10100-1-10-20200525-1.pdf:PDF},
+  groups     = {Others},
+  url        = {https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
