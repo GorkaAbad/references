@@ -463,4 +463,107 @@
   booktitle = {The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)},
   title     = {Hidden Trigger Backdoor Attacks},
   year      = {1195},
-  abstract  = {With the success of deep learning algorithms in various domains, studying adversarial attacks to secure deep models in real world applications has become an important research topic. Backdoor attacks are a form of adversarial attacks on deep networks where the attacker provides poisoned data to the victim to train the model with, and then activates the attack by showing a specific small trigger pattern at the test time. Most state-of-the-art backdoor attacks either provide mislabeled poisoning data that is possible to identify by visual inspection, reveal the trigger in the poisoned data, or use noise to hide the trigger. We propose a novel form of backdoor attack where poisoned data look natural with correct labels and also more importantly, the attacker hides the trigger in the poisoned data and keeps the trigger secret until the test time. We perform an extensive study on various image classification settings and show that our attack can fool the model by pasting the trigger at random locations on unseen images although the model performs well on clean data. We also show that our proposed attack cannot be easily defended using a state-o
+  abstract  = {With the success of deep learning algorithms in various domains, studying adversarial attacks to secure deep models in real world applications has become an important research topic. Backdoor attacks are a form of adversarial attacks on deep networks where the attacker provides poisoned data to the victim to train the model with, and then activates the attack by showing a specific small trigger pattern at the test time. Most state-of-the-art backdoor attacks either provide mislabeled poisoning data that is possible to identify by visual inspection, reveal the trigger in the poisoned data, or use noise to hide the trigger. We propose a novel form of backdoor attack where poisoned data look natural with correct labels and also more importantly, the attacker hides the trigger in the poisoned data and keeps the trigger secret until the test time. We perform an extensive study on various image classification settings and show that our attack can fool the model by pasting the trigger at random locations on unseen images although the model performs well on clean data. We also show that our proposed attack cannot be easily defended using a state-of-the-art defense algorithm for backdoor attacks.},
+  file      = {:Saha1195 - Hidden Trigger Backdoor Attacks.pdf:PDF},
+  groups    = {Backdoors, Attack},
+  keywords  = {Vision},
+}
+
+ 
+@TechReport{Li2021a,
+  author     = {Li, Yiming and Zhai, Tongqing and Wu, Baoyuan and Jiang, Yong and Li, Zhifeng and Xia, Shutao},
+  title      = {Rethinking the {Trigger} of {Backdoor} {Attack}},
+  year       = {2021},
+  month      = jan,
+  note       = {ZSCC: NoCitationData[s0] arXiv:2004.04692 [cs] type: article},
+  abstract   = {Backdoor attack intends to inject hidden backdoor into the deep neural networks (DNNs), such that the prediction of the infected model will be maliciously changed if the hidden backdoor is activated by the attacker-defined trigger, while it performs well on benign samples. Currently, most of existing backdoor attacks adopted the setting of {\textbackslash}emph\{static\} trigger, \$i.e.,\$ triggers across the training and testing images follow the same appearance and are located in the same area. In this paper, we revisit this attack paradigm by analyzing the characteristics of the static trigger. We demonstrate that such an attack paradigm is vulnerable when the trigger in testing images is not consistent with the one used for training. We further explore how to utilize this property for backdoor defense, and discuss how to alleviate such vulnerability of existing attacks.},
+  annote     = {Comment: 18 pages},
+  doi        = {10.48550/arXiv.2004.04692},
+  file       = {arXiv Fulltext PDF:https\://arxiv.org/pdf/2004.04692.pdf:application/pdf;arXiv.org Snapshot:http\://arxiv.org/abs/2004.04692:text/html},
+  groups     = {Backdoors, Defenses},
+  keywords   = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+  ranking    = {rank1},
+  readstatus = {read},
+  school     = {arXiv},
+  url        = {http://arxiv.org/abs/2004.04692},
+  urldate    = {2023-02-14},
+}
+
+@Misc{,
+  title      = {Invisible Backdoor Attack With Sample-Specific Triggers - Li_Invisible_Backdoor_Attack_With_Sample-Specific_Triggers_ICCV_2021_paper},
+  accessdate = {2023-02-14},
+  file       = {:- Invisible Backdoor Attack with Sample Specific Triggers Li_Invisible_Backdoor_Attack_With_Sample Specific_Triggers_ICCV_2021_paper.pdf:PDF},
+  groups     = {Attack, Backdoors},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Invisible_Backdoor_Attack_With_Sample-Specific_Triggers_ICCV_2021_paper.pdf},
+}
+
+@InProceedings{Chen2000,
+  author     = {Zhenzhu Chen and Shang Wang and Anmin Fu and Yansong Gao and Shui Yu and Robert H. Deng},
+  title      = {LinkBreaker: Breaking the Backdoor-Trigger Link in DNNs via Neurons Consistency Check},
+  year       = {2000},
+  publisher  = {IEEE},
+  abstract   = {IEEE Transactions on Information Forensics and Security;2022;17; ;10.1109/TIFS.2022.3175616},
+  file       = {://wsl.localhost/Ubuntu/home/gorka/Git/references/LinkBreaker_Breaking_the_Backdoor-Trigger_Link_in_DNNs_via_Neurons_Consistency_Check.pdf:PDF},
+  groups     = {Backdoors, Defenses},
+  keywords   = {Backdoor attack, defense, deep learning, AI security},
+  ranking    = {rank1},
+  readstatus = {read},
+}
+
+ 
+@TechReport{Carlini2022,
+  author     = {Carlini, Nicholas and Terzis, Andreas},
+  title      = {Poisoning and {Backdooring} {Contrastive} {Learning}},
+  year       = {2022},
+  month      = mar,
+  note       = {ZSCC: NoCitationData[s0] arXiv:2106.09667 [cs] type: article},
+  abstract   = {Multimodal contrastive learning methods like CLIP train on noisy and uncurated training datasets. This is cheaper than labeling datasets manually, and even improves out-of-distribution robustness. We show that this practice makes backdoor and poisoning attacks a significant threat. By poisoning just 0.01\% of a dataset (e.g., just 300 images of the 3 million-example Conceptual Captions dataset), we can cause the model to misclassify test images by overlaying a small patch. Targeted poisoning attacks, whereby the model misclassifies a particular test input with an adversarially-desired label, are even easier requiring control of 0.0001\% of the dataset (e.g., just three out of the 3 million images). Our attacks call into question whether training on noisy and uncurated Internet scrapes is desirable.},
+  doi        = {10.48550/arXiv.2106.09667},
+  file       = {:carlini_poisoning_2022 - Poisoning and Backdooring Contrastive Learning.pdf:PDF;:Carlini2022 - Poisoning and Backdooring Contrastive Learning.html:URL},
+  groups     = {Backdoors, Attack},
+  keywords   = {Computer Science - Machine Learning},
+  ranking    = {rank5},
+  readstatus = {read},
+  school     = {arXiv},
+  url        = {http://arxiv.org/abs/2106.09667},
+  urldate    = {2023-02-14},
+}
+
+ 
+@TechReport{Nguyen2021,
+  author   = {Nguyen, Anh and Tran, Anh},
+  title    = {{WaNet} -- {Imperceptible} {Warping}-based {Backdoor} {Attack}},
+  year     = {2021},
+  month    = mar,
+  note     = {ZSCC: 0000135 arXiv:2102.10369 [cs] type: article},
+  abstract = {With the thriving of deep learning and the widespread practice of using pre-trained networks, backdoor attacks have become an increasing security threat drawing many research interests in recent years. A third-party model can be poisoned in training to work well in normal conditions but behave maliciously when a trigger pattern appears. However, the existing backdoor attacks are all built on noise perturbation triggers, making them noticeable to humans. In this paper, we instead propose using warping-based triggers. The proposed backdoor outperforms the previous methods in a human inspection test by a wide margin, proving its stealthiness. To make such models undetectable by machine defenders, we propose a novel training mode, called the ``noise mode. The trained networks successfully attack and bypass the state-of-the-art defense methods on standard classification datasets, including MNIST, CIFAR-10, GTSRB, and CelebA. Behavior analyses show that our backdoors are transparent to network inspection, further proving this novel attack mechanism's efficiency.},
+  annote   = {Comment: Accepted to ICLR 2021},
+  doi      = {10.48550/arXiv.2102.10369},
+  file     = {:nguyen_wanet_2021 - WaNet Imperceptible Warping Based Backdoor Attack.pdf:PDF;:Nguyen2021 - WaNet Imperceptible Warping Based Backdoor Attack.html:URL},
+  groups   = {Attack, Backdoors},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2102.10369},
+  urldate  = {2023-02-15},
+}
+
+@Misc{,
+  title      = {Attention is All you Need - NIPS-2017-attention-is-all-you-need-Paper},
+  accessdate = {2023-02-15},
+  file       = {:- Attention Is All You Need NIPS 2017 Attention Is All You Need Paper.pdf:PDF;:6871-Article Text-10100-1-10-20200525-1.pdf:PDF},
+  groups     = {Others},
+  url        = {https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
+}
+
+ 
+@InProceedings{Liu2022,
+  author    = {Liu, Qianhui and Xing, Dong and Feng, Lang and Tang, Huajin and Pan, Gang},
+  booktitle = {{ICASSP} 2022 - 2022 {IEEE} {International} {Conference} on {Acoustics}, {Speech} and {Signal} {Processing} ({ICASSP})},
+  title     = {Event-{Based} {Multimodal} {Spiking} {Neural} {Network} with {Attention} {Mechanism}},
+  year      = {2022},
+  month     = may,
+  note      = {ZSCC: 0000002 ISSN: 2379-190X},
+  pages     = {8922--8926},
+  abstract  = {Human brain can effectively integrate visual and auditory information. Dynamic Vision Sensor (DVS) and Dynamic Audio Sensor (DAS) are event-based sensors imitating the mechanism of human retina and cochlea. Since the sensors record the visual and auditory input as asynchronous discrete events, they are inherently suitable to cooperate with the spiking neural network (SNN). Existing works of SNNs for processing events mainly focus on unimodality, however, audiovisual multimodal SNNs are s
