@@ -140,6 +140,7 @@
   groups     = {To read, Attack},
   issn       = {2375-1207},
   keywords   = {Privacy, Computer vision, Training data, Self-supervised learning, Feature extraction, Internet, Security},
+  priority   = {prio1},
   shorttitle = {{BadEncoder}},
 }
 
@@ -586,7 +587,8 @@
   doi        = {10.48550/arXiv.2010.11929},
   file       = {:dosovitskiy_image_2021 - An Image Is Worth 16x16 Words_ Transformers for Image Recognition at Scale.pdf:PDF;:Dosovitskiy2021 - An Image Is Worth 16x16 Words_ Transformers for Image Recognition at Scale.html:URL},
   keywords   = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
-  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {read},
   school     = {arXiv},
   shorttitle = {An {Image} is {Worth} 16x16 {Words}},
   url        = {http://arxiv.org/abs/2010.11929},
@@ -595,26 +597,47 @@
 
  
 @TechReport{Subramanya2022,
-  author   = {Subramanya, Akshayvarun and Saha, Aniruddha and Koohpayegani, Soroush Abbasi and Tejankar, Ajinkya and Pirsiavash, Hamed},
-  title    = {Backdoor {Attacks} on {Vision} {Transformers}},
-  year     = {2022},
-  month    = jun,
-  note     = {ZSCC: 0000002 arXiv:2206.08477 [cs] type: article},
-  abstract = {Vision Transformers (ViT) have recently demonstrated exemplary performance on a variety of vision tasks and are being used as an alternative to CNNs. Their design is based on a self-attention mechanism that processes images as a sequence of patches, which is quite different compared to CNNs. Hence it is interesting to study if ViTs are vulnerable to backdoor attacks. Backdoor attacks happen when an attacker poisons a small part of the training data for malicious purposes. The model performance is good on clean test images, but the attacker can manipulate the decision of the model by showing the trigger at test time. To the best of our knowledge, we are the first to show that ViTs are vulnerable to backdoor attacks. We also find an intriguing difference between ViTs and CNNs - interpretation algorithms effectively highlight the trigger on test images for ViTs but not for CNNs. Based on this observation, we propose a test-time image blocking defense for ViTs which reduces the attack success rate by a large margin. Code is available here: https://github.com/UCDvision/backdoor\_transformer.git},
-  doi      = {10.48550/arXiv.2206.08477},
-  file     = {:subramanya_backdoor_2022 - Backdoor Attacks on Vision Transformers.pdf:PDF;:Subramanya2022 - Backdoor Attacks on Vision Transformers.html:URL},
-  keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Cryptography and Security, Computer Science - Machine Learning},
-  priority = {prio1},
-  school   = {arXiv},
-  url      = {http://arxiv.org/abs/2206.08477},
-  urldate  = {2023-02-16},
+  author     = {Subramanya, Akshayvarun and Saha, Aniruddha and Koohpayegani, Soroush Abbasi and Tejankar, Ajinkya and Pirsiavash, Hamed},
+  title      = {Backdoor {Attacks} on {Vision} {Transformers}},
+  year       = {2022},
+  month      = jun,
+  note       = {ZSCC: 0000002 arXiv:2206.08477 [cs] type: article},
+  abstract   = {Vision Transformers (ViT) have recently demonstrated exemplary performance on a variety of vision tasks and are being used as an alternative to CNNs. Their design is based on a self-attention mechanism that processes images as a sequence of patches, which is quite different compared to CNNs. Hence it is interesting to study if ViTs are vulnerable to backdoor attacks. Backdoor attacks happen when an attacker poisons a small part of the training data for malicious purposes. The model performance is good on clean test images, but the attacker can manipulate the decision of the model by showing the trigger at test time. To the best of our knowledge, we are the first to show that ViTs are vulnerable to backdoor attacks. We also find an intriguing difference between ViTs and CNNs - interpretation algorithms effectively highlight the trigger on test images for ViTs but not for CNNs. Based on this observation, we propose a test-time image blocking defense for ViTs which reduces the attack success rate by a large margin. Code is available here: https://github.com/UCDvision/backdoor\_transformer.git},
+  doi        = {10.48550/arXiv.2206.08477},
+  file       = {:subramanya_backdoor_2022 - Backdoor Attacks on Vision Transformers.pdf:PDF;:Subramanya2022 - Backdoor Attacks on Vision Transformers.html:URL},
+  keywords   = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  priority   = {prio1},
+  ranking    = {rank2},
+  readstatus = {read},
+  school     = {arXiv},
+  url        = {http://arxiv.org/abs/2206.08477},
+  urldate    = {2023-02-16},
+}
+
+ 
+@TechReport{Lv2021,
+  author     = {Lv, Peizhuo and Ma, Hualong and Zhou, Jiachen and Liang, Ruigang and Chen, Kai and Zhang, Shengzhi and Yang, Yunfei},
+  title      = {{DBIA}: {Data}-free {Backdoor} {Injection} {Attack} against {Transformer} {Networks}},
+  year       = {2021},
+  month      = nov,
+  note       = {ZSCC: 0000004 arXiv:2111.11870 [cs] version: 1 type: article},
+  abstract   = {Recently, transformer architecture has demonstrated its significance in both Natural Language Processing (NLP) and Computer Vision (CV) tasks. Though other network models are known to be vulnerable to the backdoor attack, which embeds triggers in the model and controls the model behavior when the triggers are presented, little is known whether such an attack is still valid on the transformer models and if so, whether it can be done in a more cost-efficient manner. In this paper, we propose DBIA, a novel data-free backdoor attack against the CV-oriented transformer networks, leveraging the inherent attention mechanism of transformers to generate triggers and injecting the backdoor using the poisoned surrogate dataset. We conducted extensive experiments based on three benchmark transformers, i.e., ViT, DeiT and Swin Transformer, on two mainstream image classification tasks, i.e., CIFAR10 and ImageNet. The evaluation results demonstrate that, consuming fewer resources, our approach can embed backdoors with a high success rate and a low impact on the performance of the victim transformers. Our code is available at https://anonymous.4open.science/r/DBIA-825D.},
+  doi        = {10.48550/arXiv.2111.11870},
+  file       = {:lv_dbia__2021 - DBIA_ Data Free Backdoor Injection Attack against Transformer Networks.pdf:PDF;:Lv2021 - DBIA_ Data Free Backdoor Injection Attack against Transformer Networks.html:URL},
+  groups     = {Attack, Backdoors},
+  keywords   = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  priority   = {prio1},
+  school     = {arXiv},
+  shorttitle = {{DBIA}},
+  url        = {http://arxiv.org/abs/2111.11870},
+  urldate    = {2023-02-17},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Others\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:Others\;0\;0\;0xff00ffff\;\;\;;
 1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
 2 StaticGroup:Attack\;0\;1\;0xe64d4dff\;\;\;;
 2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;

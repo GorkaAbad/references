@@ -140,6 +140,7 @@
   groups     = {To read, Attack},
   issn       = {2375-1207},
   keywords   = {Privacy, Computer vision, Training data, Self-supervised learning, Feature extraction, Internet, Security},
+  priority   = {prio1},
   shorttitle = {{BadEncoder}},
 }
 
@@ -566,4 +567,4 @@
   month     = may,
   note      = {ZSCC: 0000002 ISSN: 2379-190X},
   pages     = {8922--8926},
-  abstract  = {Human brain can effectively integrate visual and auditory information. Dynamic Vision Sensor (DVS) and Dynamic Audio Sensor (DAS) are event-based sensors imitating the mechanism of human retina and cochlea. Since the sensors record the visual and auditory input as asynchronous discrete events, they are inherently suitable to cooperate with the spiking neural network (SNN). Existing works of SNNs for processing events mainly focus on unimodality, however, audiovisual multimodal SNNs are s
+  abstract  = {Human brain can effectively integrate visual and auditory information. Dynamic Vision Sensor (DVS) and Dynamic Audio Sensor (DAS) are event-based sensors imitating the mechanism of human retina and cochlea. Since the sensors record the visual and auditory input as asynchronous discrete events, they are inherently suitable to cooperate with the spiking neural network (SNN). Existing works of SNNs for processing events mainly focus on unimodality, however, audiovis
