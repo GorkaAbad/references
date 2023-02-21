@@ -136,7 +136,7 @@
   pages      = {2043--2059},
   abstract   = {Self-supervised learning in computer vision aims to pre-train an image encoder using a large amount of unlabeled images or (image, text) pairs. The pre-trained image encoder can then be used as a feature extractor to build downstream classifiers for many downstream tasks with a small amount of or no labeled training data. In this work, we propose BadEncoder, the first backdoor attack to self-supervised learning. In particular, our BadEncoder injects backdoors into a pre-trained image encoder such that the downstream classifiers built based on the backdoored image encoder for different downstream tasks simultaneously inherit the backdoor behavior. We formulate our BadEncoder as an optimization problem and we propose a gradient descent based method to solve it, which produces a backdoored image encoder from a clean one. Our extensive empirical evaluation results on multiple datasets show that our BadEncoder achieves high attack success rates while preserving the accuracy of the downstream classifiers. We also show the effectiveness of BadEncoder using two publicly available, real-world image encoders, i.e., Google’s image encoder pre-trained on ImageNet and OpenAI’s Contrastive Language-Image Pre-training (CLIP) image encoder pre-trained on 400 million (image, text) pairs collected from the Internet. Moreover, we consider defenses including Neural Cleanse and MNTD (empirical defenses) as well as PatchGuard (a provable defense). Our results show that these defenses are insufficient to defend against BadEncoder, highlighting the needs for new defenses against our BadEncoder. Our code is publicly available at: https://github.com/jjy1994/BadEncoder.},
   doi        = {10.1109/SP46214.2022.9833644},
-  file       = {:Jia2022 - BadEncoder_ Backdoor Attacks to Pre Trained Encoders in Self Supervised Learning.html:URL},
+  file       = {:Jia2022 - BadEncoder_ Backdoor Attacks to Pre Trained Encoders in Self Supervised Learning.pdf:PDF},
   groups     = {To read, Attack},
   issn       = {2375-1207},
   keywords   = {Privacy, Computer vision, Training data, Self-supervised learning, Feature extraction, Internet, Security},
@@ -468,6 +468,7 @@
   file      = {:Saha1195 - Hidden Trigger Backdoor Attacks.pdf:PDF},
   groups    = {Backdoors, Attack},
   keywords  = {Vision},
+  priority  = {prio2},
 }
 
  
@@ -606,7 +607,6 @@
   doi        = {10.48550/arXiv.2206.08477},
   file       = {:subramanya_backdoor_2022 - Backdoor Attacks on Vision Transformers.pdf:PDF;:Subramanya2022 - Backdoor Attacks on Vision Transformers.html:URL},
   keywords   = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Cryptography and Security, Computer Science - Machine Learning},
-  priority   = {prio1},
   ranking    = {rank2},
   readstatus = {read},
   school     = {arXiv},
@@ -623,14 +623,67 @@
   note       = {ZSCC: 0000004 arXiv:2111.11870 [cs] version: 1 type: article},
   abstract   = {Recently, transformer architecture has demonstrated its significance in both Natural Language Processing (NLP) and Computer Vision (CV) tasks. Though other network models are known to be vulnerable to the backdoor attack, which embeds triggers in the model and controls the model behavior when the triggers are presented, little is known whether such an attack is still valid on the transformer models and if so, whether it can be done in a more cost-efficient manner. In this paper, we propose DBIA, a novel data-free backdoor attack against the CV-oriented transformer networks, leveraging the inherent attention mechanism of transformers to generate triggers and injecting the backdoor using the poisoned surrogate dataset. We conducted extensive experiments based on three benchmark transformers, i.e., ViT, DeiT and Swin Transformer, on two mainstream image classification tasks, i.e., CIFAR10 and ImageNet. The evaluation results demonstrate that, consuming fewer resources, our approach can embed backdoors with a high success rate and a low impact on the performance of the victim transformers. Our code is available at https://anonymous.4open.science/r/DBIA-825D.},
   doi        = {10.48550/arXiv.2111.11870},
-  file       = {:lv_dbia__2021 - DBIA_ Data Free Backdoor Injection Attack against Transformer Networks.pdf:PDF;:Lv2021 - DBIA_ Data Free Backdoor Injection Attack against Transformer Networks.html:URL},
+  file       = {:lv_dbia__2021 - DBIA_ Data Free Backdoor Injection Attack against Transformer Networks.pdf:PDF},
   groups     = {Attack, Backdoors},
   keywords   = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Cryptography and Security, Computer Science - Machine Learning},
-  priority   = {prio1},
+  ranking    = {rank3},
+  readstatus = {read},
   school     = {arXiv},
   shorttitle = {{DBIA}},
   url        = {http://arxiv.org/abs/2111.11870},
   urldate    = {2023-02-17},
+}
+
+ 
+@TechReport{Chen2017,
+  author   = {Chen, Xinyun and Liu, Chang and Li, Bo and Lu, Kimberly and Song, Dawn},
+  title    = {Targeted {Backdoor} {Attacks} on {Deep} {Learning} {Systems} {Using} {Data} {Poisoning}},
+  year     = {2017},
+  month    = dec,
+  note     = {ZSCC: 0000992 arXiv:1712.05526 [cs] type: article},
+  abstract = {Deep learning models have achieved high performance on many tasks, and thus have been applied to many security-critical scenarios. For example, deep learning-based face recognition systems have been used to authenticate users to access many security-sensitive applications like payment apps. Such usages of deep learning systems provide the adversaries with sufficient incentives to perform attacks against these systems for their adversarial purposes. In this work, we consider a new type of attacks, called backdoor attacks, where the attacker's goal is to create a backdoor into a learning-based authentication system, so that he can easily circumvent the system by leveraging the backdoor. Specifically, the adversary aims at creating backdoor instances, so that the victim learning system will be misled to classify the backdoor instances as a target label specified by the adversary. In particular, we study backdoor poisoning attacks, which achieve backdoor attacks using poisoning strategies. Different from all existing work, our studied poisoning strategies can apply under a very weak threat model: (1) the adversary has no knowledge of the model and the training set used by the victim system; (2) the attacker is allowed to inject only a small amount of poisoning samples; (3) the backdoor key is hard to notice even by human beings to achieve stealthiness. We conduct evaluation to demonstrate that a backdoor adversary can inject only around 50 poisoning samples, while achieving an attack success rate of above 90\%. We are also the first work to show that a data poisoning attack can create physically implementable backdoors without touching the training process. Our work demonstrates that backdoor poisoning attacks pose real threats to a learning system, and thus highlights the importance of further investigation and proposing defense strategies against them.},
+  doi      = {10.48550/arXiv.1712.05526},
+  file     = {:chen_targeted_2017 - Targeted Backdoor Attacks on Deep Learning Systems Using Data Poisoning.pdf:PDF},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  priority = {prio2},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/1712.05526},
+  urldate  = {2023-02-21},
+}
+
+ 
+@TechReport{Quiring2020,
+  author   = {Quiring, Erwin and Rieck, Konrad},
+  title    = {Backdooring and {Poisoning} {Neural} {Networks} with {Image}-{Scaling} {Attacks}},
+  year     = {2020},
+  month    = mar,
+  note     = {ZSCC: 0000048 arXiv:2003.08633 [cs] type: article},
+  abstract = {Backdoors and poisoning attacks are a major threat to the security of machine-learning and vision systems. Often, however, these attacks leave visible artifacts in the images that can be visually detected and weaken the efficacy of the attacks. In this paper, we propose a novel strategy for hiding backdoor and poisoning attacks. Our approach builds on a recent class of attacks against image scaling. These attacks enable manipulating images such that they change their content when scaled to a specific resolution. By combining poisoning and image-scaling attacks, we can conceal the trigger of backdoors as well as hide the overlays of clean-label poisoning. Furthermore, we consider the detection of image-scaling attacks and derive an adaptive attack. In an empirical evaluation, we demonstrate the effectiveness of our strategy. First, we show that backdoors and poisoning work equally well when combined with image-scaling attacks. Second, we demonstrate that current detection defenses against image-scaling attacks are insufficient to uncover our manipulations. Overall, our work provides a novel means for hiding traces of manipulations, being applicable to different poisoning approaches.},
+  annote   = {Comment: IEEE Deep Learning and Security Workshop (DLS) 2020},
+  doi      = {10.48550/arXiv.2003.08633},
+  file     = {:quiring_backdooring_2020 - Backdooring and Poisoning Neural Networks with Image Scaling Attacks.pdf:PDF;:Quiring2020 - Backdooring and Poisoning Neural Networks with Image Scaling Attacks.html:URL},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2003.08633},
+  urldate  = {2023-02-21},
+}
+
+ 
+@TechReport{Zhao2020,
+  author   = {Zhao, Shihao and Ma, Xingjun and Zheng, Xiang and Bailey, James and Chen, Jingjing and Jiang, Yu-Gang},
+  title    = {Clean-{Label} {Backdoor} {Attacks} on {Video} {Recognition} {Models}},
+  year     = {2020},
+  month    = jun,
+  note     = {ZSCC: 0000145 arXiv:2003.03030 [cs] type: article},
+  abstract = {Deep neural networks (DNNs) are vulnerable to backdoor attacks which can hide backdoor triggers in DNNs by poisoning training data. A backdoored model behaves normally on clean test images, yet consistently predicts a particular target class for any test examples that contain the trigger pattern. As such, backdoor attacks are hard to detect, and have raised severe security concerns in real-world applications. Thus far, backdoor research has mostly been conducted in the image domain with image classification models. In this paper, we show that existing image backdoor attacks are far less effective on videos, and outline 4 strict conditions where existing attacks are likely to fail: 1) scenarios with more input dimensions (eg. videos), 2) scenarios with high resolution, 3) scenarios with a large number of classes and few examples per class (a "sparse dataset"), and 4) attacks with access to correct labels (eg. clean-label attacks). We propose the use of a universal adversarial trigger as the backdoor trigger to attack video recognition models, a situation where backdoor attacks are likely to be challenged by the above 4 strict conditions. We show on benchmark video datasets that our proposed backdoor attack can manipulate state-of-the-art video models with high success rates by poisoning only a small proportion of training data (without changing the labels). We also show that our proposed backdoor attack is resistant to state-of-the-art backdoor defense/detection methods, and can even be applied to improve image backdoor attacks. Our proposed video backdoor attack not only serves as a strong baseline for improving the robustness of video models, but also provides a new perspective for more understanding more powerful backdoor attacks.},
+  annote   = {Comment: CVPR2020},
+  doi      = {10.48550/arXiv.2003.03030},
+  file     = {:zhao_clean-label_2020 - Clean Label Backdoor Attacks on Video Recognition Models.pdf:PDF;:Zhao2020 - Clean Label Backdoor Attacks on Video Recognition Models.html:URL},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  priority = {prio2},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2003.03030},
+  urldate  = {2023-02-21},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
