@@ -460,15 +460,16 @@
 }
 
 @InProceedings{Saha1195,
-  author    = {Saha, Aniruddha and Subramanya, Akshayvarun and Pirsiavash, Hamed},
-  booktitle = {The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)},
-  title     = {Hidden Trigger Backdoor Attacks},
-  year      = {1195},
-  abstract  = {With the success of deep learning algorithms in various domains, studying adversarial attacks to secure deep models in real world applications has become an important research topic. Backdoor attacks are a form of adversarial attacks on deep networks where the attacker provides poisoned data to the victim to train the model with, and then activates the attack by showing a specific small trigger pattern at the test time. Most state-of-the-art backdoor attacks either provide mislabeled poisoning data that is possible to identify by visual inspection, reveal the trigger in the poisoned data, or use noise to hide the trigger. We propose a novel form of backdoor attack where poisoned data look natural with correct labels and also more importantly, the attacker hides the trigger in the poisoned data and keeps the trigger secret until the test time. We perform an extensive study on various image classification settings and show that our attack can fool the model by pasting the trigger at random locations on unseen images although the model performs well on clean data. We also show that our proposed attack cannot be easily defended using a state-of-the-art defense algorithm for backdoor attacks.},
-  file      = {:Saha1195 - Hidden Trigger Backdoor Attacks.pdf:PDF},
-  groups    = {Backdoors, Attack},
-  keywords  = {Vision},
-  priority  = {prio2},
+  author     = {Saha, Aniruddha and Subramanya, Akshayvarun and Pirsiavash, Hamed},
+  booktitle  = {The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)},
+  title      = {Hidden Trigger Backdoor Attacks},
+  year       = {1195},
+  abstract   = {With the success of deep learning algorithms in various domains, studying adversarial attacks to secure deep models in real world applications has become an important research topic. Backdoor attacks are a form of adversarial attacks on deep networks where the attacker provides poisoned data to the victim to train the model with, and then activates the attack by showing a specific small trigger pattern at the test time. Most state-of-the-art backdoor attacks either provide mislabeled poisoning data that is possible to identify by visual inspection, reveal the trigger in the poisoned data, or use noise to hide the trigger. We propose a novel form of backdoor attack where poisoned data look natural with correct labels and also more importantly, the attacker hides the trigger in the poisoned data and keeps the trigger secret until the test time. We perform an extensive study on various image classification settings and show that our attack can fool the model by pasting the trigger at random locations on unseen images although the model performs well on clean data. We also show that our proposed attack cannot be easily defended using a state-of-the-art defense algorithm for backdoor attacks.},
+  file       = {:Saha1195 - Hidden Trigger Backdoor Attacks.pdf:PDF},
+  groups     = {Backdoors, Attack},
+  keywords   = {Vision},
+  ranking    = {rank4},
+  readstatus = {read},
 }
 
  
@@ -636,9 +637,62 @@
 
  
 @TechReport{Chen2017,
-  author   = {Chen, Xinyun and Liu, Chang and Li, Bo and Lu, Kimberly and Song, Dawn},
-  title    = {Targeted {Backdoor} {Attacks} on {Deep} {Learning} {Systems} {Using} {Data} {Poisoning}},
-  year     = {2017},
-  month    = dec,
-  note     = {ZSCC: 0000992 arXiv:1712.05526 [cs] type: article},
-  abstract = {Deep learning models have achieved high performance on many tasks, and thus have been applied to many security-critical scenarios. For example, deep learning-based face recognition sy
+  author     = {Chen, Xinyun and Liu, Chang and Li, Bo and Lu, Kimberly and Song, Dawn},
+  title      = {Targeted {Backdoor} {Attacks} on {Deep} {Learning} {Systems} {Using} {Data} {Poisoning}},
+  year       = {2017},
+  month      = dec,
+  note       = {ZSCC: 0000992 arXiv:1712.05526 [cs] type: article},
+  abstract   = {Deep learning models have achieved high performance on many tasks, and thus have been applied to many security-critical scenarios. For example, deep learning-based face recognition systems have been used to authenticate users to access many security-sensitive applications like payment apps. Such usages of deep learning systems provide the adversaries with sufficient incentives to perform attacks against these systems for their adversarial purposes. In this work, we consider a new type of attacks, called backdoor attacks, where the attacker's goal is to create a backdoor into a learning-based authentication system, so that he can easily circumvent the system by leveraging the backdoor. Specifically, the adversary aims at creating backdoor instances, so that the victim learning system will be misled to classify the backdoor instances as a target label specified by the adversary. In particular, we study backdoor poisoning attacks, which achieve backdoor attacks using poisoning strategies. Different from all existing work, our studied poisoning strategies can apply under a very weak threat model: (1) the adversary has no knowledge of the model and the training set used by the victim system; (2) the attacker is allowed to inject only a small amount of poisoning samples; (3) the backdoor key is hard to notice even by human beings to achieve stealthiness. We conduct evaluation to demonstrate that a backdoor adversary can inject only around 50 poisoning samples, while achieving an attack success rate of above 90\%. We are also the first work to show that a data poisoning attack can create physically implementable backdoors without touching the training process. Our work demonstrates that backdoor poisoning attacks pose real threats to a learning system, and thus highlights the importance of further investigation and proposing defense strategies against them.},
+  doi        = {10.48550/arXiv.1712.05526},
+  file       = {:chen_targeted_2017 - Targeted Backdoor Attacks on Deep Learning Systems Using Data Poisoning.pdf:PDF},
+  keywords   = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  ranking    = {rank2},
+  readstatus = {skimmed},
+  school     = {arXiv},
+  url        = {http://arxiv.org/abs/1712.05526},
+  urldate    = {2023-02-21},
+}
+
+ 
+@TechReport{Quiring2020,
+  author   = {Quiring, Erwin and Rieck, Konrad},
+  title    = {Backdooring and {Poisoning} {Neural} {Networks} with {Image}-{Scaling} {Attacks}},
+  year     = {2020},
+  month    = mar,
+  note     = {ZSCC: 0000048 arXiv:2003.08633 [cs] type: article},
+  abstract = {Backdoors and poisoning attacks are a major threat to the security of machine-learning and vision systems. Often, however, these attacks leave visible artifacts in the images that can be visually detected and weaken the efficacy of the attacks. In this paper, we propose a novel strategy for hiding backdoor and poisoning attacks. Our approach builds on a recent class of attacks against image scaling. These attacks enable manipulating images such that they change their content when scaled to a specific resolution. By combining poisoning and image-scaling attacks, we can conceal the trigger of backdoors as well as hide the overlays of clean-label poisoning. Furthermore, we consider the detection of image-scaling attacks and derive an adaptive attack. In an empirical evaluation, we demonstrate the effectiveness of our strategy. First, we show that backdoors and poisoning work equally well when combined with image-scaling attacks. Second, we demonstrate that current detection defenses against image-scaling attacks are insufficient to uncover our manipulations. Overall, our work provides a novel means for hiding traces of manipulations, being applicable to different poisoning approaches.},
+  annote   = {Comment: IEEE Deep Learning and Security Workshop (DLS) 2020},
+  doi      = {10.48550/arXiv.2003.08633},
+  file     = {:quiring_backdooring_2020 - Backdooring and Poisoning Neural Networks with Image Scaling Attacks.pdf:PDF;:Quiring2020 - Backdooring and Poisoning Neural Networks with Image Scaling Attacks.html:URL},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2003.08633},
+  urldate  = {2023-02-21},
+}
+
+ 
+@TechReport{Zhao2020,
+  author   = {Zhao, Shihao and Ma, Xingjun and Zheng, Xiang and Bailey, James and Chen, Jingjing and Jiang, Yu-Gang},
+  title    = {Clean-{Label} {Backdoor} {Attacks} on {Video} {Recognition} {Models}},
+  year     = {2020},
+  month    = jun,
+  note     = {ZSCC: 0000145 arXiv:2003.03030 [cs] type: article},
+  abstract = {Deep neural networks (DNNs) are vulnerable to backdoor attacks which can hide backdoor triggers in DNNs by poisoning training data. A backdoored model behaves normally on clean test images, yet consistently predicts a particular target class for any test examples that contain the trigger pattern. As such, backdoor attacks are hard to detect, and have raised severe security concerns in real-world applications. Thus far, backdoor research has mostly been conducted in the image domain with image classification models. In this paper, we show that existing image backdoor attacks are far less effective on videos, and outline 4 strict conditions where existing attacks are likely to fail: 1) scenarios with more input dimensions (eg. videos), 2) scenarios with high resolution, 3) scenarios with a large number of classes and few examples per class (a "sparse dataset"), and 4) attacks with access to correct labels (eg. clean-label attacks). We propose the use of a universal adversarial trigger as the backdoor trigger to attack video recognition models, a situation where backdoor attacks are likely to be challenged by the above 4 strict conditions. We show on benchmark video datasets that our proposed backdoor attack can manipulate state-of-the-art video models with high success rates by poisoning only a small proportion of training data (without changing the labels). We also show that our proposed backdoor attack is resistant to state-of-the-art backdoor defense/detection methods, and can even be applied to improve image backdoor attacks. Our proposed video backdoor attack not only serves as a strong baseline for improving the robustness of video models, but also provides a new perspective for more understanding more powerful backdoor attacks.},
+  annote   = {Comment: CVPR2020},
+  doi      = {10.48550/arXiv.2003.03030},
+  file     = {:zhao_clean-label_2020 - Clean Label Backdoor Attacks on Video Recognition Models.pdf:PDF;:Zhao2020 - Clean Label Backdoor Attacks on Video Recognition Models.html:URL},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  priority = {prio2},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2003.03030},
+  urldate  = {2023-02-21},
+}
+
+ 
+@TechReport{Tancik2020,
+  author     = {Tancik, Matthew and Mildenhall, Ben and Ng, Ren},
+  title      = {{StegaStamp}: {Invisible} {Hyperlinks} in {Physical} {Photographs}},
+  year       = {2020},
+  month      = mar,
+  note       = {ZSCC: 0000138 arXiv:1904.05343 [cs] type: article},
+  abstract   = {Printed and digitally displayed photos have the ability to hide imperceptible digital data that can be accessed through internet-connected imaging systems. Another way to think about this is physical photographs that have unique QR codes invisibly embedded within them. This paper presents an architecture, algorithms, and a prototype implementation addressing this vision. Our key technical contribution is StegaStamp, a learned steganographic algorithm to enable robust encoding and decoding of arbitrary hyperlink bitstrings into photos in a manner that approaches perceptual invisibility. StegaStamp comprises a deep neural network that learns an encoding/decoding algorithm robust to image perturbations approximating the space of distortions resulting from real printing and photography. We demonstrates real-time decoding of hyperlinks in photos from in-the-wild videos that contain variation in lighting, shadows, perspective, occlusion and viewing distance. Our prototype system robustly retrieves 56 bit hyperlinks after error correction - s
