@@ -140,7 +140,8 @@
   groups     = {To read, Attack},
   issn       = {2375-1207},
   keywords   = {Privacy, Computer vision, Training data, Self-supervised learning, Feature extraction, Internet, Security},
-  priority   = {prio1},
+  ranking    = {rank3},
+  readstatus = {read},
   shorttitle = {{BadEncoder}},
 }
 
@@ -695,4 +696,76 @@
   year       = {2020},
   month      = mar,
   note       = {ZSCC: 0000138 arXiv:1904.05343 [cs] type: article},
-  abstract   = {Printed and digitally displayed photos have the ability to hide imperceptible digital data that can be accessed through internet-connected imaging systems. Another way to think about this is physical photographs that have unique QR codes invisibly embedded within them. This paper presents an architecture, algorithms, and a prototype implementation addressing this vision. Our key technical contribution is StegaStamp, a learned steganographic algorithm to enable robust encoding and decoding of arbitrary hyperlink bitstrings into photos in a manner that approaches perceptual invisibility. StegaStamp comprises a deep neural network that learns an encoding/decoding algorithm robust to image perturbations approximating the space of distortions resulting from real printing and photography. We demonstrates real-time decoding of hyperlinks in photos from in-the-wild videos that contain variation in lighting, shadows, perspective, occlusion and viewing distance. Our prototype system robustly retrieves 56 bit hyperlinks after error correction - s
+  abstract   = {Printed and digitally displayed photos have the ability to hide imperceptible digital data that can be accessed through internet-connected imaging systems. Another way to think about this is physical photographs that have unique QR codes invisibly embedded within them. This paper presents an architecture, algorithms, and a prototype implementation addressing this vision. Our key technical contribution is StegaStamp, a learned steganographic algorithm to enable robust encoding and decoding of arbitrary hyperlink bitstrings into photos in a manner that approaches perceptual invisibility. StegaStamp comprises a deep neural network that learns an encoding/decoding algorithm robust to image perturbations approximating the space of distortions resulting from real printing and photography. We demonstrates real-time decoding of hyperlinks in photos from in-the-wild videos that contain variation in lighting, shadows, perspective, occlusion and viewing distance. Our prototype system robustly retrieves 56 bit hyperlinks after error correction - sufficient to embed a unique code within every photo on the internet.},
+  annote     = {Comment: CVPR 2020, Project page: http://www.matthewtancik.com/stegastamp},
+  doi        = {10.48550/arXiv.1904.05343},
+  file       = {:tancik_stegastamp__2020 - StegaStamp_ Invisible Hyperlinks in Physical Photographs.pdf:PDF;:Tancik2020 - StegaStamp_ Invisible Hyperlinks in Physical Photographs.html:URL},
+  keywords   = {Computer Science - Computer Vision and Pattern Recognition},
+  ranking    = {rank3},
+  readstatus = {skimmed},
+  school     = {arXiv},
+  shorttitle = {{StegaStamp}},
+  url        = {http://arxiv.org/abs/1904.05343},
+  urldate    = {2023-02-21},
+}
+
+ 
+@TechReport{Carlini2023,
+  author   = {Carlini, Nicholas and Jagielski, Matthew and Choquette-Choo, Christopher A. and Paleka, Daniel and Pearce, Will and Anderson, Hyrum and Terzis, Andreas and Thomas, Kurt and Tramèr, Florian},
+  title    = {Poisoning {Web}-{Scale} {Training} {Datasets} is {Practical}},
+  year     = {2023},
+  month    = feb,
+  note     = {ZSCC: NoCitationData[s0] arXiv:2302.10149 [cs] type: article},
+  abstract = {Deep learning models are often trained on distributed, webscale datasets crawled from the internet. In this paper, we introduce two new dataset poisoning attacks that intentionally introduce malicious examples to a model's performance. Our attacks are immediately practical and could, today, poison 10 popular datasets. Our first attack, split-view poisoning, exploits the mutable nature of internet content to ensure a dataset annotator's initial view of the dataset differs from the view downloaded by subsequent clients. By exploiting specific invalid trust assumptions, we show how we could have poisoned 0.01\% of the LAION-400M or COYO-700M datasets for just \$60 USD. Our second attack, frontrunning poisoning, targets web-scale datasets that periodically snapshot crowd-sourced content -- such as Wikipedia -- where an attacker only needs a time-limited window to inject malicious examples. In light of both attacks, we notify the maintainers of each affected dataset and recommended several low-overhead defenses.},
+  doi      = {10.48550/arXiv.2302.10149},
+  file     = {:carlini_poisoning_2023 - Poisoning Web Scale Training Datasets Is Practical.pdf:PDF;:Carlini2023 - Poisoning Web Scale Training Datasets Is Practical.html:URL},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2302.10149},
+  urldate  = {2023-02-22},
+}
+
+ 
+@TechReport{Turner2019,
+  author     = {Turner, Alexander and Tsipras, Dimitris and Madry, Aleksander},
+  title      = {Label-{Consistent} {Backdoor} {Attacks}},
+  year       = {2019},
+  month      = dec,
+  note       = {ZSCC: 0000160 arXiv:1912.02771 [cs, stat] type: article},
+  abstract   = {Deep neural networks have been demonstrated to be vulnerable to backdoor attacks. Specifically, by injecting a small number of maliciously constructed inputs into the training set, an adversary is able to plant a backdoor into the trained model. This backdoor can then be activated during inference by a backdoor trigger to fully control the model's behavior. While such attacks are very effective, they crucially rely on the adversary injecting arbitrary inputs that are---often blatantly---mislabeled. Such samples would raise suspicion upon human inspection, potentially revealing the attack. Thus, for backdoor attacks to remain undetected, it is crucial that they maintain label-consistency---the condition that injected inputs are consistent with their labels. In this work, we leverage adversarial perturbations and generative models to execute efficient, yet label-consistent, backdoor attacks. Our approach is based on injecting inputs that appear plausible, yet are hard to classify, hence causing the model to rely on the (easier-to-learn) backdoor trigger.},
+  doi        = {10.48550/arXiv.1912.02771},
+  file       = {:turner_label-consistent_2019 - Label Consistent Backdoor Attacks.pdf:PDF;:Turner2019 - Label Consistent Backdoor Attacks.html:URL},
+  keywords   = {Statistics - Machine Learning, Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  readstatus = {read},
+  school     = {arXiv},
+  url        = {http://arxiv.org/abs/1912.02771},
+  urldate    = {2023-02-22},
+}
+
+ 
+@TechReport{Madry2019,
+  author   = {Madry, Aleksander and Makelov, Aleksandar and Schmidt, Ludwig and Tsipras, Dimitris and Vladu, Adrian},
+  title    = {Towards {Deep} {Learning} {Models} {Resistant} to {Adversarial} {Attacks}},
+  year     = {2019},
+  month    = sep,
+  note     = {ZSCC: NoCitationData[s0] arXiv:1706.06083 [cs, stat] type: article},
+  abstract = {Recent work has demonstrated that deep neural networks are vulnerable to adversarial examples---inputs that are almost indistinguishable from natural data and yet classified incorrectly by the network. In fact, some of the latest findings suggest that the existence of adversarial attacks may be an inherent weakness of deep learning models. To address this problem, we study the adversarial robustness of neural networks through the lens of robust optimization. This approach provides us with a broad and unifying view on much of the prior work on this topic. Its principled nature also enables us to identify methods for both training and attacking neural networks that are reliable and, in a certain sense, universal. In particular, they specify a concrete security guarantee that would protect against any adversary. These methods let us train networks with significantly improved resistance to a wide range of adversarial attacks. They also suggest the notion of security against a first-order adversary as a natural and broad security guarantee. We believe that robustness against such well-defined classes of adversaries is an important stepping stone towards fully resistant deep learning models. Code and pre-trained models are available at https://github.com/MadryLab/mnist\_challenge and https://github.com/MadryLab/cifar10\_challenge.},
+  annote   = {Comment: ICLR'18},
+  doi      = {10.48550/arXiv.1706.06083},
+  file     = {:madry_towards_2019 - Towards Deep Learning Models Resistant to Adversarial Attacks.pdf:PDF;:Madry2019 - Towards Deep Learning Models Resistant to Adversarial Attacks.html:URL},
+  keywords = {Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+  priority = {prio1},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/1706.06083},
+  urldate  = {2023-02-22},
+}
+
+@Article{Chen2021a,
+  author    = {Xuan Chen and Yuena Ma and Shiwei Lu},
+  journal   = {IEEE Access},
+  title     = {Use Procedural Noise to Achieve Backdoor Attack},
+  year      = {2021},
+  issn      = {2169-3536},
+  pages     = {127204--127216},
+  volume    = {9},
+  abstract  = {In recent years, more researchers pay their attention to the security of artificial intelligence. The backdoor attack is one of the threats and has a powerful, stealthy attack ability. There exist a growing trend towards the triggers is that become dynamic and global. In this paper, we propose a novel global backdoor trigger that is generated by procedural noise. Compared with most triggers, ours are much stealthy and straightforward to implement. In fact, there exist three types of procedural noise, and we evaluate the attack ability of triggers generated by them on the different classification datasets, including CIFAR-10, GTSRB, CelebA, and ImageNet12. The experiment results show that our attack approach can bypass most defense approaches, even for the inspections of humans. We only need poison 5%–10% training data, but the attack success rate(ASR) can reach over 99%. To test the robustness of the backdoor model against the corruption methods that in practice, we introduce 17 corruption methods and compute the accuracy, ASR of the backdoor model with them. The facts show that our backdoor model has strong robustness for most corruption methods, which means it can be applied in reali
