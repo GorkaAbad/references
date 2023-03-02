@@ -836,37 +836,39 @@
 
  
 @TechReport{Liu2023,
-  author   = {Liu, Yugeng and Li, Zheng and Backes, Michael and Shen, Yun and Zhang, Yang},
-  title    = {Backdoor {Attacks} {Against} {Dataset} {Distillation}},
-  year     = {2023},
-  month    = jan,
-  note     = {ZSCC: 0000001 arXiv:2301.01197 [cs] type: article},
-  abstract = {Dataset distillation has emerged as a prominent technique to improve data efficiency when training machine learning models. It encapsulates the knowledge from a large dataset into a smaller synthetic dataset. A model trained on this smaller distilled dataset can attain comparable performance to a model trained on the original training dataset. However, the existing dataset distillation techniques mainly aim at achieving the best trade-off between resource usage efficiency and model utility. The security risks stemming from them have not been explored. This study performs the first backdoor attack against the models trained on the data distilled by dataset distillation models in the image domain. Concretely, we inject triggers into the synthetic data during the distillation procedure rather than during the model training stage, where all previous attacks are performed. We propose two types of backdoor attacks, namely NAIVEATTACK and DOORPING. NAIVEATTACK simply adds triggers to the raw data at the initial distillation phase, while DOORPING iteratively updates the triggers during the entire distillation procedure. We conduct extensive evaluations on multiple datasets, architectures, and dataset distillation techniques. Empirical evaluation shows that NAIVEATTACK achieves decent attack success rate (ASR) scores in some cases, while DOORPING reaches higher ASR scores (close to 1.0) in all cases. Furthermore, we conduct a comprehensive ablation study to analyze the factors that may affect the attack performance. Finally, we evaluate multiple defense mechanisms against our backdoor attacks and show that our attacks can practically circumvent these defense mechanisms.},
-  doi      = {10.48550/arXiv.2301.01197},
-  file     = {:liu_backdoor_2023 - Backdoor Attacks against Dataset Distillation.pdf:PDF;:Liu2023 - Backdoor Attacks against Dataset Distillation.html:URL},
-  keywords = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
-  priority = {prio1},
-  school   = {arXiv},
-  url      = {http://arxiv.org/abs/2301.01197},
-  urldate  = {2023-03-01},
+  author     = {Liu, Yugeng and Li, Zheng and Backes, Michael and Shen, Yun and Zhang, Yang},
+  title      = {Backdoor {Attacks} {Against} {Dataset} {Distillation}},
+  year       = {2023},
+  month      = jan,
+  note       = {ZSCC: 0000001 arXiv:2301.01197 [cs] type: article},
+  abstract   = {Dataset distillation has emerged as a prominent technique to improve data efficiency when training machine learning models. It encapsulates the knowledge from a large dataset into a smaller synthetic dataset. A model trained on this smaller distilled dataset can attain comparable performance to a model trained on the original training dataset. However, the existing dataset distillation techniques mainly aim at achieving the best trade-off between resource usage efficiency and model utility. The security risks stemming from them have not been explored. This study performs the first backdoor attack against the models trained on the data distilled by dataset distillation models in the image domain. Concretely, we inject triggers into the synthetic data during the distillation procedure rather than during the model training stage, where all previous attacks are performed. We propose two types of backdoor attacks, namely NAIVEATTACK and DOORPING. NAIVEATTACK simply adds triggers to the raw data at the initial distillation phase, while DOORPING iteratively updates the triggers during the entire distillation procedure. We conduct extensive evaluations on multiple datasets, architectures, and dataset distillation techniques. Empirical evaluation shows that NAIVEATTACK achieves decent attack success rate (ASR) scores in some cases, while DOORPING reaches higher ASR scores (close to 1.0) in all cases. Furthermore, we conduct a comprehensive ablation study to analyze the factors that may affect the attack performance. Finally, we evaluate multiple defense mechanisms against our backdoor attacks and show that our attacks can practically circumvent these defense mechanisms.},
+  doi        = {10.48550/arXiv.2301.01197},
+  file       = {:liu_backdoor_2023 - Backdoor Attacks against Dataset Distillation.pdf:PDF;:Liu2023 - Backdoor Attacks against Dataset Distillation.html:URL},
+  keywords   = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  ranking    = {rank2},
+  readstatus = {read},
+  school     = {arXiv},
+  url        = {http://arxiv.org/abs/2301.01197},
+  urldate    = {2023-03-01},
 }
 
  
 @TechReport{Sha2022,
-  author   = {Sha, Zeyang and He, Xinlei and Berrang, Pascal and Humbert, Mathias and Zhang, Yang},
-  title    = {Fine-{Tuning} {Is} {All} {You} {Need} to {Mitigate} {Backdoor} {Attacks}},
-  year     = {2022},
-  month    = dec,
-  note     = {ZSCC: 0000000 arXiv:2212.09067 [cs] type: article},
-  abstract = {Backdoor attacks represent one of the major threats to machine learning models. Various efforts have been made to mitigate backdoors. However, existing defenses have become increasingly complex and often require high computational resources or may also jeopardize models' utility. In this work, we show that fine-tuning, one of the most common and easy-to-adopt machine learning training operations, can effectively remove backdoors from machine learning models while maintaining high model utility. Extensive experiments over three machine learning paradigms show that fine-tuning and our newly proposed super-fine-tuning achieve strong defense performance. Furthermore, we coin a new term, namely backdoor sequela, to measure the changes in model vulnerabilities to other attacks before and after the backdoor has been removed. Empirical evaluation shows that, compared to other defense methods, super-fine-tuning leaves limited backdoor sequela. We hope our results can help machine learning model owners better protect their models from backdoor threats. Also, it calls for the design of more advanced attacks in order to comprehensively assess machine learning models' backdoor vulnerabilities.},
-  annote   = {Comment: 17 pages, 17 figures},
-  doi      = {10.48550/arXiv.2212.09067},
-  file     = {:sha_fine-tuning_2022 - Fine Tuning Is All You Need to Mitigate Backdoor Attacks.pdf:PDF;:Sha2022 - Fine Tuning Is All You Need to Mitigate Backdoor Attacks.html:URL},
-  keywords = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
-  priority = {prio1},
-  school   = {arXiv},
-  url      = {http://arxiv.org/abs/2212.09067},
-  urldate  = {2023-03-01},
+  author     = {Sha, Zeyang and He, Xinlei and Berrang, Pascal and Humbert, Mathias and Zhang, Yang},
+  title      = {Fine-{Tuning} {Is} {All} {You} {Need} to {Mitigate} {Backdoor} {Attacks}},
+  year       = {2022},
+  month      = dec,
+  note       = {ZSCC: 0000000 arXiv:2212.09067 [cs] type: article},
+  abstract   = {Backdoor attacks represent one of the major threats to machine learning models. Various efforts have been made to mitigate backdoors. However, existing defenses have become increasingly complex and often require high computational resources or may also jeopardize models' utility. In this work, we show that fine-tuning, one of the most common and easy-to-adopt machine learning training operations, can effectively remove backdoors from machine learning models while maintaining high model utility. Extensive experiments over three machine learning paradigms show that fine-tuning and our newly proposed super-fine-tuning achieve strong defense performance. Furthermore, we coin a new term, namely backdoor sequela, to measure the changes in model vulnerabilities to other attacks before and after the backdoor has been removed. Empirical evaluation shows that, compared to other defense methods, super-fine-tuning leaves limited backdoor sequela. We hope our results can help machine learning model owners better protect their models from backdoor threats. Also, it calls for the design of more advanced attacks in order to comprehensively assess machine learning models' backdoor vulnerabilities.},
+  annote     = {Comment: 17 pages, 17 figures},
+  doi        = {10.48550/arXiv.2212.09067},
+  file       = {:sha_fine-tuning_2022 - Fine Tuning Is All You Need to Mitigate Backdoor Attacks.pdf:PDF;:Sha2022 - Fine Tuning Is All You Need to Mitigate Backdoor Attacks.html:URL},
+  keywords   = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+  ranking    = {rank2},
+  readstatus = {read},
+  school     = {arXiv},
+  url        = {http://arxiv.org/abs/2212.09067},
+  urldate    = {2023-03-01},
 }
 
 @Conference{Zhang2021,
@@ -967,6 +969,44 @@
   shorttitle = {{DeepPayload}},
 }
 
+ 
+@TechReport{He2022,
+  author     = {He, Mingrui and Chen, Tianyu and Zhou, Haoyi and Zhang, Shanghang and Li, Jianxin},
+  title      = {{BadRes}: {Reveal} the {Backdoors} through {Residual} {Connection}},
+  year       = {2022},
+  month      = sep,
+  note       = {ZSCC: 0000000 arXiv:2209.07125 [cs] type: article},
+  abstract   = {Generally, residual connections are indispensable network components in building CNNs and Transformers for various downstream tasks in CV and VL, which encourages skip shortcuts between network blocks. However, the layer-by-layer loopback residual connections may also hurt the model's robustness by allowing unsuspecting input. In this paper, we proposed a simple yet strong backdoor attack method - BadRes, where the residual connections play as a turnstile to be deterministic on clean inputs while unpredictable on poisoned ones. We have performed empirical evaluations on four datasets with ViT and BEiT models, and the BadRes achieves 97\% attack success rate while receiving zero performance degradation on clean data. Moreover, we analyze BadRes with state-of-the-art defense methods and reveal the fundamental weakness lying in residual connections.},
+  annote     = {Comment: 16pages, 9 figures},
+  doi        = {10.48550/arXiv.2209.07125},
+  file       = {:he_badres__2022 - BadRes_ Reveal the Backdoors through Residual Connection.pdf:PDF;:He2022 - BadRes_ Reveal the Backdoors through Residual Connection.html:URL},
+  keywords   = {Computer Science - Cryptography and Security},
+  priority   = {prio2},
+  school     = {arXiv},
+  shorttitle = {{BadRes}},
+  url        = {http://arxiv.org/abs/2209.07125},
+  urldate    = {2023-03-02},
+}
+
+ 
+@TechReport{Smith2018,
+  author     = {Smith, Leslie N. and Topin, Nicholay},
+  title      = {Super-{Convergence}: {Very} {Fast} {Training} of {Neural} {Networks} {Using} {Large} {Learning} {Rates}},
+  year       = {2018},
+  month      = may,
+  note       = {ZSCC: NoCitationData[s0] arXiv:1708.07120 [cs, stat] type: article},
+  abstract   = {In this paper, we describe a phenomenon, which we named "super-convergence", where neural networks can be trained an order of magnitude faster than with standard training methods. The existence of super-convergence is relevant to understanding why deep networks generalize well. One of the key elements of super-convergence is training with one learning rate cycle and a large maximum learning rate. A primary insight that allows super-convergence training is that large learning rates regularize the training, hence requiring a reduction of all other forms of regularization in order to preserve an optimal regularization balance. We also derive a simplification of the Hessian Free optimization method to compute an estimate of the optimal learning rate. Experiments demonstrate super-convergence for Cifar-10/100, MNIST and Imagenet datasets, and resnet, wide-resnet, densenet, and inception architectures. In addition, we show that super-convergence provides a greater boost in performance relative to standard training when the amount of labeled training data is limited. The architectures and code to replicate the figures in this paper are available at github.com/lnsmith54/super-convergence. See http://www.fast.ai/2018/04/30/dawnbench-fastai/ for an application of super-convergence to win the DAWNBench challenge (see https://dawn.cs.stanford.edu/benchmark/).},
+  annote     = {Comment: This paper was significantly revised to show super-convergence as a general fast training methodology},
+  doi        = {10.48550/arXiv.1708.07120},
+  file       = {:smith_super-convergence__2018 - Super Convergence_ Very Fast Training of Neural Networks Using Large Learning Rates.pdf:PDF;:Smith2018 - Super Convergence_ Very Fast Training of Neural Networks Using Large Learning Rates.html:URL},
+  keywords   = {Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
+  priority   = {prio2},
+  school     = {arXiv},
+  shorttitle = {Super-{Convergence}},
+  url        = {http://arxiv.org/abs/1708.07120},
+  urldate    = {2023-03-02},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -975,5 +1015,4 @@
 1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
 2 StaticGroup:Attack\;0\;1\;0xe64d4dff\;\;\;;
 2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;
-1 KeywordGroup:To read\;0\;readstatus\;\;0\;1\;1\;0x00ffffff\;\;\;;
 }
