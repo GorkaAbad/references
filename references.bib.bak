@@ -704,6 +704,7 @@
   file     = {:zhao_clean-label_2020 - Clean Label Backdoor Attacks on Video Recognition Models.pdf:PDF;:Zhao2020 - Clean Label Backdoor Attacks on Video Recognition Models.html:URL},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
   priority = {prio2},
+  ranking  = {rank1},
   school   = {arXiv},
   url      = {http://arxiv.org/abs/2003.03030},
   urldate  = {2023-02-21},
@@ -1015,5 +1016,4 @@
 1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
 2 StaticGroup:Attack\;0\;1\;0xe64d4dff\;\;\;;
 2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;
-1 KeywordGroup:To read\;0\;readstatus\;\;0\;1\;1\;0x00ffffff\;\;\;;
 }
