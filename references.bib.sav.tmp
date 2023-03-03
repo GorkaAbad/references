@@ -949,4 +949,74 @@
   eprint        = {2201.08619},
   file          = {:http\://arxiv.org/pdf/2201.08619v2:PDF},
   keywords      = {cs.CV, cs.AI, cs.CR},
-  primary
+  primaryclass  = {cs.CV},
+}
+
+ 
+@InProceedings{Li2021,
+  author     = {Li, Yuanchun and Hua, Jiayi and Wang, Haoyu and Chen, Chunyang and Liu, Yunxin},
+  booktitle  = {2021 {IEEE}/{ACM} 43rd {International} {Conference} on {Software} {Engineering} ({ICSE})},
+  title      = {{DeepPayload}: {Black}-box {Backdoor} {Attack} on {Deep} {Learning} {Models} through {Neural} {Payload} {Injection}},
+  year       = {2021},
+  month      = may,
+  note       = {ZSCC: 0000025 ISSN: 1558-1225},
+  pages      = {263--274},
+  abstract   = {Deep learning models are increasingly used in mobile applications as critical components. Unlike the program bytecode whose vulnerabilities and threats have been widely-discussed, whether and how the deep learning models deployed in the applications can be compromised are not well-understood since Neural Networks are usually viewed as a black box. In this paper, we introduce a highly practical backdoor attack achieved with a set of reverse-engineering techniques over compiled deep learning models. The core of the attack is a neural conditional branch constructed with a trigger detector and several operators and injected into the victim model as a malicious payload. The attack is effective as the conditional logic can be flexibly customized by the attacker, and scalable as it does not require any prior knowledge from the original model. We evaluated the attack effectiveness using 5 state-of-the-art deep learning models and real-world samples collected from 30 users. The results demonstrated that the injected backdoor can be triggered with a success rate of 93.5\%, while only brought less than 2ms latency overhead and no more than 1.4\% accuracy decrease. We further conducted an empirical study on real-world mobile deep learning apps collected from Google Play. We found 54 apps that were vulnerable to our attack, including popular and security-critical ones. The results call for the awareness of deep learning application developers and auditors to enhance the protection of deployed models.},
+  doi        = {10.1109/ICSE43902.2021.00035},
+  file       = {:Li2021 - DeepPayload_ Black Box Backdoor Attack on Deep Learning Models through Neural Payload Injection.html:URL;:Li2021 - DeepPayload_ Black Box Backdoor Attack on Deep Learning Models through Neural Payload Injection.html:URL},
+  issn       = {1558-1225},
+  keywords   = {Deep learning, Training, Neural networks, Internet, Mobile applications, Payloads, Software engineering, deep learning, backdoor attack, mobile applications, reverse engineering, malicious payload},
+  priority   = {prio1},
+  shorttitle = {{DeepPayload}},
+}
+
+ 
+@TechReport{He2022,
+  author     = {He, Mingrui and Chen, Tianyu and Zhou, Haoyi and Zhang, Shanghang and Li, Jianxin},
+  title      = {{BadRes}: {Reveal} the {Backdoors} through {Residual} {Connection}},
+  year       = {2022},
+  month      = sep,
+  note       = {ZSCC: 0000000 arXiv:2209.07125 [cs] type: article},
+  abstract   = {Generally, residual connections are indispensable network components in building CNNs and Transformers for various downstream tasks in CV and VL, which encourages skip shortcuts between network blocks. However, the layer-by-layer loopback residual connections may also hurt the model's robustness by allowing unsuspecting input. In this paper, we proposed a simple yet strong backdoor attack method - BadRes, where the residual connections play as a turnstile to be deterministic on clean inputs while unpredictable on poisoned ones. We have performed empirical evaluations on four datasets with ViT and BEiT models, and the BadRes achieves 97\% attack success rate while receiving zero performance degradation on clean data. Moreover, we analyze BadRes with state-of-the-art defense methods and reveal the fundamental weakness lying in residual connections.},
+  annote     = {Comment: 16pages, 9 figures},
+  doi        = {10.48550/arXiv.2209.07125},
+  file       = {:he_badres__2022 - BadRes_ Reveal the Backdoors through Residual Connection.pdf:PDF;:He2022 - BadRes_ Reveal the Backdoors through Residual Connection.html:URL},
+  keywords   = {Computer Science - Cryptography and Security},
+  priority   = {prio2},
+  school     = {arXiv},
+  shorttitle = {{BadRes}},
+  url        = {http://arxiv.org/abs/2209.07125},
+  urldate    = {2023-03-02},
+}
+
+ 
+@TechReport{Smith2018,
+  author     = {Smith, Leslie N. and Topin, Nicholay},
+  title      = {Super-{Convergence}: {Very} {Fast} {Training} of {Neural} {Networks} {Using} {Large} {Learning} {Rates}},
+  year       = {2018},
+  month      = may,
+  note       = {ZSCC: NoCitationData[s0] arXiv:1708.07120 [cs, stat] type: article},
+  abstract   = {In this paper, we describe a phenomenon, which we named "super-convergence", where neural networks can be trained an order of magnitude faster than with standard training methods. The existence of super-convergence is relevant to understanding why deep networks generalize well. One of the key elements of super-convergence is training with one learning rate cycle and a large maximum learning rate. A primary insight that allows super-convergence training is that large learning rates regularize the training, hence requiring a reduction of all other forms of regularization in order to preserve an optimal regularization balance. We also derive a simplification of the Hessian Free optimization method to compute an estimate of the optimal learning rate. Experiments demonstrate super-convergence for Cifar-10/100, MNIST and Imagenet datasets, and resnet, wide-resnet, densenet, and inception architectures. In addition, we show that super-convergence provides a greater boost in performance relative to standard training when the amount of labeled training data is limited. The architectures and code to replicate the figures in this paper are available at github.com/lnsmith54/super-convergence. See http://www.fast.ai/2018/04/30/dawnbench-fastai/ for an application of super-convergence to win the DAWNBench challenge (see https://dawn.cs.stanford.edu/benchmark/).},
+  annote     = {Comment: This paper was significantly revised to show super-convergence as a general fast training methodology},
+  doi        = {10.48550/arXiv.1708.07120},
+  file       = {:smith_super-convergence__2018 - Super Convergence_ Very Fast Training of Neural Networks Using Large Learning Rates.pdf:PDF;:Smith2018 - Super Convergence_ Very Fast Training of Neural Networks Using Large Learning Rates.html:URL},
+  keywords   = {Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
+  priority   = {prio2},
+  school     = {arXiv},
+  shorttitle = {Super-{Convergence}},
+  url        = {http://arxiv.org/abs/1708.07120},
+  urldate    = {2023-03-02},
+}
+
+ 
+@Article{Jiang2022,
+  author   = {Jiang, Kai and Peng, Peng and Lian, Youzao and Xu, Weisheng},
+  journal  = {Journal of Visual Communication and Image Representation},
+  title    = {The encoding method of position embeddings in vision transformer},
+  year     = {2022},
+  issn     = {1047-3203},
+  month    = nov,
+  note     = {ZSCC: 0000000},
+  pages    = {103664},
+  volume   = {89},
+  abstract = {In contrast to Convolutional Neural Networks (CNNs), Vision Transformers (ViT) cannot capture sequence ordering of input tokens and require position embeddings. As a learnable fixed-dimension vector, the position embedding improves accuracy while limiting the migration of the model between different input sizes. Hence, this paper conducts an empirical study on position embeddings of pre-trained models, which mainly focuses on two questions: (1) What do the position embeddings learn from training? (2) How do the position embeddings affect the self-attention modules? This paper analyzes the pattern of position embedding in pre-trained models and finds that the linear combination of Gabor filters and edge markers can fit the learned position embeddings well. The Gabor filters and edge markers can occupy some channels to append the position information, and the edge markers have flowed to v
