@@ -1109,12 +1109,97 @@
   urldate    = {2023-03-24},
 }
 
+ 
+@TechReport{Perin2022,
+  author     = {Perin, Guilherme and Wu, Lichao and Picek, Stjepan},
+  title      = {I {Know} {What} {Your} {Layers} {Did}: {Layer}-wise {Explainability} of {Deep} {Learning} {Side}-channel {Analysis}},
+  year       = {2022},
+  number     = {1087},
+  abstract   = {Masked cryptographic implementations can be vulnerable to higher-order attacks. For instance, deep neural networks have proven effective for second-order profiling side-channel attacks even in a black-box setting (no prior knowledge of masks and implementation details). While such attacks have been successful, no explanations were provided for understanding why a variety of deep neural networks can (or cannot) learn high-order leakages and what the limitations are. In other words, we lack the explainability on neural network layers combining (or not) unknown and random secret shares, which is a necessary step to defeat, e.g., Boolean masking countermeasures. In this paper, we use information-theoretic metrics to explain the internal activities of deep neural network layers. We propose a novel methodology for the explainability of deep learning-based profiling side-channel analysis (denoted ExDL-SCA) to understand the processing of secret masks. Inspired by the Information Bottleneck theory, our explainability methodology uses perceived information to explain and detect the different phenomena that occur in deep neural networks, such as fitting, compression, and generalization. We provide experimental results on masked AES datasets showing where, what, and why deep neural networks learn relevant features from input trace sets while compressing irrelevant ones, including noise. This paper opens new perspectives for understanding the role of different neural network layers in profiling side-channel attacks.},
+  file       = {:Perin2022 - I Know What Your Layers Did_ Layer Wise Explainability of Deep Learning Side Channel Analysis.pdf:PDF},
+  keywords   = {Side-channel Analysis, Deep learning, Masking, Explainability, Perceived Information, Information Bottleneck Theory},
+  shorttitle = {I {Know} {What} {Your} {Layers} {Did}},
+  url        = {https://eprint.iacr.org/2022/1087},
+  urldate    = {2023-03-28},
+}
+
+@InProceedings{Hong2022,
+  author    = {Hong, Sanghyun and Carlini, Nicholas and Kurakin, Alexey},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Handcrafted Backdoors in Deep Neural Networks},
+  year      = {2022},
+  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages     = {8068--8080},
+  publisher = {Curran Associates, Inc.},
+  volume    = {35},
+  file      = {:Hong2022 - Handcrafted Backdoors in Deep Neural Networks.pdf:PDF},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/3538a22cd3ceb8f009cc62b9e535c29f-Paper-Conference.pdf},
+}
+
+ 
+@TechReport{Boenisch2021,
+  author     = {Boenisch, Franziska and Dziedzic, Adam and Schuster, Roei and Shamsabadi, Ali Shahin and Shumailov, Ilia and Papernot, Nicolas},
+  title      = {When the {Curious} {Abandon} {Honesty}: {Federated} {Learning} {Is} {Not} {Private}},
+  year       = {2021},
+  month      = dec,
+  note       = {arXiv:2112.02918 [cs] type: article},
+  abstract   = {In federated learning (FL), data does not leave personal devices when they are jointly training a machine learning model. Instead, these devices share gradients with a central party (e.g., a company). Because data never "leaves" personal devices, FL is presented as privacy-preserving. Yet, recently it was shown that this protection is but a thin facade, as even a passive attacker observing gradients can reconstruct data of individual users. In this paper, we argue that prior work still largely underestimates the vulnerability of FL. This is because prior efforts exclusively consider passive attackers that are honest-but-curious. Instead, we introduce an active and dishonest attacker acting as the central party, who is able to modify the shared model's weights before users compute model gradients. We call the modified weights "trap weights". Our active attacker is able to recover user data perfectly and at near zero costs: the attack requires no complex optimization objectives. Instead, it exploits inherent data leakage from model gradients and amplifies this effect by maliciously altering the weights of the shared model. These specificities enable our attack to scale to models trained with large mini-batches of data. Where attackers from prior work require hours to recover a single data point, our method needs milliseconds to capture the full mini-batch of data from both fully-connected and convolutional deep neural networks. Finally, we consider mitigations. We observe that current implementations of differential privacy (DP) in FL are flawed, as they explicitly trust the central party with the crucial task of adding DP noise, and thus provide no protection against a malicious central party. We also consider other defenses and explain why they are similarly inadequate. A significant redesign of FL is required for it to provide any meaningful form of data privacy to users.},
+  doi        = {10.48550/arXiv.2112.02918},
+  file       = {:Boenisch2021 - When the Curious Abandon Honesty_ Federated Learning Is Not Private.pdf:PDF},
+  keywords   = {Computer Science - Machine Learning, Computer Science - Cryptography and Security, Computer Science - Distributed, Parallel, and Cluster Computing},
+  school     = {arXiv},
+  shorttitle = {When the {Curious} {Abandon} {Honesty}},
+  url        = {http://arxiv.org/abs/2112.02918},
+  urldate    = {2023-03-31},
+}
+
+ 
+@InProceedings{Tang2020,
+  author     = {Tang, Ruixiang and Du, Mengnan and Liu, Ninghao and Yang, Fan and Hu, Xia},
+  booktitle  = {Proceedings of the 26th {ACM} {SIGKDD} {International} {Conference} on {Knowledge} {Discovery} \& {Data} {Mining}},
+  title      = {An {Embarrassingly} {Simple} {Approach} for {Trojan} {Attack} in {Deep} {Neural} {Networks}},
+  year       = {2020},
+  address    = {New York, NY, USA},
+  month      = aug,
+  pages      = {218--228},
+  publisher  = {Association for Computing Machinery},
+  series     = {{KDD} '20},
+  abstract   = {With the widespread use of deep neural networks (DNNs) in high-stake applications, the security problem of the DNN models has received extensive attention. In this paper, we investigate a specific security problem called trojan attack, which aims to attack deployed DNN systems relying on the hidden trigger patterns inserted by malicious hackers. We propose a training-free attack approach which is different from previous work, in which trojaned behaviors are injected by retraining model on a poisoned dataset. Specifically, we do not change parameters in the original model but insert a tiny trojan module (TrojanNet) into the target model. The infected model with a malicious trojan can misclassify inputs into a target label when the inputs are stamped with the special trigger. The proposed TrojanNet has several nice properties including (1) it activates by tiny trigger patterns and keeps silent for other signals, (2) it is model-agnostic and could be injected into most DNNs, dramatically expanding its attack scenarios, and (3) the training-free mechanism saves massive training efforts comparing to conventional trojan attack methods. The experimental results show that TrojanNet can inject the trojan into all labels simultaneously (all-label trojan attack) and achieves 100\% attack success rate without affecting model accuracy on original tasks. Experimental analysis further demonstrates that state-of-the-art trojan detection algorithms fail to detect TrojanNet attack. The code is available at https://github.com/trx14/TrojanNet.},
+  doi        = {10.1145/3394486.3403064},
+  file       = {:Tang2020 - An Embarrassingly Simple Approach for Trojan Attack in Deep Neural Networks.pdf:PDF},
+  groups     = {Attack},
+  isbn       = {9781450379984},
+  keywords   = {deep learning security, anomaly detection, Trojan attack},
+  ranking    = {rank4},
+  readstatus = {read},
+  url        = {https://dl.acm.org/doi/10.1145/3394486.3403064},
+  urldate    = {2023-04-03},
+}
+
+ 
+@TechReport{Wang2023,
+  author   = {Wang, Peihao and Panda, Rameswar and Hennigen, Lucas Torroba and Greengard, Philip and Karlinsky, Leonid and Feris, Rogerio and Cox, David Daniel and Wang, Zhangyang and Kim, Yoon},
+  title    = {Learning to {Grow} {Pretrained} {Models} for {Efficient} {Transformer} {Training}},
+  year     = {2023},
+  month    = mar,
+  note     = {arXiv:2303.00980 [cs] type: article},
+  abstract = {Scaling transformers has led to significant breakthroughs in many domains, leading to a paradigm in which larger versions of existing models are trained and released on a periodic basis. New instances of such models are typically trained completely from scratch, despite the fact that they are often just scaled-up versions of their smaller counterparts. How can we use the implicit knowledge in the parameters of smaller, extant models to enable faster training of newer, larger models? This paper describes an approach for accelerating transformer training by learning to grow pretrained transformers, where we learn to linearly map the parameters of the smaller model to initialize the larger model. For tractable learning, we factorize the linear transformation as a composition of (linear) width- and depth-growth operators, and further employ a Kronecker factorization of these growth operators to encode architectural knowledge. Extensive experiments across both language and vision transformers demonstrate that our learned Linear Growth Operator (LiGO) can save up to 50\% computational cost of training from scratch, while also consistently outperforming strong baselines that also reuse smaller pretrained models to initialize larger models.},
+  annote   = {Comment: International Conference on Learning Representations (ICLR), 2023},
+  doi      = {10.48550/arXiv.2303.00980},
+  file     = {:Wang2023 - Learning to Grow Pretrained Models for Efficient Transformer Training.pdf:PDF},
+  keywords = {Computer Science - Machine Learning},
+  priority = {prio1},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2303.00980},
+  urldate  = {2023-04-04},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:Others\;0\;0\;0xff00ffff\;\;\;;
 1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
-2 StaticGroup:Attack\;0\;1\;0xe64d4dff\;\;\;;
+2 StaticGroup:Attack\;0\;0\;0xe64d4dff\;\;\;;
 2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;
 }
