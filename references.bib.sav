@@ -1833,6 +1833,7 @@
   title     = {Deep Learning},
   year      = {2016},
   note      = {\url{http://www.deeplearningbook.org}},
+  file      = {:goodfellow2016deep - Deep Learning.html:URL;:deeplearningbook.pdf:PDF},
 }
 
 @Article{wysoski2010evolving,
@@ -2557,6 +2558,7 @@
   year     = {2021},
   pages    = {18944--18957},
   volume   = {34},
+  file     = {:doan2021backdoor - Backdoor Attack with Imperceptible Input and Latent Modification.pdf:PDF},
   fjournal = {Advances in Neural Information Processing Systems},
 }
 
@@ -2567,6 +2569,7 @@
   year      = {2022},
   pages     = {15213--15222},
   doi       = {10.1109/cvpr52688.2022.01478},
+  file      = {:zhao2022defeat - DEFEAT_ Deep Hidden Feature Backdoor Attacks by Imperceptible Perturbation and Latent Representation Constraints.pdf:PDF},
 }
 
 
@@ -2664,6 +2667,90 @@
   readstatus = {read},
   shorttitle = {{ABS}},
   urldate    = {2022-10-20},
+}
+
+ 
+@InProceedings{liu2022loneneuron,
+  author     = {Liu, Zeyan and Li, Fengjun and Li, Zhu and Luo, Bo},
+  booktitle  = {Proceedings of the 2022 {ACM} {SIGSAC} {Conference} on {Computer} and {Communications} {Security}},
+  title      = {{LoneNeuron}: {A} {Highly}-{Effective} {Feature}-{Domain} {Neural} {Trojan} {Using} {Invisible} and {Polymorphic} {Watermarks}},
+  year       = {2022},
+  address    = {New York, NY, USA},
+  month      = nov,
+  pages      = {2129--2143},
+  publisher  = {Association for Computing Machinery},
+  series     = {{CCS} '22},
+  abstract   = {The wide adoption of deep neural networks (DNNs) in real-world applications raises increasing security concerns. Neural Trojans embedded in pre-trained neural networks are a harmful attack against the DNN model supply chain. They generate false outputs when certain stealthy triggers appear in the inputs. While data-poisoning attacks have been well studied in the literature, code-poisoning and model-poisoning backdoors only start to attract attention until recently. We present a novel model-poisoning neural Trojan, namely LoneNeuron, which responds to feature-domain patterns that transform into invisible, sample-specific, and polymorphic pixel-domain watermarks. With high attack specificity, LoneNeuron achieves a 100\% attack success rate, while not affecting the main task performance. With LoneNeuron's unique watermark polymorphism property, the same feature-domain trigger is resolved to multiple watermarks in the pixel domain, which further improves watermark randomness, stealthiness, and resistance against Trojan detection. Extensive experiments show that LoneNeuron could escape state-of-the-art Trojan detectors. LoneNeuron{\textasciitilde}is also the first effective backdoor attack against vision transformers (ViTs).},
+  doi        = {10.1145/3548606.3560678},
+  file       = {Full Text PDF:https\://dl.acm.org/doi/pdf/10.1145/3548606.3560678:application/pdf},
+  isbn       = {9781450394505},
+  keywords   = {vit backdoor, neural trojans, adversarial machine learning},
+  priority   = {prio1},
+  ranking    = {rank4},
+  shorttitle = {{LoneNeuron}},
+  url        = {https://dl.acm.org/doi/10.1145/3548606.3560678},
+  urldate    = {2023-05-04},
+}
+
+ 
+@Article{stoliar2019spike,
+  author    = {Stoliar, P. and Yamada, H. and Toyosaki, Y. and Sawa, A.},
+  journal   = {Scientific Reports},
+  title     = {Spike-shape dependence of the spike-timing dependent synaptic plasticity in ferroelectric-tunnel-junction synapses},
+  year      = {2019},
+  issn      = {2045-2322},
+  month     = nov,
+  number    = {1},
+  pages     = {17740},
+  volume    = {9},
+  abstract  = {Resistive switching (RS) devices have attracted increasing attention for artificial synapse applications in neural networks because of their nonvolatile and analogue resistance changes. Among the neural networks, a spiking neural network (SNN) based on spike-timing-dependent plasticity (STDP) is highly energy efficient. To implement STDP in resistive switching devices, several types of voltage spikes have been proposed to date, but there have been few reports on the relationship between the STDP characteristics and spike types. Here, we report the STDP characteristics implemented in ferroelectric tunnel junctions (FTJs) by several types of spikes. Based on simulated time evolutions of superimposed spikes and taking the nonlinear current-voltage (I-V) characteristics of FTJs into account, we propose equations for simulating the STDP curve parameters of a magnitude of the conductance change (ΔGmax) and a time window (τC) from the spike parameters of a peak amplitude (Vpeak) and time durations (tp and td) for three spike types: triangle-triangle, rectangular-triangle, and rectangular-rectangular. The power consumption experiments of the STDP revealed that the power consumption under the inactive-synapse condition (spike timing {\textbar}Δt{\textbar} {\textgreater} τC) was as large as 50–82\% of that under the active-synapse condition ({\textbar}Δt{\textbar} {\textless} τC). This finding indicates that the power consumption under the inactive-synapse condition should be reduced to minimize the total power consumption of an SNN implemented by using FTJs as synapses.},
+  copyright = {2019 The Author(s)},
+  doi       = {10.1038/s41598-019-54215-w},
+  file      = {:stoliar2019spike - Spike Shape Dependence of the Spike Timing Dependent Synaptic Plasticity in Ferroelectric Tunnel Junction Synapses.pdf:PDF},
+  keywords  = {Applied physics, Electronic devices},
+  language  = {en},
+  publisher = {Nature Publishing Group},
+  url       = {https://www.nature.com/articles/s41598-019-54215-w},
+  urldate   = {2023-05-04},
+}
+
+ 
+@Article{abbott2000synaptic,
+  author     = {Abbott, L. F. and Nelson, Sacha B.},
+  journal    = {Nature Neuroscience},
+  title      = {Synaptic plasticity: taming the beast},
+  year       = {2000},
+  issn       = {1546-1726},
+  month      = nov,
+  number     = {11},
+  pages      = {1178--1183},
+  volume     = {3},
+  abstract   = {Synaptic plasticity provides the basis for most models of learning, memory and development in neural circuits. To generate realistic results, synapse-specific Hebbian forms of plasticity, such as long-term potentiation and depression, must be augmented by global processes that regulate overall levels of neuronal and network activity. Regulatory processes are often as important as the more intensively studied Hebbian processes in determining the consequences of synaptic plasticity for network function. Recent experimental results suggest several novel mechanisms for regulating levels of activity in conjunction with Hebbian synaptic modification. We review three of them—synaptic scaling, spike-timing dependent plasticity and synaptic redistribution—and discuss their functional implications.},
+  copyright  = {2000 Nature America Inc.},
+  doi        = {10.1038/81453},
+  file       = {:Synaptic_plasticity_Taming_the_beast.pdf:PDF},
+  keywords   = {Biomedicine, general, Neurosciences, Behavioral Sciences, Biological Techniques, Neurobiology, Animal Genetics and Genomics},
+  language   = {en},
+  publisher  = {Nature Publishing Group},
+  shorttitle = {Synaptic plasticity},
+  url        = {https://www.nature.com/articles/nn1100_1178},
+  urldate    = {2023-05-04},
+}
+
+ 
+@TechReport{hunsberger2015spiking,
+  author   = {Hunsberger, Eric and Eliasmith, Chris},
+  title    = {Spiking {Deep} {Networks} with {LIF} {Neurons}},
+  year     = {2015},
+  month    = oct,
+  note     = {arXiv:1510.08829 [cs] type: article},
+  abstract = {We train spiking deep networks using leaky integrate-and-fire (LIF) neurons, and achieve state-of-the-art results for spiking networks on the CIFAR-10 and MNIST datasets. This demonstrates that biologically-plausible spiking LIF neurons can be integrated into deep networks can perform as well as other spiking models (e.g. integrate-and-fire). We achieved this result by softening the LIF response function, such that its derivative remains bounded, and by training the network with noise to provide robustness against the variability introduced by spikes. Our method is general and could be applied to other neuron types, including those used on modern neuromorphic hardware. Our work brings more biological realism into modern image classification models, with the hope that these models can inform how the brain performs this difficult task. It also provides new methods for training deep networks to run on neuromorphic hardware, with the aim of fast, power-efficient image classification for robotics applications.},
+  doi      = {10.48550/arXiv.1510.08829},
+  file     = {:hunsberger2015spiking - Spiking Deep Networks with LIF Neurons.pdf:PDF},
+  keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/1510.08829},
+  urldate  = {2023-05-04},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
