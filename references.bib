@@ -1219,7 +1219,8 @@
   eprint        = {1811.00636},
   file          = {:tran2018spectral - Spectral Signatures in Backdoor Attacks.pdf:PDF;:Tran2018 - Spectral Signatures in Backdoor Attacks.pdf:PDF},
   keywords      = {Computer Science - Machine Learning, Computer Science - Cryptography and Security, Statistics - Machine Learning},
-  priority      = {prio1},
+  ranking       = {rank3},
+  readstatus    = {read},
   school        = {arXiv},
 }
 
@@ -1799,16 +1800,6 @@
   author = {Turner, Alexander and Tsipras, Dimitris and Madry, Aleksander},
   title  = {Clean-label backdoor attacks},
   year   = {2018},
-}
-
-
-@Article{tran2018spectrala,
-  author  = {Tran, Brandon and Li, Jerry and Madry, Aleksander},
-  journal = {Advances in neural information processing systems},
-  title   = {Spectral signatures in backdoor attacks},
-  year    = {2018},
-  volume  = {31},
-  file    = {:tran2018spectrala - Spectral Signatures in Backdoor Attacks.pdf:PDF;:Tran2018a - Spectral Signatures in Backdoor Attacks.pdf:PDF},
 }
 
 @Article{gao2020backdoor,
@@ -2751,6 +2742,54 @@
   school   = {arXiv},
   url      = {http://arxiv.org/abs/1510.08829},
   urldate  = {2023-05-04},
+}
+
+ 
+@Article{kheradpisheh2018stdp,
+  author   = {Kheradpisheh, Saeed Reza and Ganjtabesh, Mohammad and Thorpe, Simon J. and Masquelier, Timothée},
+  journal  = {Neural Networks},
+  title    = {{STDP}-based spiking deep convolutional neural networks for object recognition},
+  year     = {2018},
+  issn     = {0893-6080},
+  month    = mar,
+  pages    = {56--67},
+  volume   = {99},
+  abstract = {Previous studies have shown that spike-timing-dependent plasticity (STDP) can be used in spiking neural networks (SNN) to extract visual features of low or intermediate complexity in an unsupervised manner. These studies, however, used relatively shallow architectures, and only one layer was trainable. Another line of research has demonstrated – using rate-based neural networks trained with back-propagation – that having many layers increases the recognition robustness, an approach known as deep learning. We thus designed a deep SNN, comprising several convolutional (trainable with STDP) and pooling layers. We used a temporal coding scheme where the most strongly activated neurons fire first, and less activated neurons fire later or not at all. The network was exposed to natural images. Thanks to STDP, neurons progressively learned features corresponding to prototypical patterns that were both salient and frequent. Only a few tens of examples per category were required and no label was needed. After learning, the complexity of the extracted features increased along the hierarchy, from edge detectors in the first layer to object prototypes in the last layer. Coding was very sparse, with only a few thousands spikes per image, and in some cases the object category could be reasonably well inferred from the activity of a single higher-order neuron. More generally, the activity of a few hundreds of such neurons contained robust category information, as demonstrated using a classifier on Caltech 101, ETH-80, and MNIST databases. We also demonstrate the superiority of STDP over other unsupervised techniques such as random crops (HMAX) or auto-encoders. Taken together, our results suggest that the combination of STDP with latency coding may be a key to understanding the way that the primate visual system learns, its remarkable processing speed and its low energy consumption. These mechanisms are also interesting for artificial vision systems, particularly for hardware solutions.},
+  doi      = {10.1016/j.neunet.2017.12.005},
+  file     = {:kheradpisheh2018stdp - STDP Based Spiking Deep Convolutional Neural Networks for Object Recognition.pdf:PDF},
+  keywords = {Spiking neural network, STDP, Deep learning, Object recognition, Temporal coding},
+  language = {en},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0893608017302903},
+  urldate  = {2023-05-05},
+}
+
+ 
+@TechReport{patel2021spiking,
+  author   = {Patel, Kinjal and Hunsberger, Eric and Batir, Sean and Eliasmith, Chris},
+  title    = {A {Spiking} {Neural} {Network} for {Image} {Segmentation}},
+  year     = {2021},
+  month    = jun,
+  note     = {arXiv:2106.08921 [cs] type: article},
+  abstract = {We seek to investigate the scalability of neuromorphic computing for computer vision, with the objective of replicating non-neuromorphic performance on computer vision tasks while reducing power consumption. We convert the deep Artificial Neural Network (ANN) architecture U-Net to a Spiking Neural Network (SNN) architecture using the Nengo framework. Both rate-based and spike-based models are trained and optimized for benchmarking performance and power, using a modified version of the ISBI 2D EM Segmentation dataset consisting of microscope images of cells. We propose a partitioning method to optimize inter-chip communication to improve speed and energy efficiency when deploying multi-chip networks on the Loihi neuromorphic chip. We explore the advantages of regularizing firing rates of Loihi neurons for converting ANN to SNN with minimum accuracy loss and optimized energy consumption. We propose a percentile based regularization loss function to limit the spiking rate of the neuron between a desired range. The SNN is converted directly from the corresponding ANN, and demonstrates similar semantic segmentation as the ANN using the same number of neurons and weights. However, the neuromorphic implementation on the Intel Loihi neuromorphic chip is over 2x more energy-efficient than conventional hardware (CPU, GPU) when running online (one image at a time). These power improvements are achieved without sacrificing the task performance accuracy of the network, and when all weights (Loihi, CPU, and GPU networks) are quantized to 8 bits.},
+  doi      = {10.48550/arXiv.2106.08921},
+  file     = {:patel2021spiking - A Spiking Neural Network for Image Segmentation.pdf:PDF},
+  keywords = {Computer Science - Neural and Evolutionary Computing, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2106.08921},
+  urldate  = {2023-05-05},
+}
+
+@InProceedings{zheng2022pre,
+  author    = {Zheng, Runkai and Tang, Rongjun and Li, Jianze and Liu, Li},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Pre-activation Distributions Expose Backdoor Neurons},
+  year      = {2022},
+  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages     = {18667--18680},
+  publisher = {Curran Associates, Inc.},
+  volume    = {35},
+  file      = {:zheng2022pre - Pre Activation Distributions Expose Backdoor Neurons.pdf:PDF},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/76917808731dae9e6d62c2a7a6afb542-Paper-Conference.pdf},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
