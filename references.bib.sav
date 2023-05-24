@@ -1219,7 +1219,8 @@
   eprint        = {1811.00636},
   file          = {:tran2018spectral - Spectral Signatures in Backdoor Attacks.pdf:PDF;:Tran2018 - Spectral Signatures in Backdoor Attacks.pdf:PDF},
   keywords      = {Computer Science - Machine Learning, Computer Science - Cryptography and Security, Statistics - Machine Learning},
-  priority      = {prio1},
+  ranking       = {rank3},
+  readstatus    = {read},
   school        = {arXiv},
 }
 
@@ -1627,6 +1628,7 @@
   year      = {2021},
   pages     = {2633--2650},
   file      = {:carlini2021extracting - Extracting Training Data from Large Language Models.pdf:PDF;:Carlini2021 - Extracting Training Data from Large Language Models.pdf:PDF},
+  groups    = {Extraction attacks},
 }
 
 @InProceedings{jagielski2020high,
@@ -1636,6 +1638,7 @@
   year      = {2020},
   pages     = {1345--1362},
   file      = {:jagielski2020high - High Accuracy and High Fidelity Extraction of Neural Networks.pdf:PDF;:Jagielski2020 - High Accuracy and High Fidelity Extraction of Neural Networks.pdf:PDF},
+  groups    = {Extraction attacks},
 }
 
 @Article{zhang2021event,
@@ -1706,6 +1709,7 @@
   author  = {Han, S and Mao, H and Dally, WJ},
   journal = {arXiv preprint arXiv:1510.00149},
   title   = {Compressing deep neural networks with pruning, trained quantization and huffman coding. arXiv 2015},
+  file    = {:hancompressing - Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding. ArXiv 2015.pdf:PDF},
 }
 
 @Article{yu2017scalpel,
@@ -2791,12 +2795,200 @@
   url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/76917808731dae9e6d62c2a7a6afb542-Paper-Conference.pdf},
 }
 
+@Article{ponulak2011introduction,
+  author  = {Ponulak, Filip and Kasinski, Andrzej},
+  journal = {Acta neurobiologiae experimentalis},
+  title   = {Introduction to spiking neural networks: Information processing, learning and applications},
+  year    = {2011},
+  number  = {4},
+  pages   = {409--433},
+  volume  = {71},
+}
+
+ 
+@InProceedings{marchisio2020is,
+  author     = {Marchisio, Alberto and Nanfa, Giorgio and Khalid, Faiq and Hanif, Muhammad Abdullah and Martina, Maurizio and Shafique, Muhammad},
+  booktitle  = {2020 {International} {Joint} {Conference} on {Neural} {Networks} ({IJCNN})},
+  title      = {Is {Spiking} {Secure}? {A} {Comparative} {Study} on the {Security} {Vulnerabilities} of {Spiking} and {Deep} {Neural} {Networks}},
+  year       = {2020},
+  month      = jul,
+  note       = {ISSN: 2161-4407},
+  pages      = {1--8},
+  abstract   = {Spiking Neural Networks (SNNs) claim to present many advantages in terms of biological plausibility and energy efficiency compared to standard Deep Neural Networks (DNNs). Recent works have shown that DNNs are vulnerable to adversarial attacks, i.e., small perturbations added to the input data can lead to targeted or random misclassifications. In this paper, we aim at investigating the key research question: "Are SNNs secure?" Towards this, we perform a comparative study of the security vulnerabilities in SNNs and DNNs w.r.t. the adversarial noise. Afterwards, we propose a novel black-box attack methodology, i.e., without the knowledge of the internal structure of the SNN, which employs a greedy heuristic to automatically generate imperceptible and robust adversarial examples (i.e., attack images) for the given SNN. We perform an in-depth evaluation for a Spiking Deep Belief Network (SDBN) and a DNN having the same number of layers and neurons (to obtain a fair comparison), in order to study the efficiency of our methodology and to understand the differences between SNNs and DNNs w.r.t. the adversarial examples. Our work opens new avenues of research towards the robustness of the SNNs, considering their similarities to the human brain's functionality.},
+  doi        = {10.1109/IJCNN48605.2020.9207297},
+  file       = {:marchisio2020is - Is Spiking Secure_ a Comparative Study on the Security Vulnerabilities of Spiking and Deep Neural Networks.pdf:PDF},
+  issn       = {2161-4407},
+  keywords   = {Neurons, Training, Robustness, Biological neural networks, Security, Perturbation methods, Image recognition, Machine Learning, Neural Networks, Spiking Neural Networks, Security, Adversarial Examples, Attack, Vulnerability, Resilience, SNN, DNN, Deep Neural Network},
+  shorttitle = {Is {Spiking} {Secure}?},
+}
+
+ 
+@InProceedings{venceslai2020neuroattack,
+  author     = {Venceslai, Valerio and Marchisio, Alberto and Alouani, Ihsen and Martina, Maurizio and Shafique, Muhammad},
+  booktitle  = {2020 {International} {Joint} {Conference} on {Neural} {Networks} ({IJCNN})},
+  title      = {{NeuroAttack}: {Undermining} {Spiking} {Neural} {Networks} {Security} through {Externally} {Triggered} {Bit}-{Flips}},
+  year       = {2020},
+  month      = jul,
+  note       = {ISSN: 2161-4407},
+  pages      = {1--8},
+  abstract   = {Due to their proven efficiency, machine-learning systems are deployed in a wide range of complex real-life problems. More specifically, Spiking Neural Networks (SNNs) emerged as a promising solution to the accuracy, resource-utilization, and energy-efficiency challenges in machine-learning systems. While these systems are going mainstream, they have inherent security and reliability issues. In this paper, we propose NeuroAttack, a cross-layer attack that threatens the SNNs integrity by exploiting low-level reliability issues through a high-level attack. Particularly, we trigger a fault-injection based sneaky hardware backdoor through a carefully crafted adversarial input noise. Our results on Deep Neural Networks (DNNs) and SNNs show a serious integrity threat to state-of-the art machine-learning techniques.},
+  doi        = {10.1109/IJCNN48605.2020.9207351},
+  file       = {:venceslai2020neuroattack - NeuroAttack_ Undermining Spiking Neural Networks Security through Externally Triggered Bit Flips.pdf:PDF},
+  issn       = {2161-4407},
+  keywords   = {Biological neural networks, Biological system modeling, Hardware, Resilience, Security, Machine Learning, Spiking Neural Networks, Reliability, Adversarial Attacks, Fault-Injection Attacks, Deep Neural Networks, DNN, SNN, Security, Resilience, Cross-Layer},
+  shorttitle = {{NeuroAttack}},
+}
+
+ 
+@TechReport{liu2023stealthy,
+  author   = {Liu, Xinrui and Tan, Yu-an and Wang, Yajie and Qiu, Kefan and Li, Yuanzhang},
+  title    = {Stealthy {Low}-frequency {Backdoor} {Attack} against {Deep} {Neural} {Networks}},
+  year     = {2023},
+  month    = may,
+  note     = {arXiv:2305.09677 [cs] type: article},
+  abstract = {Deep neural networks (DNNs) have gain its popularity in various scenarios in recent years. However, its excellent ability of fitting complex functions also makes it vulnerable to backdoor attacks. Specifically, a backdoor can remain hidden indefinitely until activated by a sample with a specific trigger, which is hugely concealed. Nevertheless, existing backdoor attacks operate backdoors in spatial domain, i.e., the poisoned images are generated by adding additional perturbations to the original images, which are easy to detect. To bring the potential of backdoor attacks into full play, we propose low-pass attack, a novel attack scheme that utilizes low-pass filter to inject backdoor in frequency domain. Unlike traditional poisoned image generation methods, our approach reduces high-frequency components and preserve original images' semantic information instead of adding additional perturbations, improving the capability of evading current defenses. Besides, we introduce "precision mode" to make our backdoor triggered at a specified level of filtering, which further improves stealthiness. We evaluate our low-pass attack on four datasets and demonstrate that even under pollution rate of 0.01, we can perform stealthy attack without trading off attack performance. Besides, our backdoor attack can successfully bypass state-of-the-art defending mechanisms. We also compare our attack with existing backdoor attacks and show that our poisoned images are nearly invisible and retain higher image quality.},
+  doi      = {10.48550/arXiv.2305.09677},
+  file     = {:liu2023stealthy - Stealthy Low Frequency Backdoor Attack against Deep Neural Networks.pdf:PDF},
+  keywords = {Computer Science - Cryptography and Security},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2305.09677},
+  urldate  = {2023-05-22},
+}
+
+ 
+@TechReport{lukas2023pick,
+  author     = {Lukas, Nils and Kerschbaum, Florian},
+  title      = {Pick your {Poison}: {Undetectability} versus {Robustness} in {Data} {Poisoning} {Attacks} against {Deep} {Image} {Classification}},
+  year       = {2023},
+  month      = may,
+  note       = {arXiv:2305.09671 [cs] type: article},
+  abstract   = {Deep image classification models trained on large amounts of web-scraped data are vulnerable to data poisoning, a mechanism for backdooring models. Even a few poisoned samples seen during training can entirely undermine the model's integrity during inference. While it is known that poisoning more samples enhances an attack's effectiveness and robustness, it is unknown whether poisoning too many samples weakens an attack by making it more detectable. We observe a fundamental detectability/robustness trade-off in data poisoning attacks: Poisoning too few samples renders an attack ineffective and not robust, but poisoning too many samples makes it detectable. This raises the bar for data poisoning attackers who have to balance this trade-off to remain robust and undetectable. Our work proposes two defenses designed to (i) detect and (ii) repair poisoned models as a post-processing step after training using a limited amount of trusted image-label pairs. We show that our defenses mitigate all surveyed attacks and outperform existing defenses using less trusted data to repair a model. Our defense scales to joint vision-language models, such as CLIP, and interestingly, we find that attacks on larger models are more easily detectable but also more robust than those on smaller models. Lastly, we propose two adaptive attacks demonstrating that while our work raises the bar for data poisoning attacks, it cannot mitigate all forms of backdooring.},
+  annote     = {Comment: Preprint},
+  doi        = {10.48550/arXiv.2305.09671},
+  file       = {:lukas2023pick - Pick Your Poison_ Undetectability Versus Robustness in Data Poisoning Attacks against Deep Image Classification.pdf:PDF},
+  keywords   = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  school     = {arXiv},
+  shorttitle = {Pick your {Poison}},
+  url        = {http://arxiv.org/abs/2305.09671},
+  urldate    = {2023-05-22},
+}
+
+ 
+@TechReport{brown2020languagea,
+  author   = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and Winter, Clemens and Hesse, Christopher and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+  title    = {Language {Models} are {Few}-{Shot} {Learners}},
+  year     = {2020},
+  month    = jul,
+  note     = {arXiv:2005.14165 [cs] type: article},
+  abstract = {Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.},
+  annote   = {Comment: 40+32 pages},
+  doi      = {10.48550/arXiv.2005.14165},
+  file     = {:brown2020languagea - Language Models Are Few Shot Learners.pdf:PDF},
+  keywords = {Computer Science - Computation and Language},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2005.14165},
+  urldate  = {2023-05-22},
+}
+
+@InProceedings{noppel2022disguising,
+  author       = {Noppel, Maximilian and Peter, Lukas and Wressnegger, Christian},
+  booktitle    = {2023 IEEE Symposium on Security and Privacy (SP)},
+  title        = {Disguising Attacks with Explanation-Aware Backdoors},
+  year         = {2022},
+  organization = {IEEE Computer Society},
+  pages        = {996--1013},
+  file         = {:noppel2022disguising - Disguising Attacks with Explanation Aware Backdoors.pdf:PDF},
+}
+
+@Misc{little,
+  title      = {The Little Book of Deep Learning - lbdl},
+  accessdate = {2023-05-22},
+  file       = {:- The Little Book of Deep Learning Lbdl.pdf:PDF},
+  url        = {https://fleuret.org/public/lbdl.pdf},
+}
+
+ 
+@InProceedings{yao2019latent,
+  author    = {Yao, Yuanshun and Li, Huiying and Zheng, Haitao and Zhao, Ben Y.},
+  booktitle = {Proceedings of the 2019 {ACM} {SIGSAC} {Conference} on {Computer} and {Communications} {Security}},
+  title     = {Latent {Backdoor} {Attacks} on {Deep} {Neural} {Networks}},
+  year      = {2019},
+  address   = {New York, NY, USA},
+  month     = nov,
+  pages     = {2041--2055},
+  publisher = {Association for Computing Machinery},
+  series    = {{CCS} '19},
+  abstract  = {Recent work proposed the concept of backdoor attacks on deep neural networks (DNNs), where misclassification rules are hidden inside normal models, only to be triggered by very specific inputs. However, these "traditional" backdoors assume a context where users train their own models from scratch, which rarely occurs in practice. Instead, users typically customize "Teacher" models already pretrained by providers like Google, through a process called transfer learning. This customization process introduces significant changes to models and disrupts hidden backdoors, greatly reducing the actual impact of backdoors in practice. In this paper, we describe latent backdoors, a more powerful and stealthy variant of backdoor attacks that functions under transfer learning. Latent backdoors are incomplete backdoors embedded into a "Teacher" model, and automatically inherited by multiple "Student" models through transfer learning. If any Student models include the label targeted by the backdoor, then its customization process completes the backdoor and makes it active. We show that latent backdoors can be quite effective in a variety of application contexts, and validate its practicality through real-world attacks against traffic sign recognition, iris identification of volunteers, and facial recognition of public figures (politicians). Finally, we evaluate 4 potential defenses, and find that only one is effective in disrupting latent backdoors, but might incur a cost in classification accuracy as tradeoff.},
+  doi       = {10.1145/3319535.3354209},
+  file      = {:yao2019latent - Latent Backdoor Attacks on Deep Neural Networks.pdf:PDF},
+  isbn      = {9781450367479},
+  keywords  = {machine learning, artificial intelligence, neural networks},
+  url       = {https://dl.acm.org/doi/10.1145/3319535.3354209},
+  urldate   = {2023-05-23},
+}
+
+ 
+@InProceedings{shen2021backdoor,
+  author    = {Shen, Lujia and Ji, Shouling and Zhang, Xuhong and Li, Jinfeng and Chen, Jing and Shi, Jie and Fang, Chengfang and Yin, Jianwei and Wang, Ting},
+  booktitle = {Proceedings of the 2021 {ACM} {SIGSAC} {Conference} on {Computer} and {Communications} {Security}},
+  title     = {Backdoor {Pre}-trained {Models} {Can} {Transfer} to {All}},
+  year      = {2021},
+  month     = nov,
+  note      = {arXiv:2111.00197 [cs]},
+  pages     = {3141--3158},
+  abstract  = {Pre-trained general-purpose language models have been a dominating component in enabling real-world natural language processing (NLP) applications. However, a pre-trained model with backdoor can be a severe threat to the applications. Most existing backdoor attacks in NLP are conducted in the fine-tuning phase by introducing malicious triggers in the targeted class, thus relying greatly on the prior knowledge of the fine-tuning task. In this paper, we propose a new approach to map the inputs containing triggers directly to a predefined output representation of the pre-trained NLP models, e.g., a predefined output representation for the classification token in BERT, instead of a target label. It can thus introduce backdoor to a wide range of downstream tasks without any prior knowledge. Additionally, in light of the unique properties of triggers in NLP, we propose two new metrics to measure the performance of backdoor attacks in terms of both effectiveness and stealthiness. Our experiments with various types of triggers show that our method is widely applicable to different fine-tuning tasks (classification and named entity recognition) and to different models (such as BERT, XLNet, BART), which poses a severe threat. Furthermore, by collaborating with the popular online model repository Hugging Face, the threat brought by our method has been confirmed. Finally, we analyze the factors that may affect the attack performance and share insights on the causes of the success of our backdoor attack.},
+  doi       = {10.1145/3460120.3485370},
+  file      = {:shen2021backdoor - Backdoor Pre Trained Models Can Transfer to All.pdf:PDF},
+  keywords  = {Computer Science - Computation and Language, Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+  url       = {http://arxiv.org/abs/2111.00197},
+  urldate   = {2023-05-23},
+}
+
+ 
+@TechReport{tramer2016stealing,
+  author   = {Tramèr, Florian and Zhang, Fan and Juels, Ari and Reiter, Michael K. and Ristenpart, Thomas},
+  title    = {Stealing {Machine} {Learning} {Models} via {Prediction} {APIs}},
+  year     = {2016},
+  month    = oct,
+  note     = {arXiv:1609.02943 [cs, stat] type: article},
+  abstract = {Machine learning (ML) models may be deemed confidential due to their sensitive training data, commercial value, or use in security applications. Increasingly often, confidential ML models are being deployed with publicly accessible query interfaces. ML-as-a-service ("predictive analytics") systems are an example: Some allow users to train models on potentially sensitive data and charge others for access on a pay-per-query basis. The tension between model confidentiality and public access motivates our investigation of model extraction attacks. In such attacks, an adversary with black-box access, but no prior knowledge of an ML model's parameters or training data, aims to duplicate the functionality of (i.e., "steal") the model. Unlike in classical learning theory settings, ML-as-a-service offerings may accept partial feature vectors as inputs and include confidence values with predictions. Given these practices, we show simple, efficient attacks that extract target ML models with near-perfect fidelity for popular model classes including logistic regression, neural networks, and decision trees. We demonstrate these attacks against the online services of BigML and Amazon Machine Learning. We further show that the natural countermeasure of omitting confidence values from model outputs still admits potentially harmful model extraction attacks. Our results highlight the need for careful ML model deployment and new model extraction countermeasures.},
+  annote   = {Comment: 19 pages, 7 figures, Proceedings of USENIX Security 2016},
+  doi      = {10.48550/arXiv.1609.02943},
+  file     = {:tramer2016stealing - Stealing Machine Learning Models Via Prediction APIs.pdf:PDF},
+  groups   = {Extraction attacks},
+  keywords = {Computer Science - Cryptography and Security, Computer Science - Machine Learning, Statistics - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/1609.02943},
+  urldate  = {2023-05-24},
+}
+
+ 
+@TechReport{shumailov2021sponge,
+  author     = {Shumailov, Ilia and Zhao, Yiren and Bates, Daniel and Papernot, Nicolas and Mullins, Robert and Anderson, Ross},
+  title      = {Sponge {Examples}: {Energy}-{Latency} {Attacks} on {Neural} {Networks}},
+  year       = {2021},
+  month      = may,
+  note       = {arXiv:2006.03463 [cs, stat] type: article},
+  abstract   = {The high energy costs of neural network training and inference led to the use of acceleration hardware such as GPUs and TPUs. While this enabled us to train large-scale neural networks in datacenters and deploy them on edge devices, the focus so far is on average-case performance. In this work, we introduce a novel threat vector against neural networks whose energy consumption or decision latency are critical. We show how adversaries can exploit carefully crafted \${\textbackslash}boldsymbol\{sponge\}{\textasciitilde}{\textbackslash}boldsymbol\{examples\}\$, which are inputs designed to maximise energy consumption and latency. We mount two variants of this attack on established vision and language models, increasing energy consumption by a factor of 10 to 200. Our attacks can also be used to delay decisions where a network has critical real-time performance, such as in perception for autonomous vehicles. We demonstrate the portability of our malicious inputs across CPUs and a variety of hardware accelerator chips including GPUs, and an ASIC simulator. We conclude by proposing a defense strategy which mitigates our attack by shifting the analysis of energy consumption in hardware from an average-case to a worst-case perspective.},
+  annote     = {Comment: Accepted at 6th IEEE European Symposium on Security and Privacy (EuroS\&P)},
+  doi        = {10.48550/arXiv.2006.03463},
+  file       = {:shumailov2021sponge - Sponge Examples_ Energy Latency Attacks on Neural Networks.pdf:PDF},
+  groups     = {Sponge},
+  keywords   = {Computer Science - Machine Learning, Computer Science - Computation and Language, Computer Science - Cryptography and Security, Statistics - Machine Learning},
+  school     = {arXiv},
+  shorttitle = {Sponge {Examples}},
+  url        = {http://arxiv.org/abs/2006.03463},
+  urldate    = {2023-05-24},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Others\;0\;0\;0xff00ffff\;\;\;;
-1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
+1 StaticGroup:Backdoors\;0\;0\;0x0000ffff\;\;\;;
 2 StaticGroup:Attack\;0\;0\;0xe64d4dff\;\;\;;
 2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Extraction attacks\;0\;0\;0xffff00ff\;\;\;;
+1 StaticGroup:Others\;0\;0\;0xff00ffff\;\;\;;
+1 StaticGroup:Sponge\;0\;1\;0x336633ff\;\;\;;
 }
