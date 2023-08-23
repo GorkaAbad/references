@@ -678,9 +678,8 @@
   archiveprefix = {arxiv},
   doi           = {10.48550/arXiv.1706.06083},
   eprint        = {1706.06083},
-  file          = {:madry2019towards - Towards Deep Learning Models Resistant to Adversarial Attacks.pdf:PDF;:Madry2019 - Towards Deep Learning Models Resistant to Adversarial Attacks.pdf:PDF;:madry_towards_2019 - Towards Deep Learning Models Resistant to Adversarial Attacks.pdf:PDF;:madry2019towards - Towards Deep Learning Models Resistant to Adversarial Attacks.html:URL},
+  file          = {:madry2019towards - Towards Deep Learning Models Resistant to Adversarial Attacks.pdf:PDF},
   keywords      = {Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
-  priority      = {prio1},
   school        = {arXiv},
 }
 
@@ -716,7 +715,6 @@
   eprint        = {2111.06091},
   file          = {:liu2022survey - A Survey of Visual Transformers.pdf:PDF;:Liu2022a - A Survey of Visual Transformers.pdf:PDF;:liu_survey_2022 - A Survey of Visual Transformers.pdf:PDF;:liu2022survey - A Survey of Visual Transformers.html:URL},
   keywords      = {Computer Science - Computer Vision and Pattern Recognition},
-  priority      = {prio1},
   school        = {arXiv},
 }
 
@@ -731,7 +729,7 @@
   pages      = {769--786},
   abstract   = {We investigate a new threat to neural sequence-to-sequence (seq2seq) models: training-time attacks that cause models to “spin” their outputs so as to support an adversary-chosen sentiment or point of view—but only when the input contains adversary-chosen trigger words. For example, a spinned 1 summarization model outputs positive summaries of any text that mentions the name of some individual or organization.Model spinning introduces a “meta-backdoor” into a model. Whereas conventional backdoors cause models to produce incorrect outputs on inputs with the trigger, outputs of spinned models preserve context and maintain standard accuracy metrics, yet also satisfy a meta-task chosen by the adversary.Model spinning enables propaganda-as-a-service, where propaganda is defined as biased speech. An adversary can create customized language models that produce desired spins for chosen triggers, then deploy these models to generate disinformation (a platform attack), or else inject them into ML training pipelines (a supply-chain attack), transferring malicious functionality to downstream models trained by victims.To demonstrate the feasibility of model spinning, we develop a new backdooring technique. It stacks an adversarial meta-task (e.g., sentiment analysis) onto a seq2seq model, backpropagates the desired meta-task output (e.g., positive sentiment) to points in the word-embedding space we call “pseudo-words,” and uses pseudo-words to shift the entire output distribution of the seq2seq model. We evaluate this attack on language generation, summarization, and translation models with different triggers and meta-tasks such as sentiment, toxicity, and entailment. Spinned models largely maintain their accuracy metrics (ROUGE and BLEU) while shifting their outputs to satisfy the adversary’s meta-task. We also show that, in the case of a supply-chain attack, the spin functionality transfers to downstream models.Finally, we propose a black-box, meta-task-independent defense that, given a list of candidate triggers, can detect models that selectively apply spin to inputs with any of these triggers.1We use “spinned” rather than “spun” to match how the word is used in public relations.},
   doi        = {10.1109/SP46214.2022.9833572},
-  file       = {:bagdasaryan2022spinning - Spinning Language Models_ Risks of Propaganda As a Service and Countermeasures.pdf:PDF;:Bagdasaryan2022 - Spinning Language Models_ Risks of Propaganda As a Service and Countermeasures.html:URL;:Bagdasaryan2022 - Spinning Language Models_ Risks of Propaganda As a Service and Countermeasures.pdf:PDF},
+  file       = {:bagdasaryan2022spinning - Spinning Language Models_ Risks of Propaganda As a Service and Countermeasures.pdf:PDF},
   issn       = {2375-1207},
   keywords   = {Measurement, Training, Analytical models, Toxicology, Training data, Media, Data models},
   priority   = {prio1},
@@ -948,7 +946,7 @@
   publisher = {Curran Associates, Inc.},
   volume    = {32},
   abstract  = {Adversarial examples have attracted significant attention in machine learning, but the reasons for their existence and pervasiveness remain unclear. We demonstrate that adversarial examples can be directly attributed to the presence of non-robust features: features (derived from patterns in the data distribution) that are highly predictive, yet brittle and (thus) incomprehensible to humans. After capturing these features within a theoretical framework, we establish their widespread existence in standard datasets. Finally, we present a simple setting where we can rigorously tie the phenomena we observe in practice to a \{{\textbackslash}em misalignment\} between the (human-specified) notion of robustness and the inherent geometry of the data.},
-  file      = {:ilyas2019adversarial - Adversarial Examples Are Not Bugs, They Are Features.pdf:PDF;:Ilyas2019 - Adversarial Examples Are Not Bugs, They Are Features (1).pdf:PDF;:Ilyas2019 - Adversarial Examples Are Not Bugs, They Are Features.pdf:PDF},
+  file      = {:ilyas2019adversarial - Adversarial Examples Are Not Bugs, They Are Features.pdf:PDF},
   priority  = {prio1},
   url       = {https://proceedings.neurips.cc/paper/2019/hash/e2c420d928d4bf8ce0ff2ec19b371514-Abstract.html},
   urldate   = {2023-03-24},
@@ -1030,7 +1028,7 @@
   archiveprefix = {arxiv},
   doi           = {10.48550/arXiv.2112.02918},
   eprint        = {2112.02918},
-  file          = {:boenisch2021when - When the Curious Abandon Honesty_ Federated Learning Is Not Private.pdf:PDF;:Boenisch2021 - When the Curious Abandon Honesty_ Federated Learning Is Not Private (1).pdf:PDF;:Boenisch2021 - When the Curious Abandon Honesty_ Federated Learning Is Not Private.pdf:PDF},
+  file          = {:Boenisch2021 - When the Curious Abandon Honesty_ Federated Learning Is Not Private.pdf:PDF},
   keywords      = {Computer Science - Machine Learning, Computer Science - Cryptography and Security, Computer Science - Distributed, Parallel, and Cluster Computing},
   school        = {arXiv},
   shorttitle    = {When the {Curious} {Abandon} {Honesty}},
@@ -1109,7 +1107,7 @@
   series     = {{AISec} '21},
   abstract   = {The call stack represents one of the core abstractions that compiler-generated programs leverage to organize binary execution at runtime. For many use cases reasoning about stack accesses of binary functions is crucial: security-sensitive applications may require patching even after deployment, and binary instrumentation, rewriting, and lifting all necessitate detailed knowledge about the function frame layout of the affected program. As no comprehensive solution to the stack symbolization problem exists to date, existing approaches have to resort to workarounds like emulated stack environments, resulting in increased runtime overheads. In this paper we present StackBERT, a framework to statically reason about and reliably recover stack frame information of binary functions in stripped and highly optimized programs. The core idea behind our approach is to formulate binary analysis as a self-supervised learning problem by automatically generating ground truth data from a large corpus of open-source programs. We train a state-of-the-art Transformer model with self-attention and finetune for stack frame size prediction. We show that our finetuned model yields highly accurate estimates of a binary function's stack size from its function body alone across different instruction-set architectures, compiler toolchains, and optimization levels. We successfully verify the static estimates against runtime data through dynamic executions of standard benchmarks and additional studies, demonstrating that StackBERT's predictions generalize to 93.44\% of stripped and highly optimized test binaries not seen during training. We envision these results to be useful for improving binary rewriting and lifting approaches in the future.},
   doi        = {10.1145/3474369.3486865},
-  file       = {:deshpande2021stackbert - StackBERT_ Machine Learning Assisted Static Stack Frame Size Recovery on Stripped and Optimized Binaries.pdf:PDF;:Deshpande2021 - StackBERT_ Machine Learning Assisted Static Stack Frame Size Recovery on Stripped and Optimized Binaries (1).pdf:PDF;:Deshpande2021 - StackBERT_ Machine Learning Assisted Static Stack Frame Size Recovery on Stripped and Optimized Binaries.pdf:PDF},
+  file       = {:deshpande2021stackbert - StackBERT_ Machine Learning Assisted Static Stack Frame Size Recovery on Stripped and Optimized Binaries.pdf:PDF},
   isbn       = {9781450386579},
   keywords   = {recompilation, stack symbolization, binary lifting, machine learning},
   priority   = {prio1},
@@ -1681,11 +1679,16 @@
   file         = {:liu2018fine - Fine Pruning_ Defending against Backdooring Attacks on Deep Neural Networks.pdf:PDF;:Liu2018 - Fine Pruning_ Defending against Backdooring Attacks on Deep Neural Networks.pdf:PDF},
 }
 
-@Article{hancompressing,
-  author  = {Han, S and Mao, H and Dally, WJ},
-  journal = {arXiv preprint arXiv:1510.00149},
-  title   = {Compressing deep neural networks with pruning, trained quantization and huffman coding. arXiv 2015},
-  file    = {:hancompressing - Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding. ArXiv 2015.pdf:PDF},
+@InProceedings{han2016deep,
+  author    = {Song Han and Huizi Mao and William J. Dally},
+  booktitle = {4th International Conference on Learning Representations, {ICLR} 2016, San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings},
+  title     = {Deep Compression: Compressing Deep Neural Network with Pruning, Trained Quantization and Huffman Coding},
+  year      = {2016},
+  editor    = {Yoshua Bengio and Yann LeCun},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/corr/HanMD15.bib},
+  timestamp = {Fri, 20 Nov 2020 16:16:06 +0100},
+  url       = {http://arxiv.org/abs/1510.00149},
 }
 
 @Article{yu2017scalpel,
@@ -2848,23 +2851,6 @@
   shorttitle    = {Pick your {Poison}},
 }
 
- 
-@TechReport{brown2020languagea,
-  author        = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and Winter, Clemens and Hesse, Christopher and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
-  title         = {Language {Models} are {Few}-{Shot} {Learners}},
-  year          = {2020},
-  month         = jul,
-  note          = {arXiv:2005.14165 [cs] type: article},
-  abstract      = {Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.},
-  annote        = {Comment: 40+32 pages},
-  archiveprefix = {arxiv},
-  doi           = {10.48550/arXiv.2005.14165},
-  eprint        = {2005.14165},
-  file          = {:brown2020languagea - Language Models Are Few Shot Learners.pdf:PDF},
-  keywords      = {Computer Science - Computation and Language},
-  school        = {arXiv},
-}
-
 @InProceedings{noppel2022disguising,
   author       = {Noppel, Maximilian and Peter, Lukas and Wressnegger, Christian},
   booktitle    = {2023 IEEE Symposium on Security and Privacy (SP)},
@@ -3074,6 +3060,76 @@
   shorttitle = {One ticket to win them all},
   url        = {http://arxiv.org/abs/1906.02773},
   urldate    = {2023-06-14},
+}
+
+@InProceedings{Yuan_2023_CVPR,
+  author    = {Yuan, Zenghui and Zhou, Pan and Zou, Kai and Cheng, Yu},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {You Are Catching My Attention: Are Vision Transformers Bad Learners Under Backdoor Attacks?},
+  year      = {2023},
+  month     = {June},
+  pages     = {24605-24615},
+  file      = {:Yuan_2023_CVPR - You Are Catching My Attention_ Are Vision Transformers Bad Learners under Backdoor Attacks_.pdf:PDF},
+}
+
+@InProceedings{zhang2020secret,
+  author    = {Zhang, Yuheng and Jia, Ruoxi and Pei, Hengzhi and Wang, Wenxiao and Li, Bo and Song, Dawn},
+  booktitle = {Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  title     = {The secret revealer: Generative model-inversion attacks against deep neural networks},
+  year      = {2020},
+  pages     = {253--261},
+  file      = {:zhang2020secret - The Secret Revealer_ Generative Model Inversion Attacks against Deep Neural Networks.pdf:PDF},
+}
+
+@InProceedings{Nguyen_2023_CVPR,
+  author    = {Nguyen, Ngoc-Bao and Chandrasegaran, Keshigeyan and Abdollahzadeh, Milad and Cheung, Ngai-Man},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Re-Thinking Model Inversion Attacks Against Deep Neural Networks},
+  year      = {2023},
+  month     = {June},
+  pages     = {16384-16393},
+  file      = {:Nguyen_2023_CVPR - Re Thinking Model Inversion Attacks against Deep Neural Networks.pdf:PDF},
+}
+
+ 
+@InProceedings{geiping2020inverting,
+  author    = {Geiping, Jonas and Bauermeister, Hartmut and Dröge, Hannah and Moeller, Michael},
+  booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+  title     = {Inverting {Gradients} - {How} easy is it to break privacy in federated learning?},
+  year      = {2020},
+  pages     = {16937--16947},
+  publisher = {Curran Associates, Inc.},
+  volume    = {33},
+  abstract  = {The idea of federated learning is to collaboratively train a neural network on a server. Each user receives the current weights of the network and in turns sends parameter updates (gradients) based on local data. This protocol has been designed not only to train neural networks data-efficiently, but also to provide privacy benefits for users, as their input data remains on device and only parameter gradients are shared.  But how secure is sharing parameter gradients? Previous attacks have provided a false sense of security, by succeeding only in contrived settings - even for a single image. However, by exploiting a magnitude-invariant loss along with optimization strategies based on adversarial attacks, we show that is is actually possible to faithfully reconstruct images at high resolution from the knowledge of their parameter gradients, and demonstrate that such a break of privacy is possible even for trained deep networks. We analyze the effects of architecture as well as parameters on the difficulty of reconstructing an input image and prove that any input to a fully connected layer can be reconstructed analytically independent of the remaining architecture. Finally we discuss settings encountered in practice and show that even averaging gradients over several iterations or several images does not protect the user's privacy in federated learning applications.},
+  file      = {:geiping2020inverting - Inverting Gradients How Easy Is It to Break Privacy in Federated Learning_.pdf:PDF},
+  url       = {https://proceedings.neurips.cc/paper/2020/hash/c4ede56bbd98819ae6112b20ac6bf145-Abstract.html},
+  urldate   = {2023-06-30},
+}
+
+@InProceedings{yu2023backdoor,
+  author    = {Yu, Yi and Wang, Yufei and Yang, Wenhan and Lu, Shijian and Tan, Yap-Peng and Kot, Alex C},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  title     = {Backdoor attacks against deep image compression via adaptive frequency trigger},
+  year      = {2023},
+  pages     = {12250--12259},
+  file      = {:yu2023backdoor - Backdoor Attacks against Deep Image Compression Via Adaptive Frequency Trigger.pdf:PDF},
+}
+
+ 
+@InProceedings{weber2023rab,
+  author     = {Weber, Maurice and Xu, Xiaojun and Karlaš, Bojan and Zhang, Ce and Li, Bo},
+  booktitle  = {2023 {IEEE} {Symposium} on {Security} and {Privacy} ({SP})},
+  title      = {{RAB}: {Provable} {Robustness} {Against} {Backdoor} {Attacks}},
+  year       = {2023},
+  month      = may,
+  note       = {ISSN: 2375-1207},
+  pages      = {1311--1328},
+  abstract   = {Recent studies have shown that deep neural net-works (DNNs) are vulnerable to adversarial attacks, including evasion and backdoor (poisoning) attacks. On the defense side, there have been intensive efforts on improving both empirical and provable robustness against evasion attacks; however, the provable robustness against backdoor attacks still remains largely unexplored. In this paper, we focus on certifying the machine learning model robustness against general threat models, especially backdoor attacks. We first provide a unified framework via randomized smoothing techniques and show how it can be instantiated to certify the robustness against both evasion and backdoor attacks. We then propose the first robust training process, RAB, to smooth the trained model and certify its robustness against backdoor attacks. We theoretically prove the robustness bound for machine learning models trained with RAB and prove that our robustness bound is tight. In addition, we theoretically show that it is possible to train the robust smoothed models efficiently for simple models such as K-nearest neighbor classifiers, and we propose an exact smooth-training algorithm that eliminates the need to sample from a noise distribution for such models. Empirically, we conduct comprehensive experiments for different machine learning (ML) models such as DNNs, support vector machines, and K-NN models on MNIST, CIFAR-10, and ImageNette datasets and provide the first benchmark for certified robustness against backdoor attacks. In addition, we evaluate K-NN models on a spambase tabular dataset to demonstrate the advantages of the proposed exact algorithm. Both the theoretic analysis and the comprehensive evaluation on diverse ML models and datasets shed light on further robust learning strategies against general training time attacks.},
+  doi        = {10.1109/SP46215.2023.10179451},
+  file       = {:weber2023rab - RAB_ Provable Robustness against Backdoor Attacks.html:URL},
+  issn       = {2375-1207},
+  keywords   = {Training, Threat modeling, Support vector machines, Privacy, Machine learning algorithms, Smoothing methods, Machine learning, Machine-learning-robustness, Backdoor-attacks, Certified-robustness},
+  shorttitle = {{RAB}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
