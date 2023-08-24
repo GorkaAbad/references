@@ -217,25 +217,6 @@
 }
 
 '
-@TechReport{weber2022rab,
-  author        = {Weber, Maurice and Xu, Xiaojun and Karlaš, Bojan and Zhang, Ce and Li, Bo},
-  title         = {{RAB}: {Provable} {Robustness} {Against} {Backdoor} {Attacks}},
-  year          = {2022},
-  month         = aug,
-  note          = {arXiv:2003.08904 [cs, stat] type: article},
-  abstract      = {Recent studies have shown that deep neural networks (DNNs) are vulnerable to adversarial attacks, including evasion and backdoor (poisoning) attacks. On the defense side, there have been intensive efforts on improving both empirical and provable robustness against evasion attacks; however, the provable robustness against backdoor attacks still remains largely unexplored. In this paper, we focus on certifying the machine learning model robustness against general threat models, especially backdoor attacks. We first provide a unified framework via randomized smoothing techniques and show how it can be instantiated to certify the robustness against both evasion and backdoor attacks. We then propose the first robust training process, RAB, to smooth the trained model and certify its robustness against backdoor attacks. We prove the robustness bound for machine learning models trained with RAB and prove that our robustness bound is tight. In addition, we theoretically show that it is possible to train the robust smoothed models efficiently for simple models such as K-nearest neighbor classifiers, and we propose an exact smooth-training algorithm that eliminates the need to sample from a noise distribution for such models. Empirically, we conduct comprehensive experiments for different machine learning (ML) models such as DNNs, support vector machines, and K-NN models on MNIST, CIFAR-10, and ImageNette datasets and provide the first benchmark for certified robustness against backdoor attacks. In addition, we evaluate K-NN models on a spambase tabular dataset to demonstrate the advantages of the proposed exact algorithm. Both the theoretic analysis and the comprehensive evaluation on diverse ML models and datasets shed light on further robust learning strategies against general training time attacks.},
-  annote        = {Comment: IEEE Symposium on Security and Privacy 2023},
-  archiveprefix = {arxiv},
-  doi           = {10.48550/arXiv.2003.08904},
-  eprint        = {2003.08904},
-  file          = {:weber2022rab - RAB_ Provable Robustness against Backdoor Attacks.pdf:PDF},
-  groups        = {Defenses, Backdoors, To read},
-  keywords      = {Computer Science - Machine Learning, Statistics - Machine Learning},
-  school        = {arXiv},
-  shorttitle    = {{RAB}},
-}
-
-'
 @TechReport{li2022sok,
   author        = {Li, Linyi and Xie, Tao and Li, Bo},
   title         = {{SoK}: {Certified} {Robustness} for {Deep} {Neural} {Networks}},
@@ -397,6 +378,7 @@
   booktitle  = {Usenix Security},
   title      = {Blind backdoors in deep learning models},
   year       = {2021},
+  file       = {:bagdasaryan2021blind - Blind Backdoors in Deep Learning Models.pdf:PDF},
   ranking    = {rank4},
   readstatus = {read},
 }
@@ -611,26 +593,6 @@
   priority      = {prio2},
   ranking       = {rank1},
   school        = {arXiv},
-}
-
- 
-@TechReport{tancik2020stegastamp,
-  author        = {Tancik, Matthew and Mildenhall, Ben and Ng, Ren},
-  title         = {{StegaStamp}: {Invisible} {Hyperlinks} in {Physical} {Photographs}},
-  year          = {2020},
-  month         = mar,
-  note          = {ZSCC: 0000138 arXiv:1904.05343 [cs] type: article},
-  abstract      = {Printed and digitally displayed photos have the ability to hide imperceptible digital data that can be accessed through internet-connected imaging systems. Another way to think about this is physical photographs that have unique QR codes invisibly embedded within them. This paper presents an architecture, algorithms, and a prototype implementation addressing this vision. Our key technical contribution is StegaStamp, a learned steganographic algorithm to enable robust encoding and decoding of arbitrary hyperlink bitstrings into photos in a manner that approaches perceptual invisibility. StegaStamp comprises a deep neural network that learns an encoding/decoding algorithm robust to image perturbations approximating the space of distortions resulting from real printing and photography. We demonstrates real-time decoding of hyperlinks in photos from in-the-wild videos that contain variation in lighting, shadows, perspective, occlusion and viewing distance. Our prototype system robustly retrieves 56 bit hyperlinks after error correction - sufficient to embed a unique code within every photo on the internet.},
-  annote        = {Comment: CVPR 2020, Project page: http://www.matthewtancik.com/stegastamp},
-  archiveprefix = {arxiv},
-  doi           = {10.48550/arXiv.1904.05343},
-  eprint        = {1904.05343},
-  file          = {:tancik2020stegastamp - StegaStamp_ Invisible Hyperlinks in Physical Photographs.pdf:PDF},
-  keywords      = {Computer Science - Computer Vision and Pattern Recognition},
-  ranking       = {rank3},
-  readstatus    = {skimmed},
-  school        = {arXiv},
-  shorttitle    = {{StegaStamp}},
 }
 
  
@@ -1668,6 +1630,7 @@
   year      = {2022},
   pages     = {3315--3317},
   doi       = {10.1145/3548606.3563532},
+  file      = {:abad2022poster - Poster_ Backdoor Attacks on Spiking NNs and Neuromorphic Datasets.pdf:PDF},
 }
 
 @InProceedings{liu2018fine,
@@ -1823,6 +1786,7 @@
   volume   = {23},
   abstract = {This paper presents a new modular and integrative sensory information system inspired by the way the brain performs information processing, in particular, pattern recognition. Spiking neural networks are used to model human-like visual and auditory pathways. This bimodal system is trained to perform the specific task of person authentication. The two unimodal systems are individually tuned and trained to recognize faces and speech signals from spoken utterances, respectively. New learning procedures are designed to operate in an online evolvable and adaptive way. Several ways of modelling sensory integration using spiking neural network architectures are suggested and evaluated in computer experiments.},
   doi      = {10.1016/j.neunet.2010.04.009},
+  file     = {:wysoski2010evolving - Evolving Spiking Neural Networks for Audiovisual Information Processing.pdf:PDF},
   keywords = {Spiking neural network, Audio and visual pattern recognition, Face recognition, Speaker authentication, Online classification},
   url      = {https://www.sciencedirect.com/science/article/pii/S0893608010000924},
 }
@@ -1864,6 +1828,7 @@
   pages    = {1537-1557},
   volume   = {34},
   doi      = {10.1109/TCAD.2015.2474396},
+  file     = {:akopyan2015truenorth - TrueNorth_ Design and Tool Flow of a 65 MW 1 Million Neuron Programmable Neurosynaptic Chip.html:URL},
   fjournal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
 }
 
@@ -1906,6 +1871,7 @@
   organization = {IEEE},
   pages        = {2430--2433},
   doi          = {10.1109/iscas.2010.5537150},
+  file         = {:posch2010high - High DR Frame Free PWM Imaging with Asynchronous AER Intensity Encoding and Focal Plane Temporal Redundancy Suppression.html:URL},
 }
 
 @Article{tavanaei2019deep,
@@ -2028,14 +1994,6 @@
   publisher = {IEEE},
 }
 
-@Article{hong2021handcrafted,
-  author  = {Hong, Sanghyun and Carlini, Nicholas and Kurakin, Alexey},
-  journal = {arXiv preprint arXiv:2106.04690},
-  title   = {Handcrafted backdoors in deep neural networks},
-  year    = {2021},
-  file    = {:hong2021handcrafted - Handcrafted Backdoors in Deep Neural Networks.pdf:PDF},
-}
-
 
 
 @InProceedings{selvaraju2017grad,
@@ -2080,14 +2038,6 @@
   pages        = {80--89},
   doi          = {10.1109/dsaa.2018.00018},
   file         = {:gilpin2018explaining - Explaining Explanations_ an Overview of Interpretability of Machine Learning.pdf:PDF},
-}
-
-@Article{aytekin2022neurala,
-  author  = {Aytekin, Caglar},
-  journal = {arXiv preprint arXiv:2210.05189},
-  title   = {Neural Networks are Decision Trees},
-  year    = {2022},
-  file    = {:aytekin2022neurala - Neural Networks Are Decision Trees.pdf:PDF},
 }
 
 @Article{kwon2020multi,
@@ -2157,6 +2107,7 @@
   title     = {$\{$T-Miner$\}$: A Generative Approach to Defend Against Trojan Attacks on $\{$DNN-based$\}$ Text Classification},
   year      = {2021},
   pages     = {2255--2272},
+  file      = {:azizi2021$$t - $$T Miner$_$_ a Generative Approach to Defend against Trojan Attacks on $$DNN Based$_$ Text Classification.pdf:PDF},
 }
 
 @InProceedings{koffas2022dynamic,
@@ -2231,6 +2182,7 @@
   pages     = {1345--1359},
   volume    = {22},
   doi       = {10.1109/tkde.2009.191},
+  file      = {:pan2010survey - A Survey on Transfer Learning.html:URL},
   publisher = {IEEE},
 }
 
@@ -2283,6 +2235,7 @@
   organization = {Ieee},
   pages        = {248--255},
   doi          = {10.1109/cvpr.2009.5206848},
+  file         = {:deng2009imagenet - Imagenet_ a Large Scale Hierarchical Image Database.html:URL},
 }
 
 @Article{simonyan2014very,
@@ -2307,6 +2260,7 @@
   author = {Alex Krizhevsky},
   title  = {Learning multiple layers of features from tiny images},
   year   = {2009},
+  file   = {:krizhevsky2009learninga - Learning Multiple Layers of Features from Tiny Images.pdf:PDF},
 }
 
 @InProceedings{feng2022stealthy,
@@ -2317,6 +2271,7 @@
   organization = {IEEE},
   pages        = {2969--2973},
   doi          = {10.1109/icassp43922.2022.9746008},
+  file         = {:feng2022stealthy - Stealthy Backdoor Attack with Adversarial Training.html:URL},
 }
 
 
@@ -2422,13 +2377,6 @@
   year   = {2019},
 }
 
-@Article{salem2020donta,
-  author  = {Salem, Ahmed and Backes, Michael and Zhang, Yang},
-  journal = {arXiv preprint arXiv:2010.03282},
-  title   = {Don't Trigger Me! A Triggerless Backdoor Attack Against Deep Neural Networks},
-  year    = {2020},
-}
-
 @Article{lecun2015deep,
   author    = {LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
   journal   = {nature},
@@ -2442,11 +2390,12 @@
   publisher = {Nature Publishing Group},
 }
 
-@article{abad2021sok,
-  title={SoK: On the Security \& Privacy in Federated Learning},
-  author={Abad, Gorka and Picek, Stjepan and Urbieta, Aitor},
-  journal={arXiv preprint arXiv:2112.05423},
-  year={2021}
+@Article{abad2021sok,
+  author  = {Abad, Gorka and Picek, Stjepan and Urbieta, Aitor},
+  journal = {arXiv preprint arXiv:2112.05423},
+  title   = {SoK: On the Security \& Privacy in Federated Learning},
+  year    = {2021},
+  file    = {:abad2021sok - SoK_ on the Security & Privacy in Federated Learning.pdf:PDF},
 }
 
 @Article{zhuang2021comprehensive,
@@ -2486,15 +2435,7 @@
   title     = {StegaStamp: Invisible Hyperlinks in Physical Photographs},
   year      = {2020},
   doi       = {10.1109/cvpr42600.2020.00219},
-  file      = {:tancik2020stegastampa - StegaStamp_ Invisible Hyperlinks in Physical Photographs.pdf:PDF},
-}
-
-@Article{turner2019labela,
-  author  = {Turner, Alexander and Tsipras, Dimitris and Madry, Aleksander},
-  journal = {arXiv preprint arXiv:1912.02771},
-  title   = {Label-consistent backdoor attacks},
-  year    = {2019},
-  file    = {:turner2019labela - Label Consistent Backdoor Attacks.pdf:PDF},
+  file      = {:tancik2020stegastamp - StegaStamp_ Invisible Hyperlinks in Physical Photographs.pdf:PDF},
 }
 
 @InProceedings{barni2019new,
@@ -2786,6 +2727,7 @@
   number  = {4},
   pages   = {409--433},
   volume  = {71},
+  file    = {:ponulak2011introduction - Introduction to Spiking Neural Networks_ Information Processing, Learning and Applications.pdf:PDF},
 }
 
  
@@ -3134,6 +3076,7 @@
   year      = {2023},
   month     = {June},
   pages     = {8133-8142},
+  file      = {:jiang2023colora - Color Backdoor_ a Robust Poisoning Attack in Color Space.pdf:PDF},
 }
 
 @InProceedings{Sun_2023_CVPR,
