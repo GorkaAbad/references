@@ -1374,16 +1374,6 @@
   file   = {:liu2017trojaning - Trojaning Attack on Neural Networks.pdf:PDF},
 }
 
-@Article{nguyen2020input,
-  author   = {Nguyen, Tuan Anh and Tran, Anh},
-  journal  = {Adv. Neur. In.},
-  title    = {Input-aware dynamic backdoor attack},
-  year     = {2020},
-  pages    = {3454--3464},
-  volume   = {33},
-  fjournal = {Advances in Neural Information Processing Systems},
-}
-
 @Article{koffas2021can,
   author  = {Koffas, Stefanos and Xu, Jing and Conti, Mauro and Picek, Stjepan},
   journal = {arXiv preprint arXiv:2107.14569},
@@ -2798,11 +2788,11 @@
   shorttitle    = {Pick your {Poison}},
 }
 
-@InProceedings{noppel2022disguising,
+@InProceedings{noppel2023disguising,
   author       = {Noppel, Maximilian and Peter, Lukas and Wressnegger, Christian},
   booktitle    = {2023 IEEE Symposium on Security and Privacy (SP)},
   title        = {Disguising Attacks with Explanation-Aware Backdoors},
-  year         = {2022},
+  year         = {2023},
   organization = {IEEE Computer Society},
   pages        = {996--1013},
   file         = {:noppel2022disguising - Disguising Attacks with Explanation Aware Backdoors.pdf:PDF},
@@ -3172,11 +3162,108 @@
   urldate  = {2023-08-24},
 }
 
+@Misc{li2021neural,
+  author        = {Yige Li and Xixiang Lyu and Nodens Koren and Lingjuan Lyu and Bo Li and Xingjun Ma},
+  title         = {Neural Attention Distillation: Erasing Backdoor Triggers from Deep Neural Networks},
+  year          = {2021},
+  archiveprefix = {arXiv},
+  eprint        = {2101.05930},
+  file          = {:http\://arxiv.org/pdf/2101.05930v2:},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{274691,
+  author    = {Takami Sato and Junjie Shen and Ningfei Wang and Yunhan Jia and Xue Lin and Qi Alfred Chen},
+  booktitle = {30th USENIX Security Symposium (USENIX Security 21)},
+  title     = {Dirty Road Can Attack: Security of Deep Learning based Automated Lane Centering under {Physical-World} Attack},
+  year      = {2021},
+  month     = aug,
+  pages     = {3309--3326},
+  publisher = {USENIX Association},
+  file      = {:274691 - Dirty Road Can Attack_ Security of Deep Learning Based Automated Lane Centering under Physical World Attack.pdf:PDF},
+  isbn      = {978-1-939133-24-3},
+  url       = {https://www.usenix.org/conference/usenixsecurity21/presentation/sato},
+}
+
+ 
+@Article{schuman2022opportunities,
+  author    = {Schuman, Catherine D. and Kulkarni, Shruti R. and Parsa, Maryam and Mitchell, J. Parker and Date, Prasanna and Kay, Bill},
+  journal   = {Nature Computational Science},
+  title     = {Opportunities for neuromorphic computing algorithms and applications},
+  year      = {2022},
+  issn      = {2662-8457},
+  month     = jan,
+  number    = {1},
+  pages     = {10--19},
+  volume    = {2},
+  abstract  = {Neuromorphic computing technologies will be important for the future of computing, but much of the work in neuromorphic computing has focused on hardware development. Here, we review recent results in neuromorphic computing algorithms and applications. We highlight characteristics of neuromorphic computing technologies that make them attractive for the future of computing and we discuss opportunities for future development of algorithms and applications on these systems.},
+  copyright = {2022 Springer Nature America, Inc.},
+  doi       = {10.1038/s43588-021-00184-y},
+  file      = {:schuman2022opportunities - Opportunities for Neuromorphic Computing Algorithms and Applications.pdf:PDF},
+  keywords  = {Computational science, Computer science},
+  language  = {en},
+  publisher = {Nature Publishing Group},
+  url       = {https://www.nature.com/articles/s43588-021-00184-y},
+  urldate   = {2023-08-29},
+}
+
+ 
+@Article{neftci2019surrogate,
+  author     = {Neftci, Emre O. and Mostafa, Hesham and Zenke, Friedemann},
+  journal    = {IEEE Signal Processing Magazine},
+  title      = {Surrogate {Gradient} {Learning} in {Spiking} {Neural} {Networks}: {Bringing} the {Power} of {Gradient}-{Based} {Optimization} to {Spiking} {Neural} {Networks}},
+  year       = {2019},
+  issn       = {1558-0792},
+  month      = nov,
+  number     = {6},
+  pages      = {51--63},
+  volume     = {36},
+  abstract   = {Spiking neural networks (SNNs) are nature's versatile solution to fault-tolerant, energy-efficient signal processing. To translate these benefits into hardware, a growing number of neuromorphic spiking NN processors have attempted to emulate biological NNs. These developments have created an imminent need for methods and tools that enable such systems to solve real-world signal processing problems. Like conventional NNs, SNNs can be trained on real, domain-specific data; however, their training requires the overcoming of a number of challenges linked to their binary and dynamical nature. This article elucidates step-by-step the problems typically encountered when training SNNs and guides the reader through the key concepts of synaptic plasticity and data-driven learning in the spiking setting. Accordingly, it gives an overview of existing approaches and provides an introduction to surrogate gradient (SG) methods, specifically, as a particularly flexible and efficient method to overcome the aforementioned challenges.},
+  doi        = {10.1109/MSP.2019.2931595},
+  file       = {:neftci2019surrogate - Surrogate Gradient Learning in Spiking Neural Networks_ Bringing the Power of Gradient Based Optimization to Spiking Neural Networks.html:URL},
+  keywords   = {Neural networks, Fault tolerance, Energy efficiency, Biological system modeling},
+  shorttitle = {Surrogate {Gradient} {Learning} in {Spiking} {Neural} {Networks}},
+}
+
+ 
+@TechReport{bagdasaryan2023ceci,
+  author     = {Bagdasaryan, Eugene and Shmatikov, Vitaly},
+  title      = {Ceci n'est pas une pomme: {Adversarial} {Illusions} in {Multi}-{Modal} {Embeddings}},
+  year       = {2023},
+  month      = aug,
+  note       = {arXiv:2308.11804 [cs] type: article},
+  abstract   = {Multi-modal encoders map images, sounds, texts, videos, etc. into a single embedding space, aligning representations across modalities (e.g., associate an image of a dog with a barking sound). We show that multi-modal embeddings can be vulnerable to an attack we call "adversarial illusions." Given an input in any modality, an adversary can perturb it so as to make its embedding close to that of an arbitrary, adversary-chosen input in another modality. Illusions thus enable the adversary to align any image with any text, any text with any sound, etc. Adversarial illusions exploit proximity in the embedding space and are thus agnostic to downstream tasks. Using ImageBind embeddings, we demonstrate how adversarially aligned inputs, generated without knowledge of specific downstream tasks, mislead image generation, text generation, and zero-shot classification.},
+  doi        = {10.48550/arXiv.2308.11804},
+  file       = {:bagdasaryan2023ceci - Ceci N'est Pas Une Pomme_ Adversarial Illusions in Multi Modal Embeddings.pdf:PDF},
+  keywords   = {Computer Science - Cryptography and Security, Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+  school     = {arXiv},
+  shorttitle = {Ceci n'est pas une pomme},
+  url        = {http://arxiv.org/abs/2308.11804},
+  urldate    = {2023-09-06},
+}
+
+ 
+@TechReport{bagdasaryan2023mithridates,
+  author     = {Bagdasaryan, Eugene and Shmatikov, Vitaly},
+  title      = {Mithridates: {Boosting} {Natural} {Resistance} to {Backdoor} {Learning}},
+  year       = {2023},
+  month      = may,
+  note       = {arXiv:2302.04977 [cs] type: article},
+  abstract   = {Machine learning (ML) models trained on data from potentially untrusted sources are vulnerable to poisoning. A small, maliciously crafted subset of the training inputs can cause the model to learn a "backdoor" task (e.g., misclassify inputs with a certain feature) in addition to its main task. While backdoor attacks remain largely a hypothetical threat, state-of-the-art defenses require massive changes to the existing ML pipelines and are too complex for practical deployment. In this paper, we take a pragmatic view and investigate natural resistance of ML pipelines to backdoor attacks, i.e., resistance that can be achieved without changes to how models are trained. We design, implement, and evaluate Mithridates, a new method that helps practitioners answer two actionable questions: (1) how well does my model resist backdoor poisoning attacks?, and (2) how can I increase its resistance without changing the training pipeline? Mithridates leverages hyperparameter search \${\textbackslash}unicode\{x2013\}\$ a tool that ML developers already extensively use \${\textbackslash}unicode\{x2013\}\$ to balance the model's accuracy and resistance to backdoor learning, without disruptive changes to the pipeline. We show that hyperparameters found by Mithridates increase resistance to multiple types of backdoor attacks by 3-5x with only a slight impact on model accuracy. We also discuss extensions to AutoML and federated learning.},
+  doi        = {10.48550/arXiv.2302.04977},
+  file       = {arXiv Fulltext PDF:https\://arxiv.org/pdf/2302.04977.pdf:application/pdf},
+  keywords   = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+  school     = {arXiv},
+  shorttitle = {Mithridates},
+  url        = {http://arxiv.org/abs/2302.04977},
+  urldate    = {2023-09-06},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Backdoors\;0\;0\;0x0000ffff\;\;\;;
+1 StaticGroup:Backdoors\;0\;1\;0x0000ffff\;\;\;;
 2 StaticGroup:Attack\;0\;0\;0xe64d4dff\;\;\;;
 2 StaticGroup:Defenses\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Extraction attacks\;0\;0\;0xffff00ff\;\;\;;
