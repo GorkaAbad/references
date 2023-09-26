@@ -415,14 +415,14 @@
   school        = {arXiv},
 }
 
-@Misc{invisible,
-  title      = {Invisible Backdoor Attack With Sample-Specific Triggers - Li_Invisible_Backdoor_Attack_With_Sample-Specific_Triggers_ICCV_2021_paper},
-  accessdate = {2023-02-14},
-  file       = {:invisible - Invisible Backdoor Attack with Sample Specific Triggers Li_Invisible_Backdoor_Attack_With_Sample Specific_Triggers_ICCV_2021_paper.pdf:PDF},
-  groups     = {Attack, Backdoors},
-  ranking    = {rank2},
-  readstatus = {read},
-  url        = {https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Invisible_Backdoor_Attack_With_Sample-Specific_Triggers_ICCV_2021_paper.pdf},
+@InProceedings{li2021invisible,
+  author    = {Li, Yuezun and Li, Yiming and Wu, Baoyuan and Li, Longkang and He, Ran and Lyu, Siwei},
+  booktitle = {Proceedings of the IEEE/CVF international conference on computer vision},
+  title     = {Invisible backdoor attack with sample-specific triggers},
+  year      = {2021},
+  pages     = {16463--16472},
+  file      = {:invisible - Invisible Backdoor Attack with Sample Specific Triggers Li_Invisible_Backdoor_Attack_With_Sample Specific_Triggers_ICCV_2021_paper.pdf:PDF},
+  groups    = {Attack, Backdoors},
 }
 
 @InProceedings{chen2000linkbreaker,
@@ -3274,6 +3274,58 @@
   school   = {arXiv},
   url      = {http://arxiv.org/abs/2109.08868},
   urldate  = {2023-09-11},
+}
+
+ 
+@TechReport{zhang2023what,
+  author   = {Zhang, Yuanhan and Zhou, Kaiyang and Liu, Ziwei},
+  title    = {What {Makes} {Good} {Examples} for {Visual} {In}-{Context} {Learning}?},
+  year     = {2023},
+  month    = feb,
+  note     = {arXiv:2301.13670 [cs] type: article},
+  abstract = {Large-scale models trained on broad data have recently become the mainstream architecture in computer vision due to their strong generalization performance. In this paper, the main focus is on an emergent ability in large vision models, known as in-context learning, which allows inference on unseen tasks by conditioning on in-context examples (a.k.a.{\textasciitilde}prompt) without updating the model parameters. This concept has been well-known in natural language processing but has only been studied very recently for large vision models. We for the first time provide a comprehensive investigation on the impact of in-context examples in computer vision, and find that the performance is highly sensitive to the choice of in-context examples. To overcome the problem, we propose a prompt retrieval framework to automate the selection of in-context examples. Specifically, we present (1) an unsupervised prompt retrieval method based on nearest example search using an off-the-shelf model, and (2) a supervised prompt retrieval method, which trains a neural network to choose examples that directly maximize in-context learning performance. The results demonstrate that our methods can bring non-trivial improvements to visual in-context learning in comparison to the commonly-used random selection.},
+  annote   = {Comment: code and models:https://github.com/ZhangYuanhan-AI/visual\_prompt\_retrieval},
+  doi      = {10.48550/arXiv.2301.13670},
+  file     = {:zhang2023what - What Makes Good Examples for Visual in Context Learning_.pdf:PDF},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2301.13670},
+  urldate  = {2023-09-14},
+}
+
+ 
+@TechReport{wang2023images,
+  author     = {Wang, Xinlong and Wang, Wen and Cao, Yue and Shen, Chunhua and Huang, Tiejun},
+  title      = {Images {Speak} in {Images}: {A} {Generalist} {Painter} for {In}-{Context} {Visual} {Learning}},
+  year       = {2023},
+  month      = mar,
+  note       = {arXiv:2212.02499 [cs] type: article},
+  abstract   = {In-context learning, as a new paradigm in NLP, allows the model to rapidly adapt to various tasks with only a handful of prompts and examples. But in computer vision, the difficulties for in-context learning lie in that tasks vary significantly in the output representations, thus it is unclear how to define the general-purpose task prompts that the vision model can understand and transfer to out-of-domain tasks. In this work, we present Painter, a generalist model which addresses these obstacles with an "image"-centric solution, that is, to redefine the output of core vision tasks as images, and specify task prompts as also images. With this idea, our training process is extremely simple, which performs standard masked image modeling on the stitch of input and output image pairs. This makes the model capable of performing tasks conditioned on visible image patches. Thus, during inference, we can adopt a pair of input and output images from the same task as the input condition, to indicate which task to perform. Without bells and whistles, our generalist Painter can achieve competitive performance compared to well-established task-specific models, on seven representative vision tasks ranging from high-level visual understanding to low-level image processing. In addition, Painter significantly outperforms recent generalist models on several challenging tasks.},
+  annote     = {Comment: Accepted to CVPR 2023. Code and model is available at: https://github.com/baaivision/Painter},
+  doi        = {10.48550/arXiv.2212.02499},
+  file       = {:wang2023images - Images Speak in Images_ a Generalist Painter for in Context Visual Learning.pdf:PDF},
+  keywords   = {Computer Science - Computer Vision and Pattern Recognition},
+  school     = {arXiv},
+  shorttitle = {Images {Speak} in {Images}},
+  url        = {http://arxiv.org/abs/2212.02499},
+  urldate    = {2023-09-14},
+}
+
+ 
+@TechReport{xie2022explanation,
+  author   = {Xie, Sang Michael and Raghunathan, Aditi and Liang, Percy and Ma, Tengyu},
+  title    = {An {Explanation} of {In}-context {Learning} as {Implicit} {Bayesian} {Inference}},
+  year     = {2022},
+  month    = jul,
+  note     = {arXiv:2111.02080 [cs] type: article},
+  abstract = {Large language models (LMs) such as GPT-3 have the surprising ability to do in-context learning, where the model learns to do a downstream task simply by conditioning on a prompt consisting of input-output examples. The LM learns from these examples without being explicitly pretrained to learn. Thus, it is unclear what enables in-context learning. In this paper, we study how in-context learning can emerge when pretraining documents have long-range coherence. Here, the LM must infer a latent document-level concept to generate coherent next tokens during pretraining. At test time, in-context learning occurs when the LM also infers a shared latent concept between examples in a prompt. We prove when this occurs despite a distribution mismatch between prompts and pretraining data in a setting where the pretraining distribution is a mixture of HMMs. In contrast to messy large-scale datasets used to train LMs capable of in-context learning, we generate a small-scale synthetic dataset (GINC) where Transformers and LSTMs both exhibit in-context learning. Beyond the theory, experiments on GINC exhibit large-scale real-world phenomena including improved in-context performance with model scaling (despite the same pretraining loss), sensitivity to example order, and instances where zero-shot is better than few-shot in-context learning.},
+  annote   = {Comment: ICLR 2022},
+  doi      = {10.48550/arXiv.2111.02080},
+  file     = {:xie2022explanation - An Explanation of in Context Learning As Implicit Bayesian Inference.pdf:PDF},
+  keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/2111.02080},
+  urldate  = {2023-09-21},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
